@@ -1,0 +1,25 @@
+site_name: IMS322 Docs
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - CSS:
+      - Introduction: css/_introduction.md
+      - Flexbox: css/flexbox.md
+      - Grid: css/grid.md
+      - Hover: css/hover.md
+      - Input Styling: css/input-styling.md
+      - Media Queries: css/media-queries.md
+      - Nesting: css/nesting.md
+      - Relative Units: css/relative-units.md
+      - Transition: css/transition.md
+      - Variables: css/variables.md
+  - JavaScript:
+      - Introduction: js/_introduction.md
+  - Reference:
+      - Introduction: ref/_introduction.md
+      - CSS Reset: ref/css-reset.md
+  - Style Guide: style-guide.md
+  - Miscellaneous: miscellaneous.md
+  - Review: review.md
