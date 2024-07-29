@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Class Toggle - IMS322 Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">IMS322 Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../setup/" class="nav-link">Setup</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../css/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../css/flexbox/" class="dropdown-item">Flexbox</a>
+</li>
+                                    
+<li>
+    <a href="../../css/grid/" class="dropdown-item">Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../css/hover/" class="dropdown-item">Hover</a>
+</li>
+                                    
+<li>
+    <a href="../../css/input-styling/" class="dropdown-item">Input Styling</a>
+</li>
+                                    
+<li>
+    <a href="../../css/media-queries/" class="dropdown-item">Media Queries</a>
+</li>
+                                    
+<li>
+    <a href="../../css/nesting/" class="dropdown-item">Nesting</a>
+</li>
+                                    
+<li>
+    <a href="../../css/relative-units/" class="dropdown-item">Relative Units</a>
+</li>
+                                    
+<li>
+    <a href="../../css/transition/" class="dropdown-item">Transition</a>
+</li>
+                                    
+<li>
+    <a href="../../css/variables/" class="dropdown-item">Variables</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ref/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../ref/css-reset/" class="dropdown-item">CSS Reset</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../style-guide/" class="nav-link">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../miscellaneous/" class="nav-link">Miscellaneous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../review/" class="nav-link">Review</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#activeinactive-states" class="nav-link">Active/Inactive States</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Now that we can add event listeners to HTML elements, let's design a simple interaction that actually changes something on the page!</p>
+<p>If your goal is to change the appearance of a page element (as opposed to the content), one simple way to do so is by toggling a class on or off. Let's start by creating a button that toggles the color of some text between black (the default) and red.</p>
+<p>Since we will need to reference both the interactive element <code>&lt;button&gt;</code> AND the changing element <code>&lt;p&gt;</code>, they will both need unique id attributes.</p>
+<pre><code class="language-html">&lt;button id=&quot;color-toggle-btn&quot;&gt;Click Me&lt;/button&gt;
+
+&lt;p id=&quot;changing-text&quot;&gt;Hello, world.&lt;/p&gt;
+</code></pre>
+<p>In CSS, create a class that describes the style changes that should occur on the element <code>&lt;p&gt;</code> when the button is clicked.</p>
+<pre><code class="language-css">.red-text {
+  color: red;
+}
+</code></pre>
+<p>In JavaScript, we have 2 new concepts:</p>
+<ol>
+<li>When writing the function, start by creating variables that reference the element(s) that will change when the function runs. In this case, we will be changing the color of the text in the <code>&lt;p&gt;</code> element.</li>
+<li>We will use the new method <code>classList.toggle()</code> to add/remove the <code>.red-text</code> class.</li>
+</ol>
+<pre><code class="language-js">let colorToggleBtn = document.querySelector(&quot;#color-toggle-btn&quot;);
+
+colorToggleBtn.addEventListener(&quot;click&quot;, colorToggle);
+
+function colorToggle() {
+  let changingText = document.querySelector(&quot;#changing-text&quot;);
+  changingText.classList.toggle(&quot;red-text&quot;);
+}
+</code></pre>
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="qBgevNq" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/qBgevNq">
+  Class Toggle 1 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<h2 id="activeinactive-states">Active/Inactive States</h2>
+<p>One useful application of <code>classList.toggle()</code> is to think of elements having "active" and "inactive" states. There is nothing new to the code in this approach - rather, it's just a way for you as the developer to mentally model the interaction states.</p>
+<p>Let's start by created a text drawer that opens and closes when a button is clicked. This type of interaction may be used to show and hide text that will not be visible all the time.</p>
+<p>In CSS, define a default or "active" state for the element. Here, <code>background-color</code> is applied for illustrative purposes (it will make it easier to see the changes). A <code>transition</code> is applied so that the change will occur gradually rather than immediately. Finally, the <code>overflow: hidden</code> property prevents text from spilling out of the drawer when closed.</p>
+<pre><code class="language-css">.open-drawer {
+  background-color: lightblue;
+  max-height: 1.2rem;
+  transition: 0.5s;
+  overflow: hidden;
+}
+</code></pre>
+<p>To close the drawer, all we have to do is set its <code>max-height</code> to 0.</p>
+<pre><code class="language-css">.closed-drawer {
+  max-height: 0;
+}
+</code></pre>
+<p><strong>Why are we using max-height instead of height?</strong>
+Usually, you would not need to specify a height value for a <code>&lt;p&gt;</code> element as it would be set automatically by the browser. However, in order to have a transition, the element <em>needs a value to transition to/from</em> - <code>auto</code> will not work for this. The reason that we are using <code>max-height</code> instead of <code>height</code> is because then we don't need to be too precise - <code>1.2rem</code> as an approximation is sufficient for displaying all of the text content without creating extra empty space.</p>
+<p>The rest of the HTML and JavaScript code is essentially the same as the previous example.</p>
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="WNPVmxL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVmxL">
+  Class Toggle 2 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

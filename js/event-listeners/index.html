@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Event Listeners - IMS322 Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">IMS322 Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../setup/" class="nav-link">Setup</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../css/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../css/flexbox/" class="dropdown-item">Flexbox</a>
+</li>
+                                    
+<li>
+    <a href="../../css/grid/" class="dropdown-item">Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../css/hover/" class="dropdown-item">Hover</a>
+</li>
+                                    
+<li>
+    <a href="../../css/input-styling/" class="dropdown-item">Input Styling</a>
+</li>
+                                    
+<li>
+    <a href="../../css/media-queries/" class="dropdown-item">Media Queries</a>
+</li>
+                                    
+<li>
+    <a href="../../css/nesting/" class="dropdown-item">Nesting</a>
+</li>
+                                    
+<li>
+    <a href="../../css/relative-units/" class="dropdown-item">Relative Units</a>
+</li>
+                                    
+<li>
+    <a href="../../css/transition/" class="dropdown-item">Transition</a>
+</li>
+                                    
+<li>
+    <a href="../../css/variables/" class="dropdown-item">Variables</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ref/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../ref/css-reset/" class="dropdown-item">CSS Reset</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../style-guide/" class="nav-link">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../miscellaneous/" class="nav-link">Miscellaneous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../review/" class="nav-link">Review</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#adding-an-event-listener" class="nav-link">Adding an Event Listener</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>An <em>event</em> is a signal that something has happened in the browser. There are several triggers for <a href="https://developer.mozilla.org/en-US/docs/Web/Events">events</a>, some that occur automatically (e.g. the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">load</a> event fires when the page has finished loading), and others that occur in response to an interaction from the user (e.g. the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click</a> event fires when the user clicks on a page element). In this class, we will primarily be focussed on the latter category.</p>
+<p>In order to make something happen in response to an event, we need to attach an <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">event listener</a> to the interactive element in JavaScript.</p>
+<h2 id="adding-an-event-listener">Adding an Event Listener</h2>
+<p>As with many coding scenarios, there are multiple ways to approach browser-based interaction development. For consistency and simplicity, the recommended procedure for this class is as follows:</p>
+<ol>
+<li>Declare a variable to reference the interactive element.</li>
+<li>Write a function that defines what should happen when the interaction occurs.</li>
+<li>Add an event listener that calls the function.</li>
+</ol>
+<h3 id="step-1-declare-a-variable-to-reference-the-interactive-element">Step 1: Declare a variable to reference the interactive element</h3>
+<p>In addition to the <a href="basic-data-types">basic data types</a> that we have already covered (number, string, boolean), a variable can also be assigned to an <em>HTML element</em>.</p>
+<pre><code class="language-js">let myButton = document.querySelector(&quot;#my-button&quot;);
+</code></pre>
+<p>Notice that the argument of this method begins with <code>#</code>, which is the CSS selector for ids - this implies that the element we are trying to reference should have a matching <em>id</em> attribute.</p>
+<pre><code class="language-html">&lt;button id=&quot;my-button&quot;&gt;Click Me&lt;/button&gt;
+</code></pre>
+<p>Also notice that the naming convention for the id in HTML (and where it is used in <code>querySelector</code>) is <em>kebab-case</em>, while the variable name in JavaScript is <em>camelCase</em>. I recommend using the same words for both the id and the variable name, but styled appropriately (kebab-case or camelCase, based on location in code).</p>
+<h3 id="step-2-write-a-function-that-defines-what-should-happen-when-the-interaction-occurs">Step 2: Write a function that defines what should happen when the interaction occurs</h3>
+<p>In this simple example, we will log the message "Button was clicked!"" to the console.</p>
+<pre><code class="language-js">function wasClicked() {
+  console.log(&quot;Button was clicked!&quot;);
+}
+</code></pre>
+<h3 id="step-3-add-an-event-listener-that-calls-the-function">Step 3: Add an event listener that calls the function</h3>
+<p>The <em>event listener</em> should be added to the element that fires the desired event - in this case, <em>the element that the user interacts with</em>, which is a button. As previously mentioned, there are many different kinds of events that can be listened for - we will specifically be listening for the <em>click</em> event.</p>
+<pre><code class="language-js">myButton.addEventListener(&quot;click&quot;, wasClicked);
+</code></pre>
+<p>Notice that this statement begins with the variable name that we created in step 1. The <code>addEventListener()</code> method is given 2 arguments: the event type to listen for (<code>"click"</code>), followed by the name of the function we created in step 2 (<code>wasClicked</code>).</p>
+<p>Click the button in the example below. Remember, you'll need to open the console in order to see the results.</p>
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="qBvWqaG" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/qBvWqaG">
+  Event Listener (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

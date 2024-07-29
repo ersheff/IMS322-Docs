@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>More DOM Manipulation - IMS322 Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">IMS322 Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../setup/" class="nav-link">Setup</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../css/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../css/flexbox/" class="dropdown-item">Flexbox</a>
+</li>
+                                    
+<li>
+    <a href="../../css/grid/" class="dropdown-item">Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../css/hover/" class="dropdown-item">Hover</a>
+</li>
+                                    
+<li>
+    <a href="../../css/input-styling/" class="dropdown-item">Input Styling</a>
+</li>
+                                    
+<li>
+    <a href="../../css/media-queries/" class="dropdown-item">Media Queries</a>
+</li>
+                                    
+<li>
+    <a href="../../css/nesting/" class="dropdown-item">Nesting</a>
+</li>
+                                    
+<li>
+    <a href="../../css/relative-units/" class="dropdown-item">Relative Units</a>
+</li>
+                                    
+<li>
+    <a href="../../css/transition/" class="dropdown-item">Transition</a>
+</li>
+                                    
+<li>
+    <a href="../../css/variables/" class="dropdown-item">Variables</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ref/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../ref/css-reset/" class="dropdown-item">CSS Reset</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../style-guide/" class="nav-link">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../miscellaneous/" class="nav-link">Miscellaneous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../review/" class="nav-link">Review</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#creating-elements-and-appending-children" class="nav-link">Creating Elements and Appending Children</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#creating-and-appending-elements-in-a-for-of-loop" class="nav-link">Creating and Appending Elements in a For Of Loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>If you recall from a previous reading, the DOM (Document Object Model) is "the data representation of the objects that comprise the structure and content of a document on the web."</p>
+<p>You can think of the structure of the DOM in terms of <em>parents</em> and <em>children</em> using a diagram like this:</p>
+<p><img src="../images/dom.webp"></p>
+<p>There are 3 child elements in the <code>&lt;body&gt;</code> of the diagram - an <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;img&gt;</code> - each which also have their own attributes and inner text. The corresponding HTML would look something like this:</p>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;h1&gt;My Site&lt;/h1&gt;
+  &lt;p&gt;Blah blah blah blah blah blah&lt;/p&gt;
+  &lt;img src=&quot;pic.webp&quot; /&gt;
+&lt;/body&gt;
+</code></pre>
+<p>Take a look at the following example - how would you describe the structure in terms of parents and children? You can probably make some guesses just by looking at the results, but you should open the inspector and/or look at the HTML to confirm.</p>
+<p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="XWGrjOq" data-editable="true" data-user="ersheff" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/XWGrjOq">
+  Parent-Child (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<p>Each <code>&lt;img&gt;</code> has a <code>&lt;figcaption&gt;</code> sibling, both of which are children of a <code>&lt;figure&gt;</code> element, which are themselves children of the <code>&lt;div&gt;</code> flex row. Or, looking at it from the other direction, the <code>&lt;div&gt;</code> flex row is the parent element containing 3 <code>&lt;figure&gt;</code> children, which each contain one <code>&lt;img&gt;</code> child element and one <code>&lt;figcaption&gt;</code> child element. </p>
+<h2 id="creating-elements-and-appending-children">Creating Elements and Appending Children</h2>
+<p>If you were given a large collection of images in a folder to display in a responsive gallery site, you might manually create flexboxes for rows, <code>&lt;figure&gt;</code> or <code>&lt;div&gt;</code> elements for image containers, and <code>&lt;img&gt;</code> elements in your HTML. But what if you were running a website for a cafe that featured different specials and events each week? Might it be easer to automatically generate the HTML with some information about the images in the folder?</p>
+<p>Let's start with a single photo. If you were to create an object that describes a single photo from <a href="https://picsum.photos">Lorem Picsum</a>, it might look like this:</p>
+<pre><code class="language-js">const photo = {
+  url: &quot;https://picsum.photos/id/292/800/600.webp&quot;,
+  alt: &quot;onion and peppercorns&quot;,
+  caption: &quot;Onion and Peppercorns.&quot;
+};
+</code></pre>
+<p>You can use JavaScript to create each required element using the <code>createElement()</code> method and set the required attributes:</p>
+<pre><code class="language-js">const figureElement = document.createElement(&quot;figure&quot;);
+const imageElement = document.createElement(&quot;img&quot;);
+const captionElement = document.createElement(&quot;figcaption&quot;);
+
+// sets src attribute to &quot;https://picsum.photos/id/292/800/600.webp&quot;
+imageElement.src = photo.url;
+// sets alt text attribute to &quot;onion and peppercorns&quot;
+imageElement.alt = photo.alt;
+// sets inner text of &lt;figcaption&gt; to &quot;Onion and Peppercorns.&quot;
+captionElement.innerText = photo.caption;
+</code></pre>
+<p>Then, you can use the <code>appendChild()</code> method to append the <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements to the <code>&lt;figure&gt;</code> element and the <code>&lt;figure&gt;</code> element to the <code>&lt;body&gt;</code> (see example below).</p>
+<p class="codepen" data-height="500" data-default-tab="js,result" data-slug-hash="mdobOPe" data-editable="true" data-user="ersheff" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/mdobOPe">
+  Creating and Appending Elements (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<h2 id="creating-and-appending-elements-in-a-for-of-loop">Creating and Appending Elements in a For Of Loop</h2>
+<p>In the example below, an array containing objects is used to generate elements for a flexbox-based row of photos. Each object contains information about the photo source (url), alt text, and caption text.</p>
+<p class="codepen" data-height="680" data-default-tab="js,result" data-slug-hash="PoLpZQV" data-editable="true" data-user="ersheff" style="height: 680px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/PoLpZQV">
+  Generating a Photo Row with a For Of Loop (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
