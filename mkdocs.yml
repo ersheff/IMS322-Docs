@@ -1,6 +1,4 @@
 site_name: IMS322 Docs
-theme:
-  name: readthedocs
 nav:
   - Home: index.md
   - Setup: setup.md

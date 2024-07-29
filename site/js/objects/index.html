@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Objects - IMS322 Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">IMS322 Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../setup/" class="nav-link">Setup</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../css/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../css/flexbox/" class="dropdown-item">Flexbox</a>
+</li>
+                                    
+<li>
+    <a href="../../css/grid/" class="dropdown-item">Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../css/hover/" class="dropdown-item">Hover</a>
+</li>
+                                    
+<li>
+    <a href="../../css/input-styling/" class="dropdown-item">Input Styling</a>
+</li>
+                                    
+<li>
+    <a href="../../css/media-queries/" class="dropdown-item">Media Queries</a>
+</li>
+                                    
+<li>
+    <a href="../../css/nesting/" class="dropdown-item">Nesting</a>
+</li>
+                                    
+<li>
+    <a href="../../css/relative-units/" class="dropdown-item">Relative Units</a>
+</li>
+                                    
+<li>
+    <a href="../../css/transition/" class="dropdown-item">Transition</a>
+</li>
+                                    
+<li>
+    <a href="../../css/variables/" class="dropdown-item">Variables</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ref/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../ref/css-reset/" class="dropdown-item">CSS Reset</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../style-guide/" class="nav-link">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../miscellaneous/" class="nav-link">Miscellaneous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../review/" class="nav-link">Review</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>We recently learned that <a href="arrays">arrays</a> are useful for storing sequences of related data, such as GPS coordinates, enrollment figures, names of the months in a year, etc.</p>
+<pre><code class="language-js">const miamiCoordinates = [39.511047326918174, -84.72907894440365];
+
+const miamiEnrollment = [21627, 20613, 20784, 20384, 20036];
+
+const months = [&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;]; // etc
+</code></pre>
+<p>The type of data and the relationship that those items have to each other suggest that an array is a suitable way to organize and store those items. They fall into a series and can be easily referenced using only the index number (e.g. <code>months[0]</code> for the first month of the year, <code>months[1]</code> for the second month of the year, etc).</p>
+<p>You may want to store multiple pieces of data about a subject that don't necessarily belong in a sequence. For example, general information about Miami University looks kind of strange in an array.</p>
+<pre><code class="language-js">const miamiOh = [&quot;Public&quot;, 1809, &quot;Oxford, OH&quot;, &quot;Division I&quot;];
+</code></pre>
+<p>While you can likely guess what each item in that array means, it isn't the most obvious or meaningful way to store that specific information. Also, it can become confusing to refer to non-sequential data by index number.</p>
+<pre><code class="language-js">miamiOh[2]; // returns &quot;Oxford, OH&quot; - but what does that mean?
+</code></pre>
+<p>For cases like this, the <em>object</em> data type is a better fit. Objects store data as <em>key/value</em> pairs.</p>
+<pre><code class="language-js">// format is key: value
+
+const miamiOh = {
+  type: &quot;Public&quot;, // type is key, &quot;Public&quot; is value
+  established: 1809, // established is key, 1809 is value
+  location: &quot;Oxford, OH&quot;, // location is key, &quot;Oxford, OH&quot; is value
+  ncaa: &quot;Division I&quot; // ncaa is key, &quot;Division I&quot; is value
+};
+</code></pre>
+<p>The key provides context for the values in a way that the generic index numbers of an array do not. You can reference the individual values of an object using <em>dot notation</em>.</p>
+<pre><code class="language-js">miamiOh.type; // returns &quot;Public&quot;
+miamiOh.established; // returns 1809
+</code></pre>
+<p>You have already been interfacing with objects in the JavaScript code that you've been developing. Essentially, any time you have written something using dot notation, that is a reference to a property (characteristic) or method (action it can perform) of an object.</p>
+<pre><code class="language-js">// the querySelector() method of the document object
+document.querySelector(&quot;text-input&quot;);
+
+// the innerText property of the textInput object
+textInput.innerText;
+</code></pre>
+<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="vYPByeL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/vYPByeL">
+  Objects (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

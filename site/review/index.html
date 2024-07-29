@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Review - IMS322 Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">IMS322 Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../setup/" class="nav-link">Setup</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../css/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../css/flexbox/" class="dropdown-item">Flexbox</a>
+</li>
+                                    
+<li>
+    <a href="../css/grid/" class="dropdown-item">Grid</a>
+</li>
+                                    
+<li>
+    <a href="../css/hover/" class="dropdown-item">Hover</a>
+</li>
+                                    
+<li>
+    <a href="../css/input-styling/" class="dropdown-item">Input Styling</a>
+</li>
+                                    
+<li>
+    <a href="../css/media-queries/" class="dropdown-item">Media Queries</a>
+</li>
+                                    
+<li>
+    <a href="../css/nesting/" class="dropdown-item">Nesting</a>
+</li>
+                                    
+<li>
+    <a href="../css/relative-units/" class="dropdown-item">Relative Units</a>
+</li>
+                                    
+<li>
+    <a href="../css/transition/" class="dropdown-item">Transition</a>
+</li>
+                                    
+<li>
+    <a href="../css/variables/" class="dropdown-item">Variables</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../js/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ref/_introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../ref/css-reset/" class="dropdown-item">CSS Reset</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../style-guide/" class="nav-link">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../miscellaneous/" class="nav-link">Miscellaneous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Review</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../miscellaneous/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#html" class="nav-link">HTML</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#css" class="nav-link">CSS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#web-browsers" class="nav-link">Web Browsers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Before we start working with JavaScript, this class assumes some familiarity with the HTML, CSS, and general web browser concepts below. We will review much of this content at the beginning of the semester.</p>
+<h2 id="html">HTML</h2>
+<h3 id="basic-tagselements">Basic tags/elements</h3>
+<p>Excerpted from Kevin Powell's <a href="../assets/the-only-tags-that-you-need-to-know-for-now.pdf">"The Only Tags You Need to Know (for now)"</a></p>
+<ul>
+<li>Metadata tags: <code>&lt;html&gt;</code> <code>&lt;head&gt;</code> <code>&lt;title&gt;</code> <code>&lt;link&gt;</code> <code>&lt;body&gt;</code></li>
+<li>Content tags: <code>&lt;h1&gt;</code>...<code>&lt;h6&gt;</code> <code>&lt;p&gt;</code> <code>&lt;a&gt;</code> <code>&lt;ol&gt;</code> <code>&lt;ul&gt;</code> <code>&lt;li&gt;</code> <code>&lt;img&gt;</code></li>
+<li>Layout tags: <code>&lt;header&gt;</code> <code>&lt;main&gt;</code> <code>&lt;footer&gt;</code> <code>&lt;nav&gt;</code> <code>&lt;section&gt;</code> <code>&lt;div&gt;</code></li>
+</ul>
+<h4 id="semantic-html">Semantic HTML</h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html">Semantic HTML</a> tags describe meaning, contextualizing the contents of the element. They also improve accessibility for people that use screen readers. Try to use the most appropriate semantic tags whenever possible.</p>
+<h3 id="attributes">Attributes</h3>
+<ul>
+<li><code>alt</code>: alternate text for an <code>&lt;img&gt;</code> tag</li>
+<li><code>class</code>: for use as a selector in CSS</li>
+<li><code>href</code>: url for <code>&lt;a&gt;</code> tags</li>
+<li><code>id</code>: for use as a query in JavaScript</li>
+<li><code>src</code>: path to image to be displayed for <code>&lt;img&gt;</code> tags</li>
+</ul>
+<hr />
+<h2 id="css">CSS</h2>
+<h3 id="common-properties">Common Properties</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">border</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">color</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">font-family</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font-size</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">height</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">margin</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height">max-height</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width">max-width</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-height">min-height</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width">min-width</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity">opacity</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">padding</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">text-align</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">transform</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">width</a></li>
+</ul>
+<p>A comprehensive reference for all CSS properties can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN Web Docs</a>.</p>
+<h3 id="css-box-model">CSS Box Model</h3>
+<p>The CSS Box Model describes how margin, border, padding, and content relate to each other in an HTML element.</p>
+<div style="display: flex; justify-content: center;"> 
+  <figure style="max-width: 500px;">
+      <img src="../images/CSS-Box-Model.webp" style="width: 100%;">
+  </figure>
+</div>
+<hr />
+<h2 id="web-browsers">Web Browsers</h2>
+<h3 id="browser-options">Browser Options</h3>
+<ul>
+<li>What web browsers are most commonly used?</li>
+<li>Why might someone choose one over another?</li>
+<li>Who are the developers of the most popular browsers?</li>
+</ul>
+<h3 id="developer-tools">Developer Tools</h3>
+<ul>
+<li>Where are the Developer Tools in your browser?</li>
+<li>What is their purpose?</li>
+<li>How can they help you with your projects?</li>
+</ul>
+<h3 id="responsive-design-mode">Responsive Design Mode</h3>
+<ul>
+<li>Where is the Responsive Design Mode in your browser?</li>
+<li>How does it work?</li>
+<li>What is it used for?</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
