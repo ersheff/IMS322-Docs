@@ -4,7 +4,7 @@ The sections on this page will lead you through the process of setting up the ap
 
 1. Install [Git](#git).
 2. Create a [GitHub](#github) account (if needed).
-3. Login to [CodePen](#codepen), enable Format on Save in account settings, and create your first Pen.
+3. Log in to [CodePen](#codepen), enable Format on Save in account settings, and create your first Pen.
 4. Install additional [browsers](#browsers) as needed.
 5. Install [VS Code](#vs-code) and configure extensions and settings.
 6. Review coding [assignment procedures](#procedures).
@@ -20,7 +20,7 @@ The sections on this page will lead you through the process of setting up the ap
 Mac users should follow the [Homebrew installation option](https://git-scm.com/download/mac):
 
 1. Install [Homebrew](https://brew.sh/).
-2. Run the `brew install git` in Terminal. If prompted, install the Command Line Developer Tools. This will likely take a while.
+2. Run `brew install git` in Terminal. If prompted, install the Command Line Developer Tools. This will likely take a while.
 
 ### Windows
 
@@ -47,11 +47,11 @@ If you're using Linux, you probably don't need help installing Git! Follow the i
 
 There are a few important things to note about CodePen and how it differs from the VS Code and GitHub workflow:
 
-- You should login to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub, it simply uses the same account credentials.
+- You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.
 - A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.
 - Make sure that the Format On Save option is checked in your account settings (found in the Editor Preferences section).
-- The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start yout HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
-- There is no file-hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
+- The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start your HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
+- There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
 
 <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVYVb">
@@ -64,10 +64,10 @@ There are a few important things to note about CodePen and how it differs from t
 
 ## Browsers
 
-Although there are many different modern web browsers, there are essentially only 3 different [browser engines](https://en.wikipedia.org/wiki/Browser_engine) currently in use. A browser engine is the software component under the hood that handles document layout, rendering, and security.
+Although there are many different modern web browsers, there are essentially only three different [browser engines](https://en.wikipedia.org/wiki/Browser_engine) currently in use. A browser engine is the software component under the hood that handles document layout, rendering, and security.
 
 - **WebKit** is maintained by Apple and used for the desktop and mobile versions of [Safari](https://www.apple.com/safari/), which is the default browser on Apple devices.
-- **Blink** is maintained by Google and powers all Chromium-based browsers, which includes [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Brave](https://brave.com/), [Opera GX](https://www.opera.com/gx), and others.
+- **Blink** is maintained by Google and powers all Chromium-based browsers, which include [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Brave](https://brave.com/), [Opera GX](https://www.opera.com/gx), and others.
 - **Gecko** is maintained by Mozilla and used for [Firefox](https://www.mozilla.org/en-US/firefox/).
 
 You should have _both_ Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also recommended that you set one of these as the Live Server Custom Browser during VS Code configuration (instructions provided below).
@@ -92,16 +92,16 @@ We will be using a small collection of VS Code extensions to assist with formatt
 
 _Make sure that Git has finished installing before completing these steps._
 
-1. Click the Accounts icon in the lower-left corner and sign-in using your GitHub account.
+1. Click the Accounts icon in the lower-left corner and sign in using your GitHub account.
 2. Click on the Terminal menu and choose New Terminal.
-3. In the Terminal panel, run the following 2 commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
+3. In the Terminal panel, run the following two commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
    `git config --global user.name "your_username"`  
    `git config --global user.email your@email.com`
 
 ### Editor Settings
 
-1. Right-click the Activity Bar on the left side of the window. Uncheck Run and Debug. Ensure that only Explorer, Search, Source Control, Extensions, Live Share, Chat, and Accounts are all checked.
-2. Click on the gear icon in the lower-left and choose Settings. Search for Live Server Custom Browser and choose your prefered browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
+1. Right-click the Activity Bar on the left side of the window. Uncheck Run and Debug. Ensure that only Explorer, Search, Source Control, Extensions, Live Share, Chat, and Accounts are checked.
+2. Click on the gear icon in the lower-left and choose Settings. Search for Live Server Custom Browser and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
 3. Go to the View menu and choose Command Palette... Use the search field to find and run the Preferences: Open User Settings (JSON) command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
 
 ```json
