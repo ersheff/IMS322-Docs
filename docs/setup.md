@@ -51,7 +51,7 @@ There are a few important things to note about CodePen and how it differs from t
 - A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.
 - Make sure that the Format On Save option is checked in your account settings (found in the Editor Preferences section).
 - The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start yout HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
-- There is no file-hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a url instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
+- There is no file-hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
 
 <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVYVb">
@@ -147,32 +147,30 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
 
 1. Click the link in the corresponding Canvas Assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your Top Repositories on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.
 2. Open VS Code. If an existing folder is already open, close it by going to the File menu and choosing Close Folder.
-3. Open the Source Control panel and click the Clone Repository button. Copy-paste the url from your repository into the text field. You will be prompted for a location on your computer to save this folder.
+3. Open the Source Control panel and click the Clone Repository button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.
 4. To open this folder in the future, go to the File menu and choose Open Folder...
 
 ### Working With VS Code Assignments
 
-- Folders are very important when working in VS Code. You should always check the top of the Explorer panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g. for images).
+- Folders are very important when working in VS Code. You should always check the top of the Explorer panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
 - Some assignments in VS Code will have 2 stages: an initial draft, followed by a final submission. We will manage these stages by using different "branches" on GitHub. This way, you can submit the assignment multiple times without needing to create multiple repositories.
 
       - By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the branch used for your final submission. Do not make any changes in the main branch until you are finished with your draft!
       - The name of the branch that you are currently working in will always be visible in the Source Control Checkout button in the lower-left corner.
-      - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the Source Control Checkout button. This will open a menu for managing different branches. Choose Create New Branch... and call it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the Source Control panel, click Publish Branch.
-      - When you are finished with your draft and ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the Source Control Checkout button and choosing main from the menu. Then, in the Source Control panel, click the 3-dot button to open the action menu and choose Branch > Merge...
-      - Test
+      - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the Source Control Checkout button. This will open a menu for managing different branches. Choose Create New Branch... and call it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the Source Control panel, click Publish Branch. You should stage, commit, and sync everything as usual in the draft branch before switching over to main (described below).
+      - When you are finished with your draft and ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the Source Control Checkout button and choosing main from the menu. Then, in the Source Control panel, click the 3-dot button to open the action menu and choose Branch > Merge... When prompted to choose the branch to merge from, choose draft.
+      - Merge conflicts may occur if you make changes in both the main and draft branches before merging. VS Code will highlight the conflicts that need to be resolved, but this can be a challenging process for beginners. Ideally, we will avoid merge conflicts altogether, but I recommend scheduling an office hours appointment if you run into this issue.
 
 ### Committing and Submitting VS Code Assignments
 
-It is recommended that you Stage and Commit after each major change (steps 1 & 2 below) and Sync often.
-You should see a blue indicator on the Source Control icon. Open the Source Control panel and do the following:
+_These steps apply to both the draft (draft branch) and final (main branch) stages. It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished._
 
-Stage all changes by clicking the + next to Changes.
-Enter a commit message and click the Commit button (use "finished" for your final commit).
-The Commit button should change to a Sync Changes button. Click this to finish syncing the latest changes to your GitHub Repository.
-
-Return to your assignment repository on GitHub.
-Go to Settings and navigate to the Pages section.
-Under Branch, choose "main" and click Save.
-After a few moments, if you refresh this page, there should now be a URL near the top next to a Visit Site button. If you click this button, you should see your site open in a new window.
-
-Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click Submit Assignment.
+1. Open the Source Control panel.
+2. Stage all changes by clicking the + next to Changes.
+3. Enter a commit message and click the Commit button (use "finished" for your final commit).
+4. The Commit button should change to a Sync Changes button. Click this to finish syncing the latest changes to your online GitHub repository.
+5. Find your repository on GitHub.
+6. Go to the Settings tab within the repository and navigate to the Pages section.
+7. Under Branch, choose the appropriate branch (draft or main) and click Save.
+8. After a few moments, if you refresh the page, there should now be a URL near the top next to a Visit Site button. If you click this button, you should see your site open in a new window.
+9. Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click Submit Assignment.
