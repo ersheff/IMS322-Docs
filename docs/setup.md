@@ -7,7 +7,7 @@ The sections on this page will lead you through the process of setting up the ap
 3. Log in to [CodePen](#codepen), enable **Format on Save** in account settings, and create your first Pen.
 4. Install additional [browsers](#browsers) as needed.
 5. Install [VS Code](#vs-code) and configure extensions and settings.
-6. Review coding [assignment procedures](#procedures).
+6. Review coding [assignment procedures](#assignment-procedures).
 
 ---
 
