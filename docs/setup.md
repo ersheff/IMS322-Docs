@@ -128,7 +128,7 @@ _Make sure that Git has finished installing before completing these steps._
 
 ---
 
-## Assignment Procedures - XXX - NEEDS EDITS
+## Assignment Procedures
 
 ### Accepting CodePen Assignments
 
