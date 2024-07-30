@@ -152,7 +152,10 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
 
 ### Working With VS Code Assignments
 
-- Folders are very important when working in VS Code. You should always check the top of the Explorer panel to make sure that you are working within the desired assignment folder. The open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g. for images).
+- Folders are very important when working in VS Code. You should always check the top of the Explorer panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g. for images).
+- Some assignments in VS Code will have 2 stages: an initial draft, followed by a final submission. We will manage these stages by using different "branches" on GitHub. This way, you can submit the assignment multiple times without needing to create multiple repositories.
+
+      - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the Source Control Checkout button in the lower-left corner. This will open a menu for managing different branches. Choose Create New Branch... and call it "draft."
 
 ### Committing and Submitting VS Code Assignments
 
