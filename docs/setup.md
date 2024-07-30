@@ -159,6 +159,7 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
       - The name of the branch that you are currently working in will always be visible in the Source Control Checkout button in the lower-left corner.
       - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the Source Control Checkout button. This will open a menu for managing different branches. Choose Create New Branch... and call it "draft." The draft branch will automatically include all of the files from the main branch.
       - When you are finished with your draft and ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the Source Control Checkout button and choosing main from the menu. Then, in the Source Control panel, click the 3-dot button to open the action menu and choose Branch > Merge...
+      - Test
 
 ### Committing and Submitting VS Code Assignments
 
