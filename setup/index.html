@@ -1,208 +1,1137 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../css/_introduction/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
         <title>Setup - IMS322 Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../css/brands.min.css" rel="stylesheet">
-        <link href="../css/solid.min.css" rel="stylesheet">
-        <link href="../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">IMS322 Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href=".." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Setup</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CSS</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../css/_introduction/" class="dropdown-item">Introduction</a>
-</li>
-                                    
-<li>
-    <a href="../css/flexbox/" class="dropdown-item">Flexbox</a>
-</li>
-                                    
-<li>
-    <a href="../css/grid/" class="dropdown-item">Grid</a>
-</li>
-                                    
-<li>
-    <a href="../css/hover/" class="dropdown-item">Hover</a>
-</li>
-                                    
-<li>
-    <a href="../css/input-styling/" class="dropdown-item">Input Styling</a>
-</li>
-                                    
-<li>
-    <a href="../css/media-queries/" class="dropdown-item">Media Queries</a>
-</li>
-                                    
-<li>
-    <a href="../css/nesting/" class="dropdown-item">Nesting</a>
-</li>
-                                    
-<li>
-    <a href="../css/relative-units/" class="dropdown-item">Relative Units</a>
-</li>
-                                    
-<li>
-    <a href="../css/transition/" class="dropdown-item">Transition</a>
-</li>
-                                    
-<li>
-    <a href="../css/variables/" class="dropdown-item">Variables</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">JavaScript</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../js/_introduction/" class="dropdown-item">Introduction</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../ref/_introduction/" class="dropdown-item">Introduction</a>
-</li>
-                                    
-<li>
-    <a href="../ref/css-reset/" class="dropdown-item">CSS Reset</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../style-guide/" class="nav-link">Style Guide</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../miscellaneous/" class="nav-link">Miscellaneous</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../review/" class="nav-link">Review</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../css/_introduction/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#setup" class="nav-link">Setup</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#git" class="nav-link">Git</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#github" class="nav-link">GitHub</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#codepen-xxx" class="nav-link">CodePen - XXX</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#browsers-xxx" class="nav-link">Browsers - XXX</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#vs-code-xxx" class="nav-link">VS Code - XXX</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#procedures-xxx" class="nav-link">Procedures - XXX</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setup" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IMS322 Docs" class="md-header__button md-logo" aria-label="IMS322 Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IMS322 Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IMS322 Docs" class="md-nav__button md-logo" aria-label="IMS322 Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    IMS322 Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mac
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codepen" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodePen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browsers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-setup-and-github-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Setup and GitHub Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editor Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assignment Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accepting-codepen-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepting CodePen Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-codepen-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submitting CodePen Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accepting-and-cloning-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepting and Cloning VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working With VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Committing and Submitting VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            CSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/_introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/flexbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flexbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/grid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/hover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/input-styling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input Styling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/media-queries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media Queries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/nesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nesting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/relative-units/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relative Units
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/transition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JavaScript
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            JavaScript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/_introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/_introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/css-reset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS Reset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mac
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codepen" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodePen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browsers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-setup-and-github-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Setup and GitHub Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editor Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assignment Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accepting-codepen-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepting CodePen Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-codepen-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Submitting CodePen Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accepting-and-cloning-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accepting and Cloning VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working With VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Committing and Submitting VS Code Assignments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
 
 <h1 id="setup">Setup</h1>
-<p>The sections on this page will lead you through the process of setting up the applications and accounts needed to complete IMS322 coursework. It is recommended that you follow the steps below in the order listed.</p>
+<p>The sections on this page will lead you through the process of setting up the applications and accounts needed to complete IMS322 coursework. It is recommended that you follow the steps below in the order listed:</p>
 <ol>
 <li>Install <a href="#git">Git</a>.</li>
-<li>Create a <a href="#github">GitHub</a> account (if neeeded).</li>
-<li>Login to <a href="#codepen">CodePen</a>.</li>
-<li>Install additional <a href="#browsers">browsers</a> (if needed).</li>
-<li>Install <a href="#vs-code">VS Code</a> and configure with extensions and settings.</li>
-<li>Review assignment <a href="#procedures">procedures</a>.</li>
+<li>Create a <a href="#github">GitHub</a> account (if needed).</li>
+<li>Log in to <a href="#codepen">CodePen</a>, enable Format on Save in account settings, and create your first Pen.</li>
+<li>Install additional <a href="#browsers">browsers</a> as needed.</li>
+<li>Install <a href="#vs-code">VS Code</a> and configure extensions and settings.</li>
+<li>Review coding <a href="#procedures">assignment procedures</a>.</li>
 </ol>
 <hr />
 <h2 id="git">Git</h2>
-<p><a href="https://git-scm.com">Git</a> is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will primarily be using it through the Source Control panel in VS Code.</p>
+<p><a href="https://git-scm.com">Git</a> is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will only be using it through the <strong>Source Control</strong> panel in VS Code.</p>
 <h3 id="mac">Mac</h3>
 <p>Mac users should follow the <a href="https://git-scm.com/download/mac">Homebrew installation option</a>:</p>
 <ol>
 <li>Install <a href="https://brew.sh/">Homebrew</a>.</li>
-<li>Run the <code>brew install git</code> in Terminal. If prompted, install the "command line developer tools." This will likely take a while...</li>
+<li>Run <code>brew install git</code> in Terminal. If prompted, install the command line developer tools. This will likely take a while.</li>
 </ol>
 <h3 id="windows">Windows</h3>
 <p>Windows users should use the 64-bit Git for Windows Setup under <a href="https://git-scm.com/download/win">Standalone Installer</a>.</p>
@@ -213,225 +1142,181 @@
 <p><a href="https://github.com">GitHub</a> is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments.</p>
 <ol>
 <li>Create a <a href="https://github.com">GitHub</a> account.</li>
-<li>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant).</li>
+<li>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant within VS Code).</li>
 </ol>
 <hr />
-<h2 id="codepen-xxx">CodePen - XXX</h2>
-<p><a href="https://codepen.io/">CodePen</a> is a popular online code editor focused on creating and sharing snippets of HTML, CSS, and JavaScript</p>
-<p>Pros
-Can login with GitHub account
-Can embed
-No setup</p>
-<p>Limitations
-No free file hosting
-Clutters up the inspector
-No fullscreen preview
-No HTML head</p>
-<p>Sign-in to CodePen using your GitHub account.</p>
-<hr />
-<h2 id="browsers-xxx">Browsers - XXX</h2>
-<p>Although there are many different modern web browsers, there are essentially only 3 different <a href="https://en.wikipedia.org/wiki/Browser_engine">browser engines</a> that currently run them all. A browser engine is essentially the software component "under the hood" of the application that handles document layout, rendering, and security.</p>
+<h2 id="codepen">CodePen</h2>
+<p><a href="https://codepen.io/">CodePen</a> is a popular online code editor focused on creating and sharing snippets of HTML, CSS, and JavaScript. The embedded code examples throughout the IMS322 Docs site have been created using CodePen. One of the main reasons that we use CodePen for this class is because it allows you to edit embedded examples right on the page and see live results - try it out below! We will also regularly use CodePen instead of VS Code for smaller assignments, like weekly practice and in-class exercises.</p>
+<p>There are a few important things to note about CodePen and how it differs from the VS Code and GitHub workflow:</p>
 <ul>
-<li><strong>WebKit</strong> is maintained by Apple and used for the desktop and mobile versions of <a href="https://www.apple.com/safari/">Safari</a>.</li>
-<li><strong>Blink</strong> is maintained by Google and powers all Chromium-based browsers, which includes <a href="https://www.google.com/chrome/">Google Chrome</a>, <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="https://brave.com/">Brave</a>, <a href="https://www.opera.com/gx">Opera GX</a>, and others.</li>
+<li>You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.</li>
+<li>A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.</li>
+<li>Make sure that the <strong>Format On Save</strong> option is checked in your account settings (found in the <strong>Editor Preferences</strong> section).</li>
+<li>The simplified HTML editor does not need a <code>&lt;head&gt;</code> element or <code>&lt;body&gt;</code> tags. You should start your HTML content from the first tag that would normally go after the opening <code>&lt;body&gt;</code> tag, like a <code>&lt;header&gt;</code> or <code>&lt;h1&gt;</code> element.</li>
+<li>There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the <code>src</code> attribute of the <code>&lt;img&gt;</code> element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like <a href="https://picsum.photos">Lorem Picsum</a> will suffice.</li>
+</ul>
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVYVb">
+  Embed Example (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<hr />
+<h2 id="browsers">Browsers</h2>
+<p>Although there are many different modern web browsers, there are essentially only three different <a href="https://en.wikipedia.org/wiki/Browser_engine">browser engines</a> currently in use. A browser engine is the software component under the hood that handles document layout, rendering, and security.</p>
+<ul>
+<li><strong>WebKit</strong> is maintained by Apple and used for the desktop and mobile versions of <a href="https://www.apple.com/safari/">Safari</a>, which is the default browser on Apple devices.</li>
+<li><strong>Blink</strong> is maintained by Google and powers all Chromium-based browsers, which include <a href="https://www.google.com/chrome/">Google Chrome</a>, <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="https://brave.com/">Brave</a>, <a href="https://www.opera.com/gx">Opera GX</a>, and others.</li>
 <li><strong>Gecko</strong> is maintained by Mozilla and used for <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>.</li>
 </ul>
+<p>You should have <em>both</em> Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also recommended that you set one of these as the <strong>Live Server Custom Browser</strong> during VS Code configuration (instructions provided below).</p>
 <hr />
-<h2 id="vs-code-xxx">VS Code - XXX</h2>
-<p><a href="https://code.visualstudio.com">Visual Studio Code</a> (aka VS Code) is the code editor that we will be using for all major assignments in this class. After installing the VS Code application, follow the instructions below to configure the necessary extensions and settings.</p>
+<h2 id="vs-code">VS Code</h2>
+<p><a href="https://code.visualstudio.com">Visual Studio Code</a> (aka VS Code) is the code editor that we will be using for all major assignments in this class. After installing the VS Code application, follow the instructions below to configure extensions and settings.</p>
 <h3 id="extensions">Extensions</h3>
-<p>We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the Extensions panel to install:</p>
+<p>We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the <strong>Extensions</strong> panel to install them:</p>
 <ul>
-<li>GitHub Copilot and Copilot Chat (AI code assistant, requires GitHub Student Benefits)</li>
-<li>JS-Beautify for VS Code (for HTML formatting)</li>
-<li>Prettier (for CSS and JavaScript formatting)</li>
-<li>Live Server (for easy browser preview)</li>
-<li>Live Share (for collaborative coding)</li>
+<li><strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> (AI code assistant, requires GitHub Student Benefits activation)</li>
+<li><strong>JS-Beautify for VS Code</strong> (for HTML formatting)</li>
+<li><strong>Prettier</strong> (for CSS and JavaScript formatting)</li>
+<li><strong>Live Server</strong> (for quick and easy browser preview)</li>
+<li><strong>Live Share</strong> (for collaborative coding, which we will primarily use during in-class troubleshooting and office hours meetings)</li>
 </ul>
-<h3 id="git-and-github">Git and GitHub</h3>
+<h3 id="git-setup-and-github-login">Git Setup and GitHub Login</h3>
+<p><em>Make sure that Git has finished installing before completing these steps.</em></p>
 <ol>
-<li>Click the Accounts icon in the lower-left corner and sign-in using your GitHub account.</li>
-<li>Click on the Terminal menu and choose "New Terminal."</li>
-<li>In the Terminal panel, run the following 2 commands, inserting your own username and email where indicated (you will not see a confirmation message):<br />
-<code>git config --global user.name "your username"</code><br />
+<li>Click the <strong>Accounts</strong> icon in the lower-left corner and sign in using your GitHub account.</li>
+<li>Click on the <strong>Terminal</strong> menu and choose <strong>New Terminal</strong>.</li>
+<li>In the <strong>Terminal</strong> panel, run the following two commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
+   <code>git config --global user.name "your_username"</code><br />
 <code>git config --global user.email your@email.com</code></li>
 </ol>
 <h3 id="editor-settings">Editor Settings</h3>
-<p>The following VS Code editor settings are primarily</p>
-<h4 id="copy-paste-configuration">Copy-Paste Configuration</h4>
-<p>Alternatively, you can copy-paste settings in the settings.json file:</p>
 <ol>
-<li>Go to the View menu and choose Command Palette...</li>
-<li>Use the search field to find and run the "Preferences: Open User Settings (JSON)" command.</li>
-<li>Copy-paste the text below into the open settings.json file.</li>
-<li>Save and close the file.</li>
+<li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are checked.</li>
+<li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.</li>
+<li>Go to the <strong>View</strong> menu and choose <strong>Command Palette...</strong> Use the search field to find and run the <strong>Preferences: Open User Settings (JSON)</strong> command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.</li>
 </ol>
-<p><em>You will still need to manually hide Run and Debug in the Activity Bar and choose your Live Server Custom Browser in the Settings GUI.</em></p>
-<pre><code class="language-json">{
-  &quot;editor.minimap.enabled&quot;: false,
-  &quot;breadcrumbs.enabled&quot;: false,
-  &quot;editor.tabSize&quot;: 2,
-  &quot;editor.formatOnSave&quot;: true,
-  &quot;prettier.trailingComma&quot;: &quot;none&quot;,
-  &quot;[javascript]&quot;: {
-    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
-  },
-  &quot;[html]&quot;: {
-    &quot;editor.defaultFormatter&quot;: &quot;vsce-toolroom.vscode-beautify&quot;
-  },
-  &quot;[css]&quot;: {
-    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
-  },
-  &quot;[json]&quot;: {
-    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
-  }
-}
-</code></pre>
-<h4 id="manual-configuration">Manual Configuration</h4>
-<p>In the left Activity Bar:</p>
-<ol>
-<li>Right-click the Activity Bar.</li>
-<li>Uncheck Run and Debug.</li>
-<li>Ensure that Explorer, Search, Source Control, Extensions, Chat, and Accounts are all checked.</li>
-</ol>
-<p>From the View menu:</p>
-<ol>
-<li>Under Appearance, uncheck Minimap.</li>
-<li>Under Apperance, uncheck Toggle Breadcrumbs.</li>
-</ol>
-<p>In Settings:</p>
-<ol>
-<li>Set Editor: Tab Size to 2.</li>
-<li>Enable Format on Save.</li>
-<li>Set Prettier: Trailing Comma to None.</li>
-<li>Choose a Custom Browser for Live Server.</li>
-</ol>
-<p>To choose JS-Beautify as the default HTML formatter:</p>
-<ol>
-<li>Open any HTML file.</li>
-<li>Right-click within the file and choose Format Document With...</li>
-<li>You will be offered a dropdown menu - choose Configure Default Formatter...</li>
-<li>Select JS-Beautify for VS Code.</li>
-</ol>
-<p>To select Prettier as the default CSS and JavaScript formatter:</p>
-<ol>
-<li>Open any CSS file.</li>
-<li>Right-click within the file and choose Format Document With...</li>
-<li>You will be offered a dropdown menu - choose Configure Default Formatter...</li>
-<li>Select Prettier.</li>
-<li>Repeat the previous steps within an open JavaScript file.</li>
-</ol>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;editor.minimap.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;breadcrumbs.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;editor.tabSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;prettier.trailingComma&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;[html]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vsce-toolroom.vscode-beautify&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;[css]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;[javascript]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="nt">&quot;[json]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">}</span>
+</span></code></pre></div>
 <hr />
-<h2 id="procedures-xxx">Procedures - XXX</h2>
-<h3 id="accepting-assignments">Accepting Assignments</h3>
-<p>Click the link in the corresponding Canvas Assignment. This will prompt you to accept the assignment on GitHub Classroom.</p>
-<p>The first time you accept a GitHub Classroom assignment, you will be asked to link your GitHub account to your name.</p>
-<p>After a few moments, GitHub Classroom will report that you are ready to go and provide a url to a new fork of the repository.</p>
-<p>To find this repository in the future, it should be visible in Top Repositories when you first land on the GitHub site. You can also find it by visiting the IMS322-Sheffield-F24 organization</p>
-<p>Make sure that you are working with the repository called "assignment-username" as you will also see the original "Assignment" repository that was used as the starting template.</p>
-<p>Open VS Code and make sure that you do not have any folders open - go to the File menu and choose "Close Folder."
-Open the Source Control panel and click the Clone Repository button. Copy-paste the url from your repository into the text field. You will be prompted for a location on your computer to save this folder.
-To open this folder in the future, go to the File menu and choose "Open Folder…"</p>
-<h3 id="committing-and-submitting-assignments">Committing and Submitting Assignments</h3>
-<p>It is recommended that you Stage, Commit, and Sync often (steps 1 &amp; 2 below) as that will essentially act as a backup for your files.</p>
-<p>Make sure that your code is formatted using the built-in formatting tools</p>
-<p>The IMS322 VS Code profile has "Format on Save" enabled by default, but you can also right-click in a file and choose "Format Document."</p>
-<p>You should see a blue indicator on the Source Control icon. Open the Source Control panel and do the following:</p>
-<p>Stage all changes by clicking the + next to Changes.
-Enter a commit message and click the Commit button (use "finished" for your final commit).
-The Commit button should change to a Sync Changes button. Click this to finish syncing the latest changes to your GitHub Repository.</p>
-<p>Return to your assignment repository on GitHub.
-Go to Settings and navigate to the Pages section.
-Under Branch, choose "main" and click Save.
-After a few moments, if you refresh this page, there should now be a URL near the top next to a Visit Site button. If you click this button, you should see your site open in a new window.</p>
-<p>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click Submit Assignment.</p>
-<h3 id="accepting-assignments_1">Accepting Assignments</h3>
-<p>Depending on the assignment instructions, do one of the following:</p>
-<p>Create a new empty Pen by clicking on "Pen" in the left sidebar or choosing "New Pen" from the menu under your user icon, or...</p>
-<p>Fork the example Pen (if provided) by clicking the Fork button in the lower-right corner of the editor window. You may need to click Edit on CodePen first if you are looking at an embedded example from the documentation.</p>
-<p>Change the Pen name to the name provided in the Canvas assignment and click Save. If you need to find this Pen again later, it will be in Your Work.</p>
-<h3 id="submitting-assignments">Submitting Assignments</h3>
-<p>Click the Save button in the upper-right corner of the CodePen window.
-Click Share in the bottom-right corner and select Copy Link.
-Paste the copied link in the Website URL field of the corresponding Canvas Assignment and click Submit Assignment.</p>
-<p>Feedback
-Feedback will be provided in comments on Canvas.
-Occasionally, I may fork your Pen and share a link in the comments to an updated version with some revisions.</p></div>
-            </div>
-        </div>
+<h2 id="assignment-procedures">Assignment Procedures</h2>
+<h3 id="accepting-codepen-assignments">Accepting CodePen Assignments</h3>
+<ol>
+<li>If the Canvas assignment instructions point to an embedded example Pen, click <strong>Edit on CodePen</strong>, then create a copy of it in your account by clicking the <strong>Fork</strong> button in the lower-right corner of the editor window. Otherwise, create a new empty Pen.</li>
+<li>Change the Pen name to the name provided in the Canvas assignment and click Save. If you need to find this Pen again later, it will be in <strong>Your Work</strong>.</li>
+</ol>
+<h3 id="submitting-codepen-assignments">Submitting CodePen Assignments</h3>
+<ol>
+<li>Click the <strong>Save</strong> button in the upper-right corner of the CodePen window.</li>
+<li>Click <strong>Share</strong> in the bottom-right corner and select <strong>Copy Link</strong>.</li>
+<li>Paste the copied link in the Website URL field of the corresponding Canvas Assignment and click <strong>Submit Assignment</strong>.</li>
+</ol>
+<h3 id="accepting-and-cloning-vs-code-assignments">Accepting and Cloning VS Code Assignments</h3>
+<p><em>The first time you accept a VS Code assignment through GitHub Classroom, you will be asked to link your GitHub account to your name.</em></p>
+<ol>
+<li>Click the link in the corresponding Canvas Assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your <strong>Top Repositories</strong> on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.</li>
+<li>Open VS Code. If an existing folder is already open, close it by going to the <strong>File</strong> menu and choosing <strong>Close Folder</strong>.</li>
+<li>Open the <strong>Source Control</strong> panel and click the <strong>Clone Repository</strong> button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.</li>
+<li>To open this folder in the future, go to the <strong>File</strong> menu and choose <strong>Open Folder...</strong></li>
+</ol>
+<h3 id="working-with-vs-code-assignments">Working With VS Code Assignments</h3>
+<ul>
+<li>Folders are very important when working in VS Code. You should always check the top of the <strong>Explorer</strong> panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).</li>
+<li>
+<p>Some assignments in VS Code will have 2 stages: an initial draft, followed by a final submission. We will manage these stages by using different "branches" on GitHub. This way, you can submit the assignment multiple times without needing to create multiple repositories.</p>
+<ul>
+<li>By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the branch used for your final submission. Do not make any changes in the main branch until you are finished with your draft!</li>
+<li>The name of the branch that you are currently working in will always be visible in the <strong>Source Control Checkout</strong> button in the lower-left corner.</li>
+<li>When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the <strong>Source Control Checkout</strong> button. This will open a menu for managing different branches. Choose <strong>Create New Branch...</strong> and name it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the <strong>Source Control</strong> panel, click <strong>Publish Branch</strong>. You should stage, commit, and sync everything as usual in the draft branch before switching over to main (described below).</li>
+<li>When you have finished your draft and are ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the <strong>Source Control Checkout</strong> button and choosing <em>main</em> from the menu. Then, in the <strong>Source Control</strong> panel, click the 3-dot button to open an action menu and choose <strong>Branch</strong> &gt; <strong>Merge...</strong> When prompted to choose the branch to merge from, choose <strong>draft</strong>.</li>
+<li>Merge conflicts may occur if changes are made in both the main and draft branches before merging. VS Code will highlight the conflicts that need to be resolved, but this can be a challenging process for beginners. Ideally, we will avoid merge conflicts altogether, but I recommend scheduling an office hours appointment if you run into this issue.</li>
+</ul>
+</li>
+</ul>
+<h3 id="committing-and-submitting-vs-code-assignments">Committing and Submitting VS Code Assignments</h3>
+<p><em>These steps apply to both the draft (draft branch) and final (main branch) stages. It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
+<ol>
+<li>Open the <strong>Source Control</strong> panel.</li>
+<li>Stage all changes by clicking the <strong>+</strong> next to <strong>Changes</strong>.</li>
+<li>Enter a commit message and click the <strong>Commit</strong> button (use "finished" for your final commit).</li>
+<li>The <strong>Commit</strong> button should change to a <strong>Sync Changes</strong> button. Click this to finish syncing the latest changes to your online GitHub repository.</li>
+<li>Find your repository on GitHub.</li>
+<li>Go to the <strong>Settings</strong> tab within the repository and navigate to the <strong>Pages</strong> section.</li>
+<li>Under <strong>Branch</strong>, choose the appropriate branch (draft or main) and click <strong>Save</strong>.</li>
+<li>After a few moments, if you refresh the page, there should now be a URL near the top next to a <strong>Visit Site</strong> button. If you click this button, you should see your site open in a new window.</li>
+<li>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click <strong>Submit Assignment</strong>.</li>
+</ol>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
 </html>
