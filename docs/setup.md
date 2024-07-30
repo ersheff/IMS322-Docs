@@ -13,14 +13,14 @@ The sections on this page will lead you through the process of setting up the ap
 
 ## Git
 
-[Git](https://git-scm.com) is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will only be using it through the Source Control panel in VS Code.
+[Git](https://git-scm.com) is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will only be using it through the **Source Control** panel in VS Code.
 
 ### Mac
 
 Mac users should follow the [Homebrew installation option](https://git-scm.com/download/mac):
 
 1. Install [Homebrew](https://brew.sh/).
-2. Run `brew install git` in Terminal. If prompted, install the Command Line Developer Tools. This will likely take a while.
+2. Run `brew install git` in Terminal. If prompted, install the command line developer tools. This will likely take a while.
 
 ### Windows
 
@@ -49,7 +49,7 @@ There are a few important things to note about CodePen and how it differs from t
 
 - You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.
 - A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.
-- Make sure that the Format On Save option is checked in your account settings (found in the Editor Preferences section).
+- Make sure that the **Format On Save** option is checked in your account settings (found in the **Editor Preferences** section).
 - The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start your HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
 - There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
 
@@ -70,7 +70,7 @@ Although there are many different modern web browsers, there are essentially onl
 - **Blink** is maintained by Google and powers all Chromium-based browsers, which include [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Brave](https://brave.com/), [Opera GX](https://www.opera.com/gx), and others.
 - **Gecko** is maintained by Mozilla and used for [Firefox](https://www.mozilla.org/en-US/firefox/).
 
-You should have _both_ Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also recommended that you set one of these as the Live Server Custom Browser during VS Code configuration (instructions provided below).
+You should have _both_ Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also recommended that you set one of these as the **Live Server Custom Browser** during VS Code configuration (instructions provided below).
 
 ---
 
@@ -80,7 +80,7 @@ You should have _both_ Firefox and at least one Chromium-based browser installed
 
 ### Extensions
 
-We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the Extensions panel to install them:
+We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the **Extensions** panel to install them:
 
 - **GitHub Copilot** and **Copilot Chat** (AI code assistant, requires GitHub Student Benefits activation)
 - **JS-Beautify for VS Code** (for HTML formatting)
@@ -92,17 +92,17 @@ We will be using a small collection of VS Code extensions to assist with formatt
 
 _Make sure that Git has finished installing before completing these steps._
 
-1. Click the Accounts icon in the lower-left corner and sign in using your GitHub account.
-2. Click on the Terminal menu and choose New Terminal.
-3. In the Terminal panel, run the following two commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
+1. Click the **Accounts** icon in the lower-left corner and sign in using your GitHub account.
+2. Click on the **Terminal** menu and choose **New Terminal**.
+3. In the **Terminal** panel, run the following two commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
    `git config --global user.name "your_username"`  
    `git config --global user.email your@email.com`
 
 ### Editor Settings
 
-1. Right-click the Activity Bar on the left side of the window. Uncheck Run and Debug. Ensure that only Explorer, Search, Source Control, Extensions, Live Share, Chat, and Accounts are checked.
-2. Click on the gear icon in the lower-left and choose Settings. Search for Live Server Custom Browser and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
-3. Go to the View menu and choose Command Palette... Use the search field to find and run the Preferences: Open User Settings (JSON) command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
+1. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
+2. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
+3. Go to the **View** menu and choose **Command Palette...** Use the search field to find and run the **Preferences: Open User Settings (JSON)** command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
 
 ```json
 {
@@ -132,45 +132,45 @@ _Make sure that Git has finished installing before completing these steps._
 
 ### Accepting CodePen Assignments
 
-1. If the Canvas assignment instructions point to an embedded example Pen, click Edit on CodePen, then create a copy of it in your account by clicking the Fork button in the lower-right corner of the editor window. Otherwise, create a new empty Pen.
-2. Change the Pen name to the name provided in the Canvas assignment and click Save. If you need to find this Pen again later, it will be in Your Work.
+1. If the Canvas assignment instructions point to an embedded example Pen, click **Edit on CodePen**, then create a copy of it in your account by clicking the **Fork** button in the lower-right corner of the editor window. Otherwise, create a new empty Pen.
+2. Change the Pen name to the name provided in the Canvas assignment and click Save. If you need to find this Pen again later, it will be in **Your Work**.
 
 ### Submitting CodePen Assignments
 
-1. Click the Save button in the upper-right corner of the CodePen window.
-2. Click Share in the bottom-right corner and select Copy Link.
-3. Paste the copied link in the Website URL field of the corresponding Canvas Assignment and click Submit Assignment.
+1. Click the **Save** button in the upper-right corner of the CodePen window.
+2. Click **Share** in the bottom-right corner and select **Copy Link**.
+3. Paste the copied link in the Website URL field of the corresponding Canvas Assignment and click **Submit Assignment**.
 
 ### Accepting and Cloning VS Code Assignments
 
 _The first time you accept a VS Code assignment through GitHub Classroom, you will be asked to link your GitHub account to your name._
 
-1. Click the link in the corresponding Canvas Assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your Top Repositories on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.
-2. Open VS Code. If an existing folder is already open, close it by going to the File menu and choosing Close Folder.
-3. Open the Source Control panel and click the Clone Repository button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.
-4. To open this folder in the future, go to the File menu and choose Open Folder...
+1. Click the link in the corresponding Canvas Assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your **Top Repositories** on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.
+2. Open VS Code. If an existing folder is already open, close it by going to the **File** menu and choosing **Close Folder**.
+3. Open the **Source Control** panel and click the **Clone Repository** button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.
+4. To open this folder in the future, go to the **File** menu and choose **Open Folder...**
 
 ### Working With VS Code Assignments
 
-- Folders are very important when working in VS Code. You should always check the top of the Explorer panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
+- Folders are very important when working in VS Code. You should always check the top of the **Explorer** panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
 - Some assignments in VS Code will have 2 stages: an initial draft, followed by a final submission. We will manage these stages by using different "branches" on GitHub. This way, you can submit the assignment multiple times without needing to create multiple repositories.
 
       - By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the branch used for your final submission. Do not make any changes in the main branch until you are finished with your draft!
-      - The name of the branch that you are currently working in will always be visible in the Source Control Checkout button in the lower-left corner.
-      - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the Source Control Checkout button. This will open a menu for managing different branches. Choose Create New Branch... and call it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the Source Control panel, click Publish Branch. You should stage, commit, and sync everything as usual in the draft branch before switching over to main (described below).
-      - When you are finished with your draft and ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the Source Control Checkout button and choosing main from the menu. Then, in the Source Control panel, click the 3-dot button to open the action menu and choose Branch > Merge... When prompted to choose the branch to merge from, choose draft.
-      - Merge conflicts may occur if you make changes in both the main and draft branches before merging. VS Code will highlight the conflicts that need to be resolved, but this can be a challenging process for beginners. Ideally, we will avoid merge conflicts altogether, but I recommend scheduling an office hours appointment if you run into this issue.
+      - The name of the branch that you are currently working in will always be visible in the **Source Control Checkout** button in the lower-left corner.
+      - When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the **Source Control Checkout** button. This will open a menu for managing different branches. Choose **Create New Branch...** and name it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the **Source Control** panel, click **Publish Branch**. You should stage, commit, and sync everything as usual in the draft branch before switching over to main (described below).
+      - When you have finished your draft and are ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the **Source Control Checkout** button and choosing *main* from the menu. Then, in the **Source Control** panel, click the 3-dot button to open an action menu and choose **Branch** > **Merge...** When prompted to choose the branch to merge from, choose **draft**.
+      - Merge conflicts may occur if changes are made in both the main and draft branches before merging. VS Code will highlight the conflicts that need to be resolved, but this can be a challenging process for beginners. Ideally, we will avoid merge conflicts altogether, but I recommend scheduling an office hours appointment if you run into this issue.
 
 ### Committing and Submitting VS Code Assignments
 
 _These steps apply to both the draft (draft branch) and final (main branch) stages. It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished._
 
-1. Open the Source Control panel.
-2. Stage all changes by clicking the + next to Changes.
-3. Enter a commit message and click the Commit button (use "finished" for your final commit).
-4. The Commit button should change to a Sync Changes button. Click this to finish syncing the latest changes to your online GitHub repository.
+1. Open the **Source Control** panel.
+2. Stage all changes by clicking the **+** next to **Changes**.
+3. Enter a commit message and click the **Commit** button (use "finished" for your final commit).
+4. The **Commit** button should change to a **Sync Changes** button. Click this to finish syncing the latest changes to your online GitHub repository.
 5. Find your repository on GitHub.
-6. Go to the Settings tab within the repository and navigate to the Pages section.
-7. Under Branch, choose the appropriate branch (draft or main) and click Save.
-8. After a few moments, if you refresh the page, there should now be a URL near the top next to a Visit Site button. If you click this button, you should see your site open in a new window.
-9. Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click Submit Assignment.
+6. Go to the **Settings** tab within the repository and navigate to the **Pages** section.
+7. Under **Branch**, choose the appropriate branch (draft or main) and click **Save**.
+8. After a few moments, if you refresh the page, there should now be a URL near the top next to a **Visit Site** button. If you click this button, you should see your site open in a new window.
+9. Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas Assignment, and click **Submit Assignment**.
