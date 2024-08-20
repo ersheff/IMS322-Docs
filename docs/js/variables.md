@@ -1,16 +1,20 @@
-# Variables - XXX
+# Variables
 
-A variable is a named container for data. The name of the container is up to you (take a look at naming guidelines in the [IMS322 Style Guide](../style-guide)), but ideally it has some meaning that relates to the data being stored. To declare a variable, start with the keyword `let` and assign a starting value with `=`.
+A variable is a named container for data. The name of the variable is up to you (take a look at naming guidelines in the [Style Guide](../../style-guide#naming-conventions)), but ideally it is something easy to write and remember that also relates to the data being stored.
+
+To declare a variable, start with the keyword `const` (for values that will not change) or `let` (for values that will change) and assign the value with `=`.
 
 ```js
-let myName = "Eric";
+const profName = "Eric"; // will never change
+let profCity = "Oxford"; // may change in the future
+const x = 2021; // terrible variable name, what is it for?
+const year = 2021; // not a great variable name, too generic
+const yearHired = 2021; // better variable name
 ```
 
-The purpose of variables may not be obvious at first, but a crucial part of interaction design and development is storing, gathering, and manipulating data. Variables make this process much more practical and flexible.
+_When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking **Edit On CodePen** and then clicking the **Console** button in the CodePen editor._
 
-Remember, you'll need to open the console in order to see the results of `console.log()`.
-
-<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="RwvXpWd" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="RwvXpWd" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/RwvXpWd">
   Variables (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

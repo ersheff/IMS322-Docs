@@ -2,11 +2,13 @@
 title: Using the Console
 ---
 
-The console is part of the developer tools in your browser. Although anyone can open the developer tools, the console is generally not viewed by users. One of its purposes is to display messages for developers. These messages might include errors, but you can also manually log helpful information using the console.log() method.
+The console is part of the [Developer Tools](../ref/browser-review.md#developer-tools) in your browser. Although anyone can open the developer tools, the console is generally not viewed by users. Take a moment right now to make sure that you can find your browser's console.
 
-CodePen has its own simplified console. It can be opened and closed by clicking the Console button when you have a Pen open in the full editor (i.e. by clicking Edit on CodePen). You can use the browser’s console in the developer tools - just be aware that there may be some warnings and error messages created by other parts of the site you are on.
+One of the main purposes of the console is to display messages for developers. These messages can include automatically generated warnings and errors, but you can also manually log information using the `console.log()` method.
 
-Try changing the code in the JavaScript below - remember, you’ll need to have either the CodePen or browser console open to see the logged messages.
+CodePen has its own simplified console. You will still see console output from your Pen in the the browser’s developer tools, just be aware that there will likely be additional messages that were not created by the JavaScript in your Pen, which may be confusing.
+
+_When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking **Edit On CodePen** and then clicking the **Console** button in the CodePen editor._
 
 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="qBgevaR" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/qBgevaR">

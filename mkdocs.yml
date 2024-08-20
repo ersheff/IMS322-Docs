@@ -18,6 +18,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Setup: setup.md
+  - Style Guide: style-guide.md
   - CSS:
       - Introduction: css/_introduction.md
       - Flexbox: css/flexbox.md
@@ -27,13 +28,21 @@ nav:
       - Media Queries: css/media-queries.md
       - Nesting: css/nesting.md
       - Relative Units: css/relative-units.md
-      - Transition: css/transition.md
+      - Transitions: css/transitions.md
       - Variables: css/variables.md
   - JavaScript:
       - Introduction: js/_introduction.md
+      - Conditionals: js/conditionals.md
+      - Data Types: js/data-types.md
+      - Functions: js/functions.md
+      - Operators: js/operators.md
+      - Using the Console: js/using-the-console.md
+      - Variables: js/variables.md
   - Reference:
       - Introduction: ref/_introduction.md
-      - CSS Reset: ref/css-reset.md
-  - Style Guide: style-guide.md
-  - Miscellaneous: miscellaneous.md
-  - Review: review.md
+      - Additional Resources: ref/additional-resources.md
+      - Browser Review: ref/browser-review.md
+      - HTML Review: ref/html-review.md
+      - Miscellaneous Examples: ref/misc-examples.md
+      - Optimizing Images: ref/optimizing-images.md
+      - Utilities: ref/utilities.md

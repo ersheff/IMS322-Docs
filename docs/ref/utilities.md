@@ -1,6 +1,4 @@
----
-title: Utilities
----
+# Utilities
 
 ## Color
 

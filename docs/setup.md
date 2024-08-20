@@ -103,10 +103,13 @@ We will be using a small collection of VS Code extensions to assist with formatt
 _Make sure that Git has finished installing before completing these steps._
 
 1. Click on the **Terminal** menu and choose **New Terminal**.
-2. In the **Terminal** panel, run the following two commands, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
-   `git config --global user.name "your_username"`  
-   `git config --global user.email your@email.com`
+2. In the **Terminal** panel, run the two commands provided below, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
 3. Click the **Accounts** icon in the lower-left corner and sign in using your GitHub account.
+
+```
+git config --global user.name "your_username"
+git config --global user.email your@email.com
+```
 
 <figure markdown="span">
   ![Activity Bar: Accounts](assets/activity-bar-accounts.webp){ width="400" }
@@ -190,7 +193,7 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
 ### Working With VS Code Assignments
 
 - Folders are very important when working in VS Code. You should always check the top of the **Explorer** panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
-- To preview your code in the browser, click the **Go Live** button in the bottom-right corner of the window (which is part of the **Status Bar**). This will use the **Live Server** extension to launch your project in your preferred browser. If you accidentally lose your browser preview window, you can either reopen the browser and navigate to `http://127.0.0.1:5500/` (replacing the last 4 digits with whatever port number appears in the **Status Bar** while the extension is running). Alternatively, you can click on the port number in the **Status Bar** to close the extension and relaunch it by clicking **Go Live** again.
+- To preview your code in the browser, click the **Go Live** button in the bottom-right corner of the window (which is part of the **Status Bar**). This will use the **Live Server** extension to launch your project in your preferred browser. If you accidentally lose your browser preview window, you can reopen the browser and navigate to `http://127.0.0.1:5500/` (replacing the last 4 digits with whatever port number appears in the **Status Bar** while the extension is running). Alternatively, you can click on the port number in the **Status Bar** to close the extension and relaunch it by clicking **Go Live** again.
 
 <figure markdown="span">
   ![Status Bar: Go Live](assets/status-bar-go-live.webp){ width="500" }
@@ -233,3 +236,17 @@ _These steps apply to both the draft (draft branch) and final (main branch) stag
   ![Source Control: Stage and Commit changes](assets/source-control-changes.webp){ width="300" }
   <figcaption>Source Control: Stage and Commit changes</figcaption>
 </figure>
+
+### Autograding
+
+Assignments managed with GitHub will be run through an autograding process when they are committed and synced with the word "finished" in the commit message. The criteria that is checked during this process can be found on the [Style Guide](../style-guide) page.
+
+To review autograding results:
+
+1.  Navigate to your assignment repository on GitHub.
+2.  Click on the **Actions** tab at the top of the repository page.
+3.  In the **Actions** tab, click on the most recent item in the list of workflows that have been run.
+4.  Click on the workflow run to view the details.
+5.  In the workflow details page, you can see the status of each step.
+
+If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can amend the commit message if you would like to keep track of subsequent attempts e.g. "finished 2".
