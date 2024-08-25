@@ -1,6 +1,6 @@
 # Relative Units
 
-Using relative units by default is recommended in the [IMS322 Style Guide](../../style-guide) because they can make layout spacing and element sizing more consistent and flexible. In the embedded example below, each `<p>`, `<div>`, and `<img>` is sized using one of the relative units recommended for this class:
+Using relative units by default is recommended in the [Style Guide](../../style-guide) because they can make layout spacing and element sizing more consistent and flexible. In the embedded example below, each `<p>`, `<div>`, and `<img>` is sized using one of the relative units recommended for this class:
 
 - `%` - Percentage relative to the parent element.
 - `ch` - The width of a character in the element's font size.

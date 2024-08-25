@@ -1,6 +1,6 @@
 # Browser Review
 
-As discussed during [Setup](../setup), browsers are built on different engines. Most things will similarly across all browsers, but you may occasionally encounter situations where an element or style renders differently, or a feature want to use has not yet been implemented.
+As discussed during [Setup](../../setup), browsers are built on different engines. Most things will similarly across all browsers, but you may occasionally encounter situations where an element or style renders differently, or a feature want to use has not yet been implemented.
 
 The content covered in this class has been selected to ensure support across all modern browsers. However, unexpected quirks or surprises may still arise. If you're troubleshooting a problem in Chrome and can't find the cause in your code, try opening your project in Firefox (or vice versa). You may find that it works as expected in a different browser, which will help you focus on addressing specific cross-browser compatibility issues.
 

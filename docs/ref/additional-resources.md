@@ -16,5 +16,5 @@ If you are interested in additional help, review, or inspiration, you may find t
 
 ## [CSS Tricks](https://css-tricks.com)
 
-- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
