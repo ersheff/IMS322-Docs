@@ -317,6 +317,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../nesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS Nesting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../flexbox/" class="md-nav__link">
         
   
@@ -347,6 +368,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Grid
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -356,6 +388,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox-or-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox or Grid?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -416,27 +476,6 @@
   
   <span class="md-ellipsis">
     Media Queries
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../nesting/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Nesting
   </span>
   
 
@@ -809,6 +848,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flexbox-or-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexbox or Grid?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -823,24 +879,34 @@
 
 
 <h1 id="grid">Grid</h1>
-<p>Grid is similar to <a href="./flexbox">flexbox</a> in that it is used to create responsive layouts that adapt to fill the available space. However, while it can certainly be used for smaller components, grid is a two-dimensional layout system that is typically adopted for creating larger layouts.</p>
-<p>The scope of properties and options in grid can be a little overwhelming. As with flexbox, CSS has an excellent article called <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-introduction">"A Complete Guide to CSS Grid"</a> that covers just about everything, but this selection of nine properties (demonstrated in the examples below) will be sufficient for most basic layout needs:</p>
+<p>Grid is similar to <a href="../flexbox">flexbox</a> in that it is used to create responsive layouts that adapt to fill the available space. However, while grid can be used for smaller components, it is a two-dimensional layout system typically adopted for creating larger layouts.</p>
+<p>The scope of properties and options in grid can be a little overwhelming. As with flexbox, CSS Tricks has an excellent article called <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">"CSS Grid Layout Guide"</a> that covers just about everything, but this selection of nine properties (demonstrated in the examples below) will suffice for most basic layout needs:</p>
 <p><strong>Container properties:</strong></p>
 <ul>
 <li><code>display</code> - Set this property value to <code>grid</code> to create a grid container.</li>
-<li><code>grid-template-columns</code> - Use to define the quantity and size of columns in your grid.</li>
-<li><code>grid-template-rows</code> - Use to define the quantity and size of rows in your grid.</li>
+<li><code>grid-template-columns</code> - Defines the number and size of columns in your grid.</li>
+<li><code>grid-template-rows</code> - Define the number and size of rows in your grid.</li>
 <li><code>grid-auto-rows</code> - Specifies the size of any auto-generated grid rows.</li>
 <li><code>gap</code> - Controls the space between grid rows and columns.</li>
-<li><code>justify-content</code> - Similar to its use in flexbox, this property sets the alignment of items along the row axis. However, it really only has an effect when grid items are sized with non-flexible units, like <code>px</code>.</li>
-<li><code>align-items</code> - Similar to its use in flexbox, this property sets the alignment of items along the column axis. However, it really only has an effect when items within a row have varying heights.</li>
+<li><code>justify-content</code> - Similar to its use in flexbox, this property sets the alignment of items along the row axis. However, it only has an effect when grid items are sized with non-flexible units, such as <code>px</code>.</li>
+<li><code>align-items</code> - Similar to its use in flexbox, this property sets the alignment of items along the column axis. However, it only has an effect when grid items within a row have varying heights.</li>
 </ul>
 <p><strong>Item properties:</strong></p>
 <ul>
 <li><code>justify-self</code> - Aligns a single grid item inside its cell along the row axis.</li>
 <li><code>align-self</code> - Aligns a single grid item inside its cell along the column axis.</li>
 </ul>
-<p><em>When testing responsiveness with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong> and using your browser's <a href="https://developer.chrome.com/docs/devtools/device-mode">Device Mode</a> (Chromium-based) or <a href="https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/">Responsive Design Mode</a> (Firefox).</em></p>
+<h2 id="flexbox-or-grid">Flexbox or Grid?</h2>
+<p>If you're not sure whether flexbox or grid is more suitable for your layout needs, consider the following:</p>
+<ul>
+<li><strong>Center a single element?</strong> Use flexbox.</li>
+<li><strong>Arranging elements in a single row or column, like a row of photos or inputs?</strong> Use flexbox.</li>
+<li><strong>Expecting the number of elements in your layout to change from time to time?</strong> Use grid (or flexbox with wrapping).</li>
+<li><strong>Planning the overall layout of your page with a header, nav bar, sidebar, footer, and possibly more?</strong> Use grid.</li>
+<li><strong>Creating an asymmetrical or multi-dimensional layout?</strong> Use grid.</li>
+</ul>
+<p>Ultimately, flexbox can be a bit easier to start with and conceptualize, but grid is more powerful and versatile once you get the basics down. You can always use both in your projects!</p>
+<p><em>When testing responsiveness with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong>, then use your browser's <a href="https://developer.chrome.com/docs/devtools/device-mode">Device Mode</a> (Chromium-based) or <a href="https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/">Responsive Design Mode</a> (Firefox).</em></p>
 <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="BagZVBE" data-pen-title="Grid 1 (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/BagZVBE">
   Grid 1 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
@@ -859,15 +925,6 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-<p>If you're not sure whether flexbox or grid would be more suitable for your layout needs, consider the following advice:</p>
-<ul>
-<li>Do you just need to center something? Use flexbox.</li>
-<li>Do you just need elements in a single row or column, like a row of photos or inputs? Use flexbox.</li>
-<li>Is it possible that the number of elements in your layout will change from time to time? Use grid (or possible flexbox with wrap).</li>
-<li>Do you want to plan the full layout of your page with a header, nav bar, sidebar, footer, and possibly more? Use grid.</li>
-<li>Do you need an asymmetrical or multi-dimensional layout? Use grid.</li>
-</ul>
-<p>Ultimately, flexbox can be a bit easier to start with and conceptualize, but grid is more powerful and versatile once you get the basics down. And you can always use both!</p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 

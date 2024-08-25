@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../introduction/">
+        <link rel="prev" href="../nesting/">
       
       
         <link rel="next" href="../grid/">
@@ -314,6 +314,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../nesting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS Nesting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -416,27 +437,6 @@
   
   <span class="md-ellipsis">
     Media Queries
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../nesting/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Nesting
   </span>
   
 
@@ -824,7 +824,7 @@
 
 <h1 id="flexbox">Flexbox</h1>
 <p>Flexbox is used to create responsive layouts. It is typically considered ideal for 1-dimensional rows or columns, though more complex layouts can be achieved by nesting flexboxes inside of each other.</p>
-<p>From CSS Tricks' <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">"A Complete Guide to Flexbox"</a>:</p>
+<p>From CSS Tricks' <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">"CSS Flexbox Layout Guide"</a>:</p>
 <blockquote>
 <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
 </blockquote>
@@ -836,21 +836,21 @@
   <img alt="Flexbox Items" src="../../assets/02-items.svg" width="400px" />
   <figcaption>Flexbox Items (image source: CSS Tricks)</figcaption>
 </figure>
-<p>The CSS Tricks article <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">"A Complete Guide to Flexbox"</a> is an excellent reference for all things flexbox. To get started, this selection of seven properties (demonstrated in the example below) can be used to accomplish most layout goals:</p>
+<p>The CSS Tricks article linked above is an excellent reference for all things flexbox. To get started, the following set of seven properties (demonstrated in the example below) can be used to accomplish most layout goals:</p>
 <p><strong>Container properties:</strong></p>
 <ul>
 <li><code>display</code> - Set this property value to <code>flex</code> to create a flexbox container.</li>
 <li><code>flex-direction</code> - Options are <code>row</code> (the default) or <code>column</code>.</li>
-<li><code>flex-wrap</code> - By default, flexbox will try to fit everything in one row. Set the value of this property to <code>wrap</code> to wrap flex items to multiple rows as needed (only works if items have a fixed or minimum size).</li>
+<li><code>flex-wrap</code> - By default, flexbox tries to fit everything in one row. Set this property to <code>wrap</code> to allow flex items to wrap into multiple rows as needed (this only works if items have a fixed or minimum size).</li>
 <li><code>justify-content</code> - Defines the alignment along the main axis.</li>
 <li><code>align-items</code> - Defines the alignment along the cross axis.</li>
 <li><code>gap</code> - Controls the space between flex items.</li>
 </ul>
 <p><strong>Item properties:</strong></p>
 <ul>
-<li><code>flex</code> - Determines how much space an item will inhabit proportionally. For example, a flex item with <code>flex: 2</code> will take up twice as much space as a flex item with <code>flex: 1</code>.</li>
+<li><code>flex</code> - Determines how much space an item will occupy proportionally. For example, a flex item with <code>flex: 2</code> will take up twice as much space as a flex item with <code>flex: 1</code>.</li>
 </ul>
-<p><em>When testing responsiveness with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong> and using your browser's <a href="https://developer.chrome.com/docs/devtools/device-mode">Device Mode</a> (Chromium-based) or <a href="https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/">Responsive Design Mode</a> (Firefox).</em></p>
+<p><em>When testing responsiveness with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong>, then use your browser's <a href="https://developer.chrome.com/docs/devtools/device-mode">Device Mode</a> (Chromium-based) or <a href="https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/">Responsive Design Mode</a> (Firefox).</em></p>
 <p class="codepen" data-height="600" data-default-tab="css,result" data-slug-hash="VwRLgEg" data-editable="true" data-user="ersheff" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/VwRLgEg">
   Flexbox (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)

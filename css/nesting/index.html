@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../media-queries/">
+        <link rel="prev" href="../introduction/">
       
       
-        <link rel="next" href="../relative-units/">
+        <link rel="next" href="../flexbox/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Nesting - IMS322 Docs</title>
+        <title>CSS Nesting - IMS322 Docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nesting" class="md-skip">
+        <a href="#css-nesting" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nesting
+              CSS Nesting
             
           </span>
         </div>
@@ -314,6 +314,37 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    CSS Nesting
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -410,37 +441,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Nesting
-  </span>
-  
-
-      </a>
-      
     </li>
   
 
@@ -822,20 +822,20 @@
                   
 
 
-<h1 id="nesting">Nesting</h1>
+<h1 id="css-nesting">CSS Nesting</h1>
 <p>Excerpted from MDN Web Docs <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting">"Using CSS nesting"</a>:</p>
 <blockquote>
 <p>The CSS nesting module allows you to write your stylesheets so that they are easier to read, more modular, and more maintainable. As you are not constantly repeating selectors, the file size can also be reduced.</p>
 <p>You can use CSS nesting to create child selectors of a parent, which in turn can be used to target child elements of specific parents.</p>
 </blockquote>
-<p>While nesting may not be appropriate for all situations, one notable benefit is that the structure more closely resembles the corresponding HTML in which child tags/selectors are wrapped in parent tags/selectors.</p>
+<p>While CSS nesting may not be appropriate for all situations, one notable benefit is that the structure more closely resembles the corresponding HTML, where child tags/selectors are nested within parent tags/selectors.</p>
 <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="PoVMLGa" data-pen-title="CSS Nesting 1 (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/PoVMLGa">
   CSS Nesting 1 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-<p>It can also help alleviate the clumsiness of creating multiple classes, so long as the heirarchy of your document structure is not too complicated. In the example below, a class only needs to be named for the parent <code>&lt;div&gt;</code> since the color change will only apply to <code>&lt;p&gt;</code> elements that are children of the <code>dark-bg</code> class.</p>
+<p>It can also help alleviate the complexity of creating multiple classes, provided that the heirarchy of your document structure is not too complicated. In the example below, a class is only needed for the parent <code>&lt;div&gt;</code>, since the color change will only apply to <code>&lt;p&gt;</code> elements that are children of the <code>dark-bg</code> class.</p>
 <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="BagZjBr" data-pen-title="CSS Nesting 2 (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/BagZjBr">
   CSS Nesting 2 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
