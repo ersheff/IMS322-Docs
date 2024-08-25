@@ -239,7 +239,7 @@ _These steps apply to both the draft (draft branch) and final (main branch) stag
 
 ### Autograding
 
-Assignments managed with GitHub will be run through an autograding process when they are committed and synced with the word "finished" in the commit message. The criteria that is checked during this process can be found on the [Style Guide](../style-guide) page.
+Assignments managed through GitHub will be run through an autograding process when they are committed and synced with the word "finished" in the commit message. The criteria checked during this process can be found on the [Style Guide](../style-guide) page.
 
 To review autograding results:
 
@@ -247,6 +247,6 @@ To review autograding results:
 2.  Click on the **Actions** tab at the top of the repository page.
 3.  In the **Actions** tab, click on the most recent item in the list of workflows that have been run.
 4.  Click on the workflow run to view the details.
-5.  In the workflow details page, you can see the status of each step.
+5.  On the workflow details page, you can see the status of each step.
 
-If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can amend the commit message if you would like to keep track of subsequent attempts e.g. "finished 2".
+If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".

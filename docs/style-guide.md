@@ -8,7 +8,7 @@ This page is divided into 3 sections:
 
 - **[Manually Graded Requirements](#manually-graded-requirements)**: The requirements in this section will be reviewed by the instructor after submission.
 
-- **[Other Suggestions](#other-suggestions)**: This section includes other miscellaneous style suggestions. Although they do not directly impact your assignment grades, implementing these suggestions will likely help you improve results.
+- **[Other Suggestions](#other-suggestions)**: This section includes other miscellaneous style suggestions. While they do not directly affect your assignment grades, implementing these suggestions may help improve your results.
 
 ---
 
@@ -26,19 +26,21 @@ These will be provided for you in each assignment template. Do not delete or ren
 
 ### Separation of Concerns
 
-There are multiple aspects to this concept. Put simply, the goal is to only put HTML, CSS, and JavaScript in their respective files. By keeping these concerns separate, you can work on structure, style, and behavior independently.
+There are multiple aspects to this concept. Simply put, the goal is to only put HTML, CSS, and JavaScript in their respective files. By keeping these concerns separate, you can work on structure, style, and behavior independently.
 
-These specific items will be checked during the autograding workflow:
+The following items will be checked during the autograding workflow:
 
-- Write all CSS in the `style.css` file, which should be referenced in the `<head>` element using `<link>` tags. Do not write any CSS as inline `style` attributes or in `<style>` tags.
-- Write all JavaScript in the `script.js` file, which should be referenced in the `<head>` element using `<script>` tags with the `defer` keyword. Do not write any JavaScript code inside of `<script>` tags.
-- On a related note, do not use a `DOMContentLoaded` event listener or `window.onload` property in your JavaScript file. This may cause issues with some projects and is unnecessary if the `defer` keyword is used in the `<script>` tags.
-- Run JavaScript functions from event listeners defined in the `script.js` file, not HTML attributes.
+- Write all CSS in the `style.css` file, which should be referenced in the `<head>` element using `<link>` tags. Avoid writing any CSS as inline `style` attributes or in `<style>` tags within the HTML.
+- Write all JavaScript in the `script.js` file, which should be referenced in the `<head>` element using `<script>` tags with the `defer` keyword. Avoid writing any JavaScript code inside `<script>` tags within the HTML.
+
+      - On a related note, do not use a `DOMContentLoaded` event listener or `window.onload` property in your JavaScript file. This can cause issues with some projects and is unnecessary when using the `defer` attribute in the `<script>` tags.
+
+- Trigger JavaScript functions from event listeners defined in the `script.js` file, not from HTML attributes.
 
 _This:_
 
 ```js
-const counterButton = document.getElementById("counter-button");
+const counterButton = document.querySelector("#counter-button");
 myButton.addEventListener("click", addCount);
 ```
 
@@ -50,9 +52,9 @@ _Not this:_
 
 ### Image Compression, Resolution, and Organization
 
-All images used in your projects should be in the WebP format with a maximum resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
+All images used in your projects should be in WebP format with a maximum resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
 
-Store image files in an "images" folder to help keep the file browser organized. Keep in mind, this means that the folder name will need to be part of the path to the file.
+Store image files in an "images" folder to help keep the file browser organized. Remember, this means that the folder name will need to be included in the file path.
 
 _This:_
 
@@ -68,12 +70,12 @@ _Not this:_
 
 ### CSS Color Syntax
 
-All CSS colors should be in the HEX or RGB format. This will help ensure that you can directly translate colors from your wireframe designs.
+All CSS colors should be in HEX or RGB format to ensure that you can directly translate colors from your wireframe designs.
 
 - Example HEX code: `#e9967a`
 - Example RGB code: `rgb(233, 150, 122)`
 
-There are multiple color utilities to help you choose and convert color codes on the [Utilities](../ref/utilities) page.
+Several color utilities are provided to help you choose and convert color codes on the [Utilities](../ref/utilities) page.
 
 ### Modern Javascript Variable Declarations
 
@@ -114,11 +116,11 @@ If you use any other font in your designs, you must include it as a resource by 
 
 ### Naming Conventions
 
-- Rename long or cryptic image files whenever necessary. For example, `dog.webp` is much easier to type and identify than `neom-9E9NsEiUGxg-unsplash.webp`.
-- Write concise, searchable, and meaningful names for classes, ids, functions, and variables. Only use common, easy-to-remember abbreviations if a name becomes excessively long.
-- Class and id attributes in HTML and CSS should always be named using the "kebab-case" convention in which lowercase words are separated by hyphens.
-- Functions and variables in JavaScript should be named using the "camelCase" convention in which each word (except the first) starts with a capital letter (without spaces or hyphens).
-- Keep in mind that you may find yourself writing both kebab-case and camelCase in your JavaScript file when assigning HTML elements to variables. This is still valid because the id name was created in the HTML file.
+- Rename long or cryptic image files as needed. For example, `dog.webp` is much easier to type and identify than `neom-9E9NsEiUGxg-unsplash.webp`.
+- Use concise, searchable, and meaningful names for classes, ids, functions, and variables. Only use common, easy-to-remember abbreviations if a name becomes excessively long.
+- Name class and id attributes in HTML and CSS using the "kebab-case" convention, where lowercase words are separated by hyphens.
+- Name functions and variables in JavaScript using the "camelCase" convention, where each word (except the first) starts with a capital letter, without spaces or hyphens.
+- Keep in mind that you may find yourself writing both kebab-case and camelCase in your JavaScript file when assigning HTML elements to variables. This is valid since the id name was created in the HTML file.
 
 ```html
 <p class="kebab-case" id="kebab-case">Blah blah blah.</p>
@@ -136,19 +138,19 @@ const counterButton = document.querySelector("#counter-button");
 
 ### Display Size Targets and General Layout
 
-Your project layouts will need to work at the following window widths (based on [MDN Web Docs recommendations](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS#mobile-first_media_queries)):
+Your project layouts should accommodate the following window widths (based on [MDN Web Docs recommendations](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS#mobile-first_media_queries)):
 
 - `480px` (mobile)
 - `800px` (tablet, narrow laptop/desktop windows)
 - `1100px` (wide laptop/desktop windows)
 
-This means that text content and images are not too small nor overflowing the visible area.
+This means that text content and images are neither too small nor overflowing the visible area.
 
-The following CSS has been created for you in the assignment templates to help achieve these general layout requirements:
+The following CSS is provided for you in the assignment templates to help meet these requirements:
 
-- By default, the `<body>` element should be centered within the browser window with a maximum width of `1100px`.
+- By default, the `<body>` element should be centered within the browser window and have a maximum width of `1100px`.
 - Large paragraphs should not exceed a width of `80ch` to improve readability.
-- Elements may need to be rearranged or resized using media queries at `480px` and/or `800px`.
+- Use media queries at `480px` and/or `800px` to rearrange or resize elements as needed.
 
 _Default assignment template CSS:_
 
@@ -183,9 +185,9 @@ img {
 
 ### Formatting
 
-In both CodePen and VS Code, [js-beautify](https://beautifier.io) is used for HTML formatting and [Prettier](https://prettier.io) is used for CSS and JavaScript formatting. Formatting occurs automatically on save if both platforms are configured as described in the [Setup](../setup) guide.
+In both CodePen and VS Code, [js-beautify](https://beautifier.io) is used for HTML formatting and [Prettier](https://prettier.io) is used for CSS and JavaScript formatting. Formatting occurs automatically on save if both platforms are configured according to the [Setup](../setup) guide.
 
-As long as your code is not missing tags or brackets, the following should apply:
+Provided your code is completely and properly structured (e.g., not missing tags or brackets), the following formatting should apply:
 
 - Blank lines and indentation
 - Proper spacing around operators, parentheses, and curly brackets
@@ -239,19 +241,19 @@ function declareLove() {
 
 ### Relative Units
 
-Try to prioritize relative units in CSS whenever possible to improve responsiveness and consistency in sizing and spacing. Common examples of relative units include:
+Prioritize using relative units in CSS whenever possible to improve responsiveness and consistency in sizing and spacing. Common examples of relative units include:
 
 - `%` - Percentage relative to the parent element.
 - `ch` - The width of a character in the element's font size.
-- `rem` - Relative to the height of the default browser font size.
+- `rem` - Relative to the root element's font size (the browser default).
 
-When you do use absolute units, like `px`, try to do so in a consistent and logical manner e.g. in multiples of 2 or 10. Adopting CSS variables can help with this since you can create your own definitions for size denominations in one place.
+When using absolute units, such as `px`, aim for consistent and logical increments e.g., multiples of 2 or 10. Adopting CSS variables can help with this by allowing you to define and adjust size denominations in one place.
 
-You can read more about all the valid absolute and relative units in this [MDN Web Docs reference](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#numbers_lengths_and_percentages).
+You can read more about valid absolute and relative units in this [MDN Web Docs reference](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#numbers_lengths_and_percentages).
 
 ### CSS Style Selectors
 
-Use element and class selectors and CSS nesting instead of id selectors in CSS. This can also help reinforce the [separation of concerns](#separation-of-concerns) by reserving id attributes for assigning HTML elements to variables in JavaScript.
+Use element and class selectors, as well as CSS nesting, instead of id selectors in CSS. This approach helps reinforce the [separation of concerns](#separation-of-concerns) by reserving id attributes for assigning HTML elements to variables in JavaScript.
 
 ```css
 /* element selector */

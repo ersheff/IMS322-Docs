@@ -20,27 +20,22 @@ nav:
   - Setup: setup.md
   - Style Guide: style-guide.md
   - CSS:
-      - Introduction: css/_introduction.md
+      - Introduction: css/introduction.md
+      - CSS Nesting: css/nesting.md
       - Flexbox: css/flexbox.md
       - Grid: css/grid.md
       - Hover: css/hover.md
       - Input Styling: css/input-styling.md
       - Media Queries: css/media-queries.md
-      - Nesting: css/nesting.md
       - Relative Units: css/relative-units.md
       - Transitions: css/transitions.md
       - Variables: css/variables.md
   - JavaScript:
       - Introduction: js/_introduction.md
-      - Conditionals: js/conditionals.md
-      - Data Types: js/data-types.md
-      - Functions: js/functions.md
-      - Operators: js/operators.md
-      - Using the Console: js/using-the-console.md
-      - Variables: js/variables.md
   - Reference:
-      - Introduction: ref/_introduction.md
+      - Introduction: ref/introduction.md
       - Additional Resources: ref/additional-resources.md
+      - Artificial Intelligence: ref/ai.md
       - Browser Review: ref/browser-review.md
       - HTML Review: ref/html-review.md
       - Miscellaneous Examples: ref/misc-examples.md

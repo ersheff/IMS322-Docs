@@ -1,6 +1,6 @@
 # CSS
 
-Before proceeding with the new CSS content on this site, review the material below. This class assumes that you are familiar with these topics from IMS222.
+Before proceeding with the new CSS content on this site, review the material below. This class assumes that you are familiar with these topics from previous classes.
 
 ## Common Properties
 
