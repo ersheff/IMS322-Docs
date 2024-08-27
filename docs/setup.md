@@ -222,7 +222,7 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
 
 _These steps apply to both the draft (draft branch) and final (main branch) stages. It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished._
 
-1. Open the **Source Control** panel.
+1. Open the **Source Control** panel in VS Code.
 2. Stage all changes by clicking the **+** next to **Changes**.
 3. Enter a commit message and click the **Commit** button (use "finished" for your final commit).
 4. The **Commit** button should change to a **Sync Changes** button. Click this to finish syncing the latest changes to your online GitHub repository.
