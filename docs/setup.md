@@ -22,10 +22,10 @@ The sections on this page will lead you through the process of setting up the ap
 
 ### Mac
 
-Mac users should follow the [Homebrew installation option](https://git-scm.com/download/mac):
+Mac users should follow the Homebrew installation option:
 
-1. Install [Homebrew](https://brew.sh/).
-2. Run `brew install git` in Terminal. If prompted, install the command line developer tools. This will likely take a while.
+1. Install [Homebrew](https://github.com/Homebrew/brew/releases/download/4.3.18/Homebrew-4.3.18.pkg).
+2. Run `brew install git` in Terminal.
 
 ### Windows
 
