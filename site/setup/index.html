@@ -482,6 +482,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Checklist
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1241,6 +1250,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Checklist
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1297,7 +1315,7 @@
 <ul>
 <li>You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.</li>
 <li>A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.</li>
-<li>Make sure that the <strong>Format On Save</strong> option is checked in your account settings (found in the <strong>Editor Preferences</strong> section).</li>
+<li>Make sure that the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options are checked in your account settings (found in the <strong>Editor Preferences</strong> section).</li>
 <li>The simplified HTML editor does not need a <code>&lt;head&gt;</code> element or <code>&lt;body&gt;</code> tags. You should start your HTML content from the first tag that would normally go after the opening <code>&lt;body&gt;</code> tag, like a <code>&lt;header&gt;</code> or <code>&lt;h1&gt;</code> element.</li>
 <li>There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the <code>src</code> attribute of the <code>&lt;img&gt;</code> element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like <a href="https://picsum.photos">Lorem Picsum</a> will suffice.</li>
 </ul>
@@ -1323,11 +1341,11 @@
 <h3 id="extensions">Extensions</h3>
 <p>We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the <strong>Extensions</strong> panel to install them:</p>
 <ul>
-<li><strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> (AI code assistant, requires GitHub Student Benefits activation)</li>
-<li><strong>JS-Beautify for VS Code</strong> (for HTML formatting)</li>
-<li><strong>Prettier</strong> (for CSS and JavaScript formatting)</li>
-<li><strong>Live Server</strong> (for quick and easy browser preview)</li>
-<li><strong>Live Share</strong> (for collaborative coding, which we will primarily use during in-class troubleshooting and office hours meetings)</li>
+<li><strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> AI code assistant (published by GitHub, requires GitHub Student Benefits activation)</li>
+<li><strong>JS-Beautify for VS Code</strong> for HTML formatting (published by VSCE Toolroom)</li>
+<li><strong>Prettier</strong> for CSS and JavaScript formatting (published by Prettier)</li>
+<li><strong>Live Server</strong> for quick and easy browser previews (published by Ritwick Dey)</li>
+<li><strong>Live Share</strong> for collaborative coding (published by Microsoft)</li>
 </ul>
 <figure>
   <img alt="Activity Bar: Extensions panel" src="../assets/activity-bar-extensions.webp" width="400" />
@@ -1349,9 +1367,9 @@
 </figure>
 <h3 id="editor-settings">Editor Settings</h3>
 <ol>
+<li>Go to the <strong>View</strong> menu and choose <strong>Command Palette...</strong> Use the search field to find and run the <strong>Preferences: Open User Settings (JSON)</strong> command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.</li>
 <li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.</li>
 <li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are checked.</li>
-<li>Go to the <strong>View</strong> menu and choose <strong>Command Palette...</strong> Use the search field to find and run the <strong>Preferences: Open User Settings (JSON)</strong> command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.</li>
 </ol>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;editor.minimap.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -1468,6 +1486,27 @@
 <li>On the workflow details page, you can see the status of each step.</li>
 </ol>
 <p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".</p>
+<hr />
+<h2 id="setup-checklist">Setup Checklist</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed Git (<em>not</em> just GitHub Desktop).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have created my GitHub account.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have enabled the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options in my CodePen account settings.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have both Chrome (or another Chromium-based browser) and Firefox installed.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed VS Code.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed the required VS Code extensions.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> (published by GitHub)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>JS-Beautify for VS Code</strong> (published by VSCE Toolroom)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Prettier</strong> (published by Prettier)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Live Server</strong> (published by Ritwick Dey)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Live Share</strong> (published by Microsoft)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have run the <code>git config</code> commands in the Terminal in VS Code.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have signed VS Code into my GitHub account.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have copy-pasted the suggested settings in the settings.json file.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have selected my <strong>Live Server Custom Browser</strong> in settings.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have ensured that <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are all visible in the Activity Bar.</li>
+</ul>
 
 
 

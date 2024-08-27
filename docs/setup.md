@@ -54,7 +54,7 @@ There are a few important things to note about CodePen and how it differs from t
 
 - You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.
 - A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.
-- Make sure that the **Format On Save** option is checked in your account settings (found in the **Editor Preferences** section).
+- Make sure that the **Format On Save** and **Autocomplete** options are checked in your account settings (found in the **Editor Preferences** section).
 - The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start your HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
 - There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
 
@@ -87,11 +87,11 @@ You should have _both_ Firefox and at least one Chromium-based browser installed
 
 We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the **Extensions** panel to install them:
 
-- **GitHub Copilot** and **Copilot Chat** (AI code assistant, requires GitHub Student Benefits activation)
-- **JS-Beautify for VS Code** (for HTML formatting)
-- **Prettier** (for CSS and JavaScript formatting)
-- **Live Server** (for quick and easy browser preview)
-- **Live Share** (for collaborative coding, which we will primarily use during in-class troubleshooting and office hours meetings)
+- **GitHub Copilot** and **Copilot Chat** AI code assistant (published by GitHub, requires GitHub Student Benefits activation)
+- **JS-Beautify for VS Code** for HTML formatting (published by VSCE Toolroom)
+- **Prettier** for CSS and JavaScript formatting (published by Prettier)
+- **Live Server** for quick and easy browser previews (published by Ritwick Dey)
+- **Live Share** for collaborative coding (published by Microsoft)
 
 <figure markdown="span">
   ![Activity Bar: Extensions panel](assets/activity-bar-extensions.webp){ width="400" }
@@ -118,9 +118,9 @@ git config --global user.email your@email.com
 
 ### Editor Settings
 
-1. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
-2. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
-3. Go to the **View** menu and choose **Command Palette...** Use the search field to find and run the **Preferences: Open User Settings (JSON)** command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
+1. Go to the **View** menu and choose **Command Palette...** Use the search field to find and run the **Preferences: Open User Settings (JSON)** command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
+2. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
+3. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
 
 ```json
 {
@@ -250,3 +250,25 @@ To review autograding results:
 5.  On the workflow details page, you can see the status of each step.
 
 If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".
+
+---
+
+## Setup Checklist
+
+- [ ] I have installed Git (_not_ just GitHub Desktop).
+- [ ] I have created my GitHub account.
+- [ ] My GitHub Student Benefits are active.
+- [ ] I have enabled the **Format On Save** and **Autocomplete** options in my CodePen account settings.
+- [ ] I have both Chrome (or another Chromium-based browser) and Firefox installed.
+- [ ] I have installed VS Code.
+- [ ] I have installed the required VS Code extensions.
+  - [ ] **GitHub Copilot** and **Copilot Chat** (published by GitHub)
+  - [ ] **JS-Beautify for VS Code** (published by VSCE Toolroom)
+  - [ ] **Prettier** (published by Prettier)
+  - [ ] **Live Server** (published by Ritwick Dey)
+  - [ ] **Live Share** (published by Microsoft)
+- [ ] I have run the `git config` commands in the Terminal in VS Code.
+- [ ] I have signed VS Code into my GitHub account.
+- [ ] I have copy-pasted the suggested settings in the settings.json file.
+- [ ] I have selected my **Live Server Custom Browser** in settings.
+- [ ] I have ensured that **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are all visible in the Activity Bar.
