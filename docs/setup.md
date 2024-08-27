@@ -262,11 +262,13 @@ If you would like to fix errors identified by the autograding logs, you may comm
 - [ ] I have both Chrome (or another Chromium-based browser) and Firefox installed.
 - [ ] I have installed VS Code.
 - [ ] I have installed the required VS Code extensions.
-  - [ ] **GitHub Copilot** and **Copilot Chat** (published by GitHub)
-  - [ ] **JS-Beautify for VS Code** (published by VSCE Toolroom)
-  - [ ] **Prettier** (published by Prettier)
-  - [ ] **Live Server** (published by Ritwick Dey)
-  - [ ] **Live Share** (published by Microsoft)
+
+      - [ ] **GitHub Copilot** and **Copilot Chat** (published by GitHub)
+      - [ ] **JS-Beautify for VS Code** (published by VSCE Toolroom)
+      - [ ] **Prettier** (published by Prettier)
+      - [ ] **Live Server** (published by Ritwick Dey)
+      - [ ] **Live Share** (published by Microsoft)
+
 - [ ] I have run the `git config` commands in the Terminal in VS Code.
 - [ ] I have signed VS Code into my GitHub account.
 - [ ] I have copy-pasted the suggested settings in the settings.json file.
