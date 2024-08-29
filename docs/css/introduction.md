@@ -7,6 +7,7 @@ Before proceeding with the new CSS content on this site, review the material bel
 - [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 - [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 - [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+- [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) (primarily for flex or grid)
 - [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 - [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
 - [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
@@ -18,6 +19,7 @@ Before proceeding with the new CSS content on this site, review the material bel
 - [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 - [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
 - [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+- [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) (e.g., scale, rotate, translate)
 - [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 
 A comprehensive reference for all CSS properties can be found on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
