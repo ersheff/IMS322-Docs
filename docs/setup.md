@@ -264,7 +264,7 @@ If you would like to fix errors identified by the autograding logs, you may comm
 
 - [ ] I have installed Git (_not_ just GitHub Desktop).
 - [ ] I have created my GitHub account.
-- [ ] My GitHub Student Benefits are active.
+- [ ] My GitHub Student Benefits are active, and I have claimed **Github Copilot** access.
 - [ ] I have enabled the **Format On Save** and **Autocomplete** options in my CodePen account settings.
 - [ ] I have both Chrome (or another Chromium-based browser) and Firefox installed.
 - [ ] I have installed VS Code.
