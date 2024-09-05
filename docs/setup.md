@@ -43,6 +43,7 @@ If you're using Linux, you probably don't need help installing Git! Follow the i
 
 1. Create a [GitHub](https://github.com) account.
 2. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code).
+3. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
 
 ---
 
@@ -239,7 +240,13 @@ _These steps apply to both the draft (draft branch) and final (main branch) stag
 
 ### Autograding
 
-Assignments managed through GitHub will be run through an autograding process when they are committed and synced with the word "finished" in the commit message. The criteria checked during this process can be found on the [Style Guide](../style-guide) page.
+Assignments managed through GitHub will be run through an autograding process when they are committed and synced with any of the following words in the commit message:
+
+- finished
+- finish
+- autograde
+
+The criteria checked during this process can be found on the [Style Guide](../style-guide) page.
 
 To review autograding results:
 
@@ -249,7 +256,7 @@ To review autograding results:
 4.  Click on the workflow run to view the details.
 5.  On the workflow details page, you can see the status of each step.
 
-If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".
+If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have one of the trigger words listed above in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".
 
 ---
 
