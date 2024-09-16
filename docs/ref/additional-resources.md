@@ -18,3 +18,8 @@ If you are interested in additional help, review, or inspiration, you may find t
 
 - [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+## Practice
+
+- [Flexbox Froggy](https://flexboxfroggy.com)
+- [Grid Garden](https://cssgridgarden.com)

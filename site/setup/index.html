@@ -1328,6 +1328,7 @@
 <ol>
 <li>Create a <a href="https://github.com">GitHub</a> account.</li>
 <li>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant within VS Code).</li>
+<li>Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose <strong>Your Copilot</strong> from the menu to claim Copilot access.</li>
 </ol>
 <hr />
 <h2 id="codepen">CodePen</h2>
@@ -1497,7 +1498,13 @@
   <figcaption>Source Control: Stage and Commit changes</figcaption>
 </figure>
 <h3 id="autograding">Autograding</h3>
-<p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with the word "finished" in the commit message. The criteria checked during this process can be found on the <a href="../style-guide">Style Guide</a> page.</p>
+<p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with any of the following words in the commit message:</p>
+<ul>
+<li>finished</li>
+<li>finish</li>
+<li>autograde</li>
+</ul>
+<p>The criteria checked during this process can be found on the <a href="../style-guide">Style Guide</a> page.</p>
 <p>To review autograding results:</p>
 <ol>
 <li>Navigate to your assignment repository on GitHub.</li>
@@ -1506,13 +1513,13 @@
 <li>Click on the workflow run to view the details.</li>
 <li>On the workflow details page, you can see the status of each step.</li>
 </ol>
-<p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have the word "finished" in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".</p>
+<p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have one of the trigger words listed above in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".</p>
 <hr />
 <h2 id="setup-checklist">Setup Checklist</h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed Git (<em>not</em> just GitHub Desktop).</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have created my GitHub account.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active, and I have claimed <strong>Github Copilot</strong> access.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have enabled the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options in my CodePen account settings.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have both Chrome (or another Chromium-based browser) and Firefox installed.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed VS Code.</li>
