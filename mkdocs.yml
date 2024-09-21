@@ -47,7 +47,13 @@ nav:
       - Transitions: css/transitions.md
       - Variables: css/variables.md
   - JavaScript:
-      - Introduction: js/_introduction.md
+      - Introduction: js/introduction.md
+      - Conditionals: js/conditionals.md
+      - Data Types: js/data-types.md
+      - Functions: js/functions.md
+      - Operators: js/operators.md
+      - Using the Console: js/using-the-console.md
+      - Variables: js/variables.md
   - Reference:
       - Introduction: ref/introduction.md
       - Additional Resources: ref/additional-resources.md

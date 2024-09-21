@@ -1,12 +1,12 @@
 # Functions
 
-**Functions** are reusable blocks of code designed to perform a specific task or group of related tasks. You can accomplish a lot without writing your own functions, but they can help reduce redundancies and are crucial for some of the workflows in this class.
+**Functions** are reusable blocks of code designed to perform a specific task or group of related tasks. While you can accomplish a lot without writing your own functions, they can help reduce redundancies and are crucial for some of the workflows in this class.
 
 ## Declaring Functions
 
-To use a cooking analogy... think of the function writing process kind of like training a fellow cook on a recipe.
+To use a cooking analogy... think of writing a function kind of like training a fellow cook on a recipe.
 
-First, you would need to define and teach them the individual steps in the process:
+First, you would define and teach them the individual steps:
 
 1. Chop stuff.
 2. Sauté and simmer.
@@ -14,7 +14,7 @@ First, you would need to define and teach them the individual steps in the proce
 
 Then, in the future, you could simply ask: _Can you please make some marinara sauce?_
 
-Start your function declaration with the `function` keyword and a name (using the naming conventions from our [Style Guide](../../style-guide#naming-conventions)), then follow with parentheses and curly braces. The individual steps of your function go inside of the curly braces.
+Start your function declaration with the `function` keyword, followed by a name (using the naming conventions from our [Style Guide](../../style-guide#naming-conventions)), then parentheses and curly braces. The individual steps of your function go inside of the curly braces.
 
 ```js
 function makeSauce() {
@@ -24,11 +24,11 @@ function makeSauce() {
 }
 ```
 
-Function declarations can go anywhere in your JavaScript, though I recommend putting them at the bottom of your `script.js` file for consistency.
+Function declarations can be placed anywhere, though I recommend putting them at the bottom of your `script.js` file for consistency.
 
 ## Calling Functions
 
-Declaring a function does not actually run the code in the function. To execute a function, call it using the function name and parentheses:
+Declaring a function does not actually execute the code inside the function. To run a function, call it using the function name followed by parentheses:
 
 ```js
 makeSauce();

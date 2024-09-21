@@ -1,6 +1,6 @@
 # Operators
 
-In other examples, you have already seen 2 operators that have fairly obvious functions: `+` for addition and `=` for assigning values, as seen in the expression:
+In other examples, you have probably already seen two operators that have fairly obvious functions: `+` for addition and `=` for assigning values, as seen in the expression:
 
 ```js
 let y = x + 10;
@@ -17,7 +17,7 @@ The standard arithmetic operators are
 - Multiplication `*`
 - Division `/`
 
-Some of the other useful arithmetic operators in JavaScript:
+Some other useful arithmetic operators in JavaScript include:
 
 - Modulo `%` (returns the remainder of dividing two numbers)
 - Increment `++` (increases avalue by 1)
@@ -47,7 +47,7 @@ Other assignment operators include:
 
 ## String Concatenation
 
-When working with strings, `+` is the concatenation operator, joining strings together. String concatenation can be used to insert variable values into longer messages.
+When working with strings, `+` is the concatenation operator, joining strings together. String concatenation is useful for inserting variable values into longer messages.
 
 ```js
 const myName = "Eric";

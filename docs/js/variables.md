@@ -1,8 +1,8 @@
 # Variables
 
-A variable is a named container for data. The name of the variable is up to you (take a look at naming guidelines in the [Style Guide](../../style-guide#naming-conventions)), but ideally it is something easy to write and remember that also relates to the data being stored.
+A variable is a named container for data. The name of the variable is up to you (take a look at naming guidelines in the [Style Guide](../../style-guide#naming-conventions)), but ideally, it should be easy to write and remember while also providing context for the data being stored.
 
-To declare a variable, start with the keyword `const` (for values that will not change) or `let` (for values that will change) and assign the value with `=`.
+To declare a variable, start with the keyword `const` (for values that will not change) or `let` (for values that may change) and assign the value using `=`.
 
 ```js
 const profName = "Eric"; // will never change

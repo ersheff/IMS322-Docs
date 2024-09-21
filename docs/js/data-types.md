@@ -1,10 +1,10 @@
 # Data Types
 
-Data stored in [variables](../variables) are always of a certain _type_. When operating on data in JavaScript, results will depend on the types of the operands (the variables on either side of the operator) used in the expression.
+Data stored in [variables](../variables) are always of a certain _type_. When operating on data in JavaScript, the results will depend on the types of the operands (the variables on either side of the operator) used in the expression.
 
-Given the prompt "add 40 and 2," the results are predictable because the operands 40 and 2 are both of the type _number_. However, a request to "add 40 and elephant" may not have an obvious response, because... "elephant" is obviously not a number.
+Given the prompt "add 40 and 2," the results are predictable because both operands, 40 and 2, are of the type _number_. However, a request to "add 40 and elephant" may not have an obvious result, because... "elephant" is obviously not a number.
 
-While it is important to be aware of these data types, you do not have to specify the type when declaring variables in JavaScript, which is required in some other languages. JavaScript is a _dynamically typed_ language, which means that types are automatically inferred based on the assigned value.
+While it is important to be aware of these data types, you do not have to specify the type when declaring variables in JavaScript (as you do in some other languages). JavaScript is a _dynamically typed_ language, meaning that types are automatically inferred based on the assigned value.
 
 There are 8 different data types in JavaScript:
 
@@ -17,11 +17,11 @@ There are 8 different data types in JavaScript:
 7. [BigInt](#bigint)
 8. [Symbol](#symbol)
 
-For this class, you will be working directly with the first four - _Number_, _String_, _Boolean_, and _Object_.
+For this class, you will be working primarily with the first four - _Number_, _String_, _Boolean_, and _Object_.
 
-You should also know about the _Null_ and _Undefined_ types since they may appear in error messages when troubleshooting.
+You should also be familiar with the _Null_ and _Undefined_ types, as they may appear in error messages during troubleshooting.
 
-The _BigInt_ and _Symbol_ types are a bit more esoteric and will likely not be relevant to your work in this class, though they are included below for comprehensiveness.
+The _BigInt_ and _Symbol_ types are a bit more esoteric and likely will not be relevant to your work in this class, but they are included below for completeness.
 
 ## Number
 
@@ -31,7 +31,7 @@ const myNumber = 42;
 
 ## String
 
-A _string_ is a sequence of one or more text characters. When declaring a variable that is intended to be a string, surround the value with double quotes, as seen below.
+A _string_ is a sequence of one or more text characters. When declaring a string variable, surround the value with double quotes, as seen below.
 
 ```js
 const myMessage = "Hello, my name is Eric.";
@@ -39,7 +39,7 @@ const myMessage = "Hello, my name is Eric.";
 
 ## Boolean
 
-The _boolean_ type has only 2 possible values - `true` or `false`. Since these values are not strings, they do not require double quotes around the value.
+The _boolean_ type has only 2 possible values: `true` or `false`. These values are not strings, so they do not require double quotes.
 
 ```js
 const isRaining = false;
@@ -49,7 +49,7 @@ const isSunny = true;
 
 ## Object
 
-An _object_ stores collections of data in _key:value_ pairs. Objects can be very complex and powerful, but a very basic example might describe the properties of an item, like a car or laptop. In this case, each _key_ on the left describes the category of the stored _value_ on the right.
+An _object_ stores collections of data in _key:value_ pairs. Objects can be very complex and powerful, but a simple example might describe the properties of an item, like a car or laptop. In this case, each _key_ on the left describes the category of the stored _value_ on the right.
 
 ```js
 const myLaptop = {
@@ -61,14 +61,14 @@ const myLaptop = {
 };
 ```
 
-Notice the following characteristics that are crucial for declaring objects:
+Notice the following characteristics, which are crucial for declaring objects:
 
 - The key:value pairs are enclosed by curly braces `{}`.
-- Each key is named, but they not require double quotes since they are not technically strings.
+- Keys are named, but they not require double quotes since they are not technically strings.
 - The key and value are separated by a colon `:`.
 - Each key:value pair is separared by a comma `,`.
 
-You can reference the individual values of an object using _dot notation_.
+You can reference individual values of an object using _dot notation_.
 
 ```js
 myLaptop.manufacturer; // returns "Apple"
@@ -93,7 +93,7 @@ console.log(myElement); // logs null
 
 ## Undefined
 
-_Undefined_ often occurs if a variable is declared but has not been assigned a value.
+_Undefined_ often occurs if a variable is declared but not assigned a value.
 
 ```js
 const myVariable;
@@ -103,7 +103,7 @@ console.log(myVariable); // logs "undefined"
 
 ## BigInt
 
-As the name suggests, the _BigInt_ type is used to store very large integer values. The standard number type is only accurate up to 15 digits, so BigInt is required for larger values. To declare a BigInt, add an `n` to the end of the value.
+As the name suggests, the _BigInt_ type is used to store very large integer values. The standard number type is accurate up to 15 digits, so BigInt is required for larger values. To declare a BigInt, add an `n` to the end of the value.
 
 ```js
 const largeNumber = 999999999999999; // 15 digits
@@ -130,7 +130,7 @@ const symbol2 = Symbol("hello");
 // symbol1 is not equal to symbol2
 ```
 
-Symbols are often used to prevent clashes between property names (the keys) in objects. They will likely not be useful for your work in this class nor appear in any example code.
+Symbols are often used to prevent clashes between property names (the keys) in objects. They likely will not be useful for your work in this class or appear in any example code.
 
 ## Example Code
 
