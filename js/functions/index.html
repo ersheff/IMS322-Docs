@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../data-types/">
+      
+      
+        <link rel="next" href="../operators/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -580,11 +586,195 @@
   
   
     <li class="md-nav__item">
-      <a href="../_introduction.md" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#declaring-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaring Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calling-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calling Functions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
   </span>
   
 
@@ -892,26 +1082,26 @@
 
 
 <h1 id="functions">Functions</h1>
-<p><strong>Functions</strong> are reusable blocks of code designed to perform a specific task or group of related tasks. You can accomplish a lot without writing your own functions, but they can help reduce redundancies and are crucial for some of the workflows in this class.</p>
+<p><strong>Functions</strong> are reusable blocks of code designed to perform a specific task or group of related tasks. While you can accomplish a lot without writing your own functions, they can help reduce redundancies and are crucial for some of the workflows in this class.</p>
 <h2 id="declaring-functions">Declaring Functions</h2>
-<p>To use a cooking analogy... think of the function writing process kind of like training a fellow cook on a recipe.</p>
-<p>First, you would need to define and teach them the individual steps in the process:</p>
+<p>To use a cooking analogy... think of writing a function kind of like training a fellow cook on a recipe.</p>
+<p>First, you would define and teach them the individual steps:</p>
 <ol>
 <li>Chop stuff.</li>
 <li>Sauté and simmer.</li>
 <li>Season to taste.</li>
 </ol>
 <p>Then, in the future, you could simply ask: <em>Can you please make some marinara sauce?</em></p>
-<p>Start your function declaration with the <code>function</code> keyword and a name (using the naming conventions from our <a href="../../style-guide#naming-conventions">Style Guide</a>), then follow with parentheses and curly braces. The individual steps of your function go inside of the curly braces.</p>
+<p>Start your function declaration with the <code>function</code> keyword, followed by a name (using the naming conventions from our <a href="../../style-guide#naming-conventions">Style Guide</a>), then parentheses and curly braces. The individual steps of your function go inside of the curly braces.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">makeSauce</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Chop stuff&quot;</span><span class="p">);</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Sauté and simmer&quot;</span><span class="p">);</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Season to taste&quot;</span><span class="p">);</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Function declarations can go anywhere in your JavaScript, though I recommend putting them at the bottom of your <code>script.js</code> file for consistency.</p>
+<p>Function declarations can be placed anywhere, though I recommend putting them at the bottom of your <code>script.js</code> file for consistency.</p>
 <h2 id="calling-functions">Calling Functions</h2>
-<p>Declaring a function does not actually run the code in the function. To execute a function, call it using the function name and parentheses:</p>
+<p>Declaring a function does not actually execute the code inside the function. To run a function, call it using the function name followed by parentheses:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">makeSauce</span><span class="p">();</span>
 </span></code></pre></div>
 <p><em>When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong> and then clicking the <strong>Console</strong> button in the CodePen editor.</em></p>

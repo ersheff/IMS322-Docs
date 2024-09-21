@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../using-the-console/">
+      
+      
+        <link rel="next" href="../../ref/introduction/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -580,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../_introduction.md" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -589,6 +595,142 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+      
     </li>
   
 
@@ -866,8 +1008,8 @@
 
 
 <h1 id="variables">Variables</h1>
-<p>A variable is a named container for data. The name of the variable is up to you (take a look at naming guidelines in the <a href="../../style-guide#naming-conventions">Style Guide</a>), but ideally it is something easy to write and remember that also relates to the data being stored.</p>
-<p>To declare a variable, start with the keyword <code>const</code> (for values that will not change) or <code>let</code> (for values that will change) and assign the value with <code>=</code>.</p>
+<p>A variable is a named container for data. The name of the variable is up to you (take a look at naming guidelines in the <a href="../../style-guide#naming-conventions">Style Guide</a>), but ideally, it should be easy to write and remember while also providing context for the data being stored.</p>
+<p>To declare a variable, start with the keyword <code>const</code> (for values that will not change) or <code>let</code> (for values that may change) and assign the value using <code>=</code>.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">profName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eric&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// will never change</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">profCity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Oxford&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// may change in the future</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2021</span><span class="p">;</span><span class="w"> </span><span class="c1">// terrible variable name, what is it for?</span>
