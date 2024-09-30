@@ -48,8 +48,10 @@ nav:
       - Variables: css/variables.md
   - JavaScript:
       - Introduction: js/introduction.md
+      - Class Toggling: js/class-toggling.md
       - Conditionals: js/conditionals.md
       - Data Types: js/data-types.md
+      - Event Listeners: js/event-listeners.md
       - Functions: js/functions.md
       - Operators: js/operators.md
       - Using the Console: js/using-the-console.md
