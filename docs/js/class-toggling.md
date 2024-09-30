@@ -39,7 +39,7 @@ function colorToggle() {
 }
 ```
 
-<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="qBgevNq" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="400" data-default-tab="js,result" data-slug-hash="qBgevNq" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/qBgevNq">
   Class Toggle 1 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -76,7 +76,7 @@ Typically, you wouldn't need to specify a height value for a `<p>` element, as t
 
 The rest of the HTML and JavaScript code is essentially the same as the previous example.
 
-<p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="WNPVmxL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="400" data-default-tab="js,result" data-slug-hash="WNPVmxL" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVmxL">
   Class Toggle 2 (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
