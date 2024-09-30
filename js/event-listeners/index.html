@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../data-types/">
+      
+      
+        <link rel="next" href="../functions/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -585,6 +591,27 @@
   
   <span class="md-ellipsis">
     Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-toggling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class Toggling
   </span>
   
 
@@ -631,6 +658,109 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Event Listeners
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Event Listeners
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-an-event-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding an Event Listener
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding an Event Listener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-declare-a-variable-in-javascript-to-reference-the-interactive-html-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Declare a variable in JavaScript to reference the interactive HTML element.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-write-a-function-that-defines-what-should-happen-when-the-interaction-occurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Write a function that defines what should happen when the interaction occurs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-an-event-listener-that-calls-the-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Add an event listener that calls the function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -995,9 +1125,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-declare-a-variable-to-reference-the-interactive-element" class="md-nav__link">
+  <a href="#step-1-declare-a-variable-in-javascript-to-reference-the-interactive-html-element" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Declare a variable to reference the interactive element
+      Step 1: Declare a variable in JavaScript to reference the interactive HTML element.
     </span>
   </a>
   
@@ -1042,35 +1172,36 @@
 
 
 <h1 id="event-listeners">Event Listeners</h1>
-<p>An <em>event</em> is a signal that something has happened in the browser. There are several triggers for <a href="https://developer.mozilla.org/en-US/docs/Web/Events">events</a>, some that occur automatically (e.g. the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">load</a> event fires when the page has finished loading), and others that occur in response to an interaction from the user (e.g. the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click</a> event fires when the user clicks on a page element). In this class, we will primarily be focussed on the latter category.</p>
-<p>In order to make something happen in response to an event, we need to attach an <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">event listener</a> to the interactive element in JavaScript.</p>
+<p>An <em>event</em> is a signal that something has happened in the browser. There are several triggers for <a href="https://developer.mozilla.org/en-US/docs/Web/Events">events</a>, some that occur automatically (e.g., the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">load</a> event fires when the page has finished loading), and others that occur in response to user interactions (e.g., the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click</a> event fires when the user clicks on a page element).</p>
+<p>To respond to an event, you can attach an <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">event listener</a> to the relevant HTML element in JavaScript.</p>
 <h2 id="adding-an-event-listener">Adding an Event Listener</h2>
-<p>As with many coding scenarios, there are multiple ways to approach browser-based interaction development. For consistency and simplicity, the recommended procedure for this class is as follows:</p>
+<p>The recommended procedure for this class is as follows:</p>
 <ol>
-<li>Declare a variable to reference the interactive element.</li>
+<li>Declare a variable in JavaScript to reference the interactive HTML element.</li>
 <li>Write a function that defines what should happen when the interaction occurs.</li>
-<li>Add an event listener that calls the function.</li>
+<li>Add an event listener that calls the function in response to the intended event.</li>
 </ol>
-<h3 id="step-1-declare-a-variable-to-reference-the-interactive-element">Step 1: Declare a variable to reference the interactive element</h3>
-<p>In addition to the <a href="data-types">data types</a> that we have already covered (number, string, boolean, etc.), a variable can also be assigned to an <em>HTML element</em>.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#my-button&quot;</span><span class="p">);</span>
+<h3 id="step-1-declare-a-variable-in-javascript-to-reference-the-interactive-html-element">Step 1: Declare a variable in JavaScript to reference the interactive HTML element.</h3>
+<p>When an HTML element is assigned to a variable using <code>document.querySelector()</code>, it is treated as an <a href="https://ersheff.github.io/IMS322-Docs/js/data-types/#object"><em>object</em> data type</a>. More specifically, it is a class of object called <em>HTMLElement</em>.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;my-button&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p>Notice that the argument of this method begins with <code>#</code>, which is the CSS selector for ids - this implies that the element we are trying to reference should have a matching <em>id</em> attribute.</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;my-button&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#my-button&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<p>Also notice that the naming convention for the id in HTML (and where it is used in <code>querySelector</code>) is <em>kebab-case</em>, while the variable name in JavaScript is <em>camelCase</em>. I recommend using the same words for both the id and the variable name, but styled appropriately (kebab-case or camelCase, based on location in code).</p>
+<p>Note that the naming convention for the <code>id</code> attribute in HTML (and how i's used in <code>querySelector</code>) is <em>kebab-case</em>, while the variable name in JavaScript is <em>camelCase</em>. Although they are the same words, they represent different things in different contexts. This is also a valid way to assign an HTML element to a variable:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">button1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#my-button&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>However, using the same words for both the <code>id</code> and the variable name (styled appropriately in kebab-case or camelCase), simplifies the process, as it reduces the number of names you need to create and remember.</p>
 <h3 id="step-2-write-a-function-that-defines-what-should-happen-when-the-interaction-occurs">Step 2: Write a function that defines what should happen when the interaction occurs</h3>
-<p>In this simple example, we will log the message "Button was clicked!"" to the console.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">wasClicked</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button was clicked!&quot;</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">wasClicked</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Button was clicked!&quot;</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="step-3-add-an-event-listener-that-calls-the-function">Step 3: Add an event listener that calls the function</h3>
-<p>The <em>event listener</em> should be added to the element that fires the desired event - in this case, <em>the element that the user interacts with</em>, which is a button. As previously mentioned, there are many different kinds of events that can be listened for - we will specifically be listening for the <em>click</em> event.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">myButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">wasClicked</span><span class="p">);</span>
+<p>The <em>event listener</em> should be added to <em>the element that fires the desired event</em> - in this case, the button that the user interacts with.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">myButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">wasClicked</span><span class="p">);</span>
 </span></code></pre></div>
-<p>Notice that this statement begins with the variable name that we created in step 1. The <code>addEventListener()</code> method is given 2 arguments: the event type to listen for (<code>"click"</code>), followed by the name of the function we created in step 2 (<code>wasClicked</code>).</p>
-<p>Click the button in the example below. Remember, you'll need to open the console in order to see the results.</p>
+<p>Notice that the statement begins with the variable name that we created in step 1. The <code>addEventListener()</code> method takes 2 arguments: the event type to listen for (<code>"click"</code>) and the name of the function we created in step 2 (<code>wasClicked</code>).</p>
+<p><em>When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong> and then clicking the <strong>Console</strong> button in the CodePen editor.</em></p>
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="qBvWqaG" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/qBvWqaG">
   Event Listener (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
