@@ -1,12 +1,13 @@
 # Operators
 
-In other examples, you have probably already seen two operators that have fairly obvious functions: `+` for addition and `=` for assigning values, as seen in the expression:
+In previous examples, you have likely encountered a few operators that have fairly obvious purposes:
 
 ```js
-let y = x + 10;
+const y = x + 10;
+const z = x - 1;
 ```
 
-Many other JavaScript operators are similarly self-explanatory, though there are a few useful ones that may require additional explanation.
+Many other JavaScript operators are similarly self-explanatory, though some useful ones may require additional explanation.
 
 ## Arithmetic Operators
 
@@ -17,21 +18,39 @@ The standard arithmetic operators are
 - Multiplication `*`
 - Division `/`
 
-Some other useful arithmetic operators in JavaScript include:
+Other useful arithmetic operators in JavaScript include:
 
 - Modulo `%` (returns the remainder of dividing two numbers)
-- Increment `++` (increases avalue by 1)
+- Increment `++` (increases a value by 1)
 - Decrement `--` (decreases a value by 1)
 
 ```js
-const x = 24 % 7; // x is 3
+let x = 24 % 7; // x is 3
 x++; // x is now 4
 x--; // x is now 3 again
 ```
 
+### Order of Precedence
+
+Remember **PEMDAS** from math class?
+
+1. **P**arentheses
+2. **E**xponents
+3. **M**ultiplication
+4. **D**ivision
+5. **A**ddition
+6. **S**ubtraction
+
+This same order of operator precedence applies in JavaScript, so be sure to construct your expressions appropriately.
+
+```js
+const notAverage = 5 + 10 + 15 / 3; // results in 20, which is NOT the average of 5, 10, and 15
+const actuallyAverage = (5 + 10 + 15) / 3; // results in 10, which IS the average of 5, 10, and 15
+```
+
 ## Assignment Operators
 
-Assignment operators execute an arithmetic operation and assignment in one step.
+Assignment operators execute an arithmetic operation and new value assignment in one step. _This will not work on variables declared with `const` since the original value is being changed._
 
 ```js
 let x = 7;
@@ -47,7 +66,7 @@ Other assignment operators include:
 
 ## String Concatenation
 
-When working with strings, `+` is the concatenation operator, joining strings together. String concatenation is useful for inserting variable values into longer messages.
+When working with strings, `+` is the concatenation operator, joining strings together. String concatenation is especially useful for inserting values into longer messages.
 
 ```js
 const myName = "Eric";

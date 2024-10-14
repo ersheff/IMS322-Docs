@@ -764,6 +764,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Arithmetic Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order-of-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Precedence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1106,6 +1121,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Arithmetic Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order-of-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Precedence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1142,10 +1172,11 @@
 
 
 <h1 id="operators">Operators</h1>
-<p>In other examples, you have probably already seen two operators that have fairly obvious functions: <code>+</code> for addition and <code>=</code> for assigning values, as seen in the expression:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span>
+<p>In previous examples, you have likely encountered a few operators that have fairly obvious purposes:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
 </span></code></pre></div>
-<p>Many other JavaScript operators are similarly self-explanatory, though there are a few useful ones that may require additional explanation.</p>
+<p>Many other JavaScript operators are similarly self-explanatory, though some useful ones may require additional explanation.</p>
 <h2 id="arithmetic-operators">Arithmetic Operators</h2>
 <p>The standard arithmetic operators are</p>
 <ul>
@@ -1154,20 +1185,34 @@
 <li>Multiplication <code>*</code></li>
 <li>Division <code>/</code></li>
 </ul>
-<p>Some other useful arithmetic operators in JavaScript include:</p>
+<p>Other useful arithmetic operators in JavaScript include:</p>
 <ul>
 <li>Modulo <code>%</code> (returns the remainder of dividing two numbers)</li>
-<li>Increment <code>++</code> (increases avalue by 1)</li>
+<li>Increment <code>++</code> (increases a value by 1)</li>
 <li>Decrement <code>--</code> (decreases a value by 1)</li>
 </ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">24</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is 3</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">24</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is 3</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">x</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is now 4</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">x</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is now 3 again</span>
 </span></code></pre></div>
+<h3 id="order-of-precedence">Order of Precedence</h3>
+<p>Remember <strong>PEMDAS</strong> from math class?</p>
+<ol>
+<li><strong>P</strong>arentheses</li>
+<li><strong>E</strong>xponents</li>
+<li><strong>M</strong>ultiplication</li>
+<li><strong>D</strong>ivision</li>
+<li><strong>A</strong>ddition</li>
+<li><strong>S</strong>ubtraction</li>
+</ol>
+<p>This same order of operator precedence applies in JavaScript, so be sure to construct your expressions appropriately.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">notAverage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">15</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// results in 20, which is NOT the average of 5, 10, and 15</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">actuallyAverage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">15</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// results in 10, which IS the average of 5, 10, and 15</span>
+</span></code></pre></div>
 <h2 id="assignment-operators">Assignment Operators</h2>
-<p>Assignment operators execute an arithmetic operation and assignment in one step.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">7</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is now 10</span>
+<p>Assignment operators execute an arithmetic operation and new value assignment in one step. <em>This will not work on variables declared with <code>const</code> since the original value is being changed.</em></p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">7</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// x is now 10</span>
 </span></code></pre></div>
 <p>Other assignment operators include:</p>
 <ul>
@@ -1177,10 +1222,10 @@
 <li>Remainder assignment <code>%=</code></li>
 </ul>
 <h2 id="string-concatenation">String Concatenation</h2>
-<p>When working with strings, <code>+</code> is the concatenation operator, joining strings together. String concatenation is useful for inserting variable values into longer messages.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eric&quot;</span><span class="p">;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">welcomeMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Welcome, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">myName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">welcomeMessage</span><span class="p">);</span><span class="w"> </span><span class="c1">// logs &quot;Welcome, Eric.&quot; to the console</span>
+<p>When working with strings, <code>+</code> is the concatenation operator, joining strings together. String concatenation is especially useful for inserting values into longer messages.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eric&quot;</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">welcomeMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Welcome, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">myName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">welcomeMessage</span><span class="p">);</span><span class="w"> </span><span class="c1">// logs &quot;Welcome, Eric.&quot; to the console</span>
 </span></code></pre></div>
 <p><em>When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking <strong>Edit On CodePen</strong> and then clicking the <strong>Console</strong> button in the CodePen editor.</em></p>
 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="RwzgYXB" data-pen-title="Operators 1 (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
