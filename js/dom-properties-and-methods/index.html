@@ -1190,28 +1190,20 @@
 
 <p>The Document Object Model (DOM) is the "representation of the objects that comprise the structure and content of a document on the web." It represents the page in a way that programs, like JavaScript, can manipulate the document structure, style, and content.</p>
 <p>The DOM defines:</p>
-<ol>
-<li>HTML elements <em>as objects</em> (i.e., how an HTML element is represented when assigned to a variable).</li>
-</ol>
+<p><strong>HTML elements <em>as objects</em></strong> (i.e., how an HTML element is represented when assigned to a variable).</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mainHeading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#main-heading&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<ol>
-<li>The <em>properties</em> of HTML element objects, which are similar to attributes in HTML.</li>
-</ol>
+<p><strong>The <em>properties</em> of HTML element objects</strong>, which are similar to attributes in HTML.</p>
 <p>Properties can be set:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">headshotImage</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;images/headshot.webp&quot;</span><span class="p">;</span>
 </span></code></pre></div>
 <p>Properties can also be read:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sliderInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
 </span></code></pre></div>
-<ol>
-<li>The <em>methods</em> (actions) that can be performed on or by HTML element objects. Methods are like functions defined within an object (notice that they have parentheses). Many (but not all) methods require arguments inside the <code>()</code>.</li>
-</ol>
+<p><strong>The <em>methods</em> (actions) that can be performed on or by HTML element objects.</strong> Methods are like functions defined within an object (notice that they have parentheses). Many (but not all) methods require arguments inside the <code>()</code>.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">primaryButton</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s2">&quot;active&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<ol>
-<li>The <em>events</em> that can be triggered by HTML elements.</li>
-</ol>
+<p><strong>The <em>events</em> that can be triggered by HTML elements.</strong></p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">primaryButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">toggleState</span><span class="p">);</span>
 </span></code></pre></div>
 <h2 id="getting-started-with-properties">Getting Started with Properties</h2>
