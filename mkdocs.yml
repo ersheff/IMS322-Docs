@@ -51,6 +51,7 @@ nav:
       - Class Toggling: js/class-toggling.md
       - Conditionals: js/conditionals.md
       - Data Types: js/data-types.md
+      - DOM Properties and Methods: js/dom-properties-and-methods.md
       - Event Listeners: js/event-listeners.md
       - Functions: js/functions.md
       - Operators: js/operators.md
