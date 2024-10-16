@@ -16,7 +16,7 @@
     
     
       
-        <title>Basic DOM Manipulation - IMS322 Docs</title>
+        <title>DOM Properties and Methods - IMS322 Docs</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic DOM Manipulation
+              DOM Properties and Methods
             
           </span>
         </div>
@@ -1044,9 +1044,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#values" class="md-nav__link">
+  <a href="#value" class="md-nav__link">
     <span class="md-ellipsis">
-      Values
+      value
     </span>
   </a>
   
@@ -1081,36 +1081,38 @@
                   
 
 
-  <h1>Basic DOM Manipulation</h1>
+  <h1>DOM Properties and Methods</h1>
 
-<p>Although JavaScript was designed as the programming language of the web, HTML and JavaScript are different languages. JavaScript cannot understand HTML the way that it is written.</p>
-<p>For example, this is not valid JavaScript:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">mainHeading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Welcome</span><span class="o">&lt;</span><span class="err">/h1&gt;;</span>
-</span></code></pre></div>
-<p>The Document Object Model, or DOM, is the "representation of the objects that comprise the structure and content of a document on the web." You can think of the DOM as a translation of HTML that JavaScript can understand. It defines:</p>
+<p>The Document Object Model (DOM) is the "representation of the objects that comprise the structure and content of a document on the web." It represents the page in a way that programs, like JavaScript, can manipulate the document structure, style, and content.</p>
+<p>The DOM defines:</p>
 <ol>
-<li>The HTML elements as objects (the way an HTML element is treated when assigned to a variable).</li>
+<li>HTML elements <em>as objects</em> (i.e., how an HTML element is represented when assigned to a variable).</li>
 </ol>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">mainHeading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#main-heading&quot;</span><span class="p">);</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mainHeading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#main-heading&quot;</span><span class="p">);</span>
 </span></code></pre></div>
 <ol>
-<li>The properties (values or attributes) of HTML elements. Properties can typically be recognized because they appear after a variable name, separated by a <code>.</code></li>
+<li>The <em>properties</em> of HTML element objects, which are similar to attributes in HTML.</li>
 </ol>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">headshotImage</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;images/headshot.webp&quot;</span><span class="p">;</span>
+<p>Properties can be set:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">headshotImage</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;images/headshot.webp&quot;</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Properties can also be read:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sliderInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
 </span></code></pre></div>
 <ol>
-<li>The methods (actions) that can be performed on or by HTML elements. Methods can typically be recognized because they appear after a variable name, separated by a <code>.</code>, with <code>()</code> at the end. Many (but not all) methods require an argument inside the <code>()</code> to be passed to the method.</li>
+<li>The <em>methods</em> (actions) that can be performed on or by HTML element objects. Methods are like functions defined within an object (notice that they have parentheses). Many (but not all) methods require arguments inside the <code>()</code>.</li>
 </ol>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">primaryButton</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s2">&quot;active&quot;</span><span class="p">);</span>
 </span></code></pre></div>
 <ol>
-<li>The events that can be fired by HTML elements.</li>
+<li>The <em>events</em> that can be triggered by HTML elements.</li>
 </ol>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">primaryButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">toggleState</span><span class="p">);</span>
 </span></code></pre></div>
 <h2 id="getting-started-with-properties">Getting Started with Properties</h2>
+<p>Here are some common examples of setting and reading properties in JavaScript.</p>
 <h3 id="innertext">innerText</h3>
-<p>To change the text displayed in an HTML element from JavaScript, assign the <code>innerText</code> property to the desired value:</p>
+<p>To change the text displayed in an HTML element via JavaScript, assign a value to the <code>innerText</code> property:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">element</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello!&quot;</span><span class="p">;</span>
 </span></code></pre></div>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poGMYEX" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -1119,16 +1121,16 @@
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-<h3 id="values">Values</h3>
-<p>Some HTML elements, notably <code>&lt;input&gt;</code>, have a value attribute which can be read or assigned as a property in JavaScript.</p>
-<p>Take a look at the 4 sliders below. Each one is give a different initial value attribute in the HTML, which is why they all start at different positions (sliders have a range from 0 to 100 by default).</p>
+<h3 id="value">value</h3>
+<p><code>&lt;input&gt;</code> elements have a <code>value</code> attribute that can be read or assigned in JavaScript.</p>
+<p>In the example below, four sliders each have a different initial value set in the HTML (as an attribute), which is why they start at different positions (sliders default to a range of 0 to 100).</p>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJdKqbw" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/OJdKqbw">
   Input Values (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-<p>These values can be read in JavaScript (e.g. in response to changes to the slider made by the user), but they can also be set from JavaScript.</p>
+<p>These values can be read in JavaScript by listening for the <code>input</code> event (e.g., in response to user ineraction), or set programmatically.</p>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abXeMBZ" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/abXeMBZ">
   Getting and Setting Values (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
@@ -1136,7 +1138,7 @@
 </p>
 
 <h2 id="getting-started-with-methods">Getting Started with Methods</h2>
-<p>Some methods - like <code>document.querySelector()</code>, <code>console.log()</code>, <code>.addEventListener()</code>, and <code>classList.toggle()</code> - get used so frequently that they become second nature. Sometimes you may need to reference online documentation in order to discover the methods (and properties and events) associated with an object. For example, the <code>play()</code> method is mentioned in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#basic_usage">Basic Usage</a> section of the MDN Web Docs article on HTML Audio Elements.</p>
+<p>Some methods - like <code>document.querySelector()</code>, <code>console.log()</code>, <code>.addEventListener()</code>, and <code>classList.toggle()</code> - are used so frequently that they become second nature. At times, you might need to reference online documentation to explore more methods (or properties and events) associated with an object. For example, the <code>play()</code> method is described in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#basic_usage">Basic Usage</a> section of the MDN Web Docs article on HTML Audio Elements.</p>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYPGjPy" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/vYPGjPy">
   Audio Element Methods (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
