@@ -54,6 +54,8 @@ nav:
       - DOM Properties and Methods: js/dom-properties-and-methods.md
       - Event Listeners: js/event-listeners.md
       - Functions: js/functions.md
+      - More Input Types: js/more-input-types.md
+      - Manipulating Style Properties: js/manipulating-style-properties.md
       - Operators: js/operators.md
       - Using the Console: js/using-the-console.md
       - Variables: js/variables.md

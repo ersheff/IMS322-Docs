@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../functions/">
+      
+      
+        <link rel="next" href="../manipulating-style-properties/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>More Controls - IMS322 Docs</title>
+        <title>More Input Types - IMS322 Docs</title>
       
     
     
@@ -104,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              More Controls
+              More Input Types
             
           </span>
         </div>
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -711,6 +717,111 @@
   
   <span class="md-ellipsis">
     Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    More Input Types
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    More Input Types
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#selection-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Controls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Controls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entry-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entry Controls
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manipulating-style-properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipulating Style Properties
   </span>
   
 
@@ -1087,19 +1198,20 @@
                   
 
 
-  <h1>More Controls</h1>
+  <h1>More Input Types</h1>
 
-<p>Buttons are the simplest form of control or input type. They present only one choice: to click or not to click, no other information or decision-making required.</p>
-<p>There are many HTML input types that vary in their complexity and intended application. Whenever possible, the type of input presented to the user should be the best fit for the information being collected. For example, a generic text input field does not provide a built-in way to provide a list of predetermined choices, while a dropdown menu or group of radio buttons is impractical for a very large number of options.</p>
-<p>This page provides an overview of some commonly used input types. A full reference for all valid input types can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">here</a>.</p>
+<p>Buttons are the simplest form of control or input type. They present only one choice: to click or not to click, with no other information or decision-making required.</p>
+<p>There are many other HTML input types and input-like elements that vary in complexity and intended application. Whenever possible, the type of input presented to the user should be the best fit for the information being collected.</p>
+<p>This page provides an overview of some commonly used input types. A full reference for all valid input types can be found here.</p>
+<p>In each of the examples below, <code>click</code>, <code>change</code>, or <code>input</code> event listeners are used to gather values.</p>
 <h2 id="selection-controls">Selection Controls</h2>
-<p>A selection control allows the user to choose from a group of predetermined choices. The type of selection control presented in the example below, radio buttons, are typically best for multiple-choice style questions in which only one choice can be selected at a time.</p>
+<p>A selection control allows the user to choose from a group of predetermined choices. The selection control presented in the example below, radio buttons, is typically best for multiple-choice style questions in which only one choice can be selected at a time.</p>
 <p>Some important things to note about radio buttons:</p>
 <ul>
-<li>The <code>name</code> attribute given to the radio buttons is what groups them together so that only one can be selected at a time.</li>
-<li>Each radio button is paired with a <code>&lt;label&gt;</code> element to provide text instructions or descriptions. The <code>for</code> attribute of each <code>&lt;label&gt;</code> should be the same as the <code>id</code> of the corresponding radio button.</li>
-<li>The <code>value</code> attribute is should be gathered in JavaScript. It does not need to be the same as the <code>&lt;label&gt;</code> text.</li>
-<li>Since there are multiple radio buttons in a set, it can be a tricky to find the value of a checked radio button in JavaScript, especially when used with a single submit button. The recommendation is to use <code>document.querySelector("input[type='radio']:checked")</code>.</li>
+<li>The name attribute given to the radio buttons groups them together so that only one can be selected at a time.</li>
+<li>Each radio button is paired with a <code>&lt;label&gt;</code> element to provide instructions. The <code>for</code> attribute of each <code>&lt;label&gt;</code> should match the <code>id</code> of the corresponding radio button.</li>
+<li>The <code>value</code> attribute should be gathered in JavaScript. It does not need to be the same as the <code>&lt;label&gt;</code> text.</li>
+<li>Since there are multiple radio buttons in a set, each with its own <code>id</code>, it can be a tricky to find the value of a checked radio button in JavaScript. The recommendation is to use <code>document.querySelector("input[type='radio']:checked")</code> paired with a submit button.</li>
 </ul>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWGrNgo" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/XWGrNgo">
@@ -1111,8 +1223,8 @@
 <p>List controls allow users to select from a small set of text strings, each representing a command, object, or attribute. The dropdown menu in the example below is created using <code>&lt;select&gt;</code> tags instead of <code>&lt;input&gt;</code> tags. Each item in the dropdown menu is created by adding <code>&lt;option&gt;</code> elements as children.</p>
 <p>Some important things to note about <code>&lt;select&gt;</code> dropdown menus:</p>
 <ul>
-<li>Like radio buttons, the <code>value</code> attribute is what will typically be gathered in your JavaScript. This does not need to be the same as the displayed text.</li>
-<li>It is recommended to put instructions in the first <code>&lt;option&gt;</code> with an empty <code>value</code> since it will be the first thing the user sees by default. and force them to make a selection.</li>
+<li>Like radio buttons, the <code>value</code> attribute is what will be gathered in your JavaScript. This does not need to match the displayed text.</li>
+<li>It is recommended to put instructions in the first <code>&lt;option&gt;</code> with an empty <code>value</code>, as this will be the first thing the user sees by default. This will also prompt the user to make a selection.</li>
 </ul>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyrbOzP" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/dyrbOzP">
@@ -1121,8 +1233,8 @@
 </p>
 
 <h2 id="entry-controls">Entry Controls</h2>
-<p>Entry controls enable users to supply their own value. The most basic entry control is the <code>&lt;input&gt;</code> element with type attribute <code>text</code>. However, there are other entry control types that may be better suited to different types of data. For example, the <code>email</code> type provides an easy way to check for valid email address formatting, while the <code>number</code> type adds increment and decrement buttons and minimum and maximum attributes.</p>
-<p>The <code>placeholder</code> attribute of entry controls is also very useful. Placeholder text can provide instructions or hints without the need for a separate <code>&lt;label&gt;</code> element, which can reduce clutter.</p>
+<p>Entry controls enable users to supply their own value. The most basic entry control is the <code>&lt;input&gt;</code> element with type attribute <code>text</code> (the default). However, there are other entry control types that may be better suited to certain data types. For example, the <code>email</code> type provides a simple way to check for valid email address formatting, while the <code>number</code> type includes increment and decrement buttons, as well as minimum and maximum attributes.</p>
+<p>The <code>placeholder</code> attribute of entry controls is also very useful. Placeholder text can provide sample values or hints when the <code>&lt;label&gt;</code> alone is not sufficient.</p>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLwBVoE" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/yLwBVoE">
   Entry Controls (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
