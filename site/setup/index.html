@@ -1655,30 +1655,28 @@
 </figure>
 <ul>
 <li>
-<p>Some assignments in VS Code will have 2 stages: an initial draft, followed by a final submission. We will manage these stages by using different "branches" on GitHub. This way, you can submit the assignment multiple times without needing to create multiple repositories.</p>
+<p>Some assignments in VS Code will have 2 stages: a draft followed by a final submission. We will manage these stages by using different "branches" on GitHub. This approach allows you to submit the assignment multiple times without needing to create multiple repositories.</p>
 <ul>
-<li>By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the branch used for your final submission. Do not make any changes in the main branch until you are finished with your draft!</li>
-<li>The name of the branch that you are currently working in will always be visible in the <strong>Source Control Checkout</strong> button in the lower-left corner (part of the <strong>Status Bar</strong>).</li>
-<li>When starting an assignment that has a draft stage, the first thing that you should do after accepting and cloning the assignment is click on the <strong>Source Control Checkout</strong> button. This will open a menu for managing different branches. Choose <strong>Create New Branch...</strong> and name it "draft." The draft branch will automatically include all of the files from the main branch. Then, in the <strong>Source Control</strong> panel, click <strong>Publish Branch</strong>. You should stage, commit, and sync everything as usual in the draft branch before switching over to main (described below).</li>
-<li>When you have finished your draft and are ready to start working on your final submission, you will need to "merge" everything from the draft branch into the main branch. To do so, switch to the main branch by clicking the <strong>Source Control Checkout</strong> button and choosing <em>main</em> from the menu. Then, in the <strong>Source Control</strong> panel, click the 3-dot button to open an action menu and choose <strong>Branch</strong> &gt; <strong>Merge...</strong> When prompted to choose the branch to merge from, choose <strong>draft</strong>.</li>
-<li>Merge conflicts may occur if changes are made in both the main and draft branches before merging. VS Code will highlight the conflicts that need to be resolved, but this can be a challenging process for beginners. Ideally, we will avoid merge conflicts altogether, but I recommend scheduling an office hours appointment if you run into this issue.</li>
+<li>By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the only branch where you write code.</li>
+<li>When you are ready to submit a draft, you will create a "draft" branch on GitHub. To do this, locate your repository on GitHub and click on the branch dropdown. Then, enter the word "draft" and click "Create branch <em>draft</em> from <em>main</em>".</li>
 </ul>
 </li>
 </ul>
 <figure>
-  <img alt="Status Bar: Source Control Checkout" src="../assets/source-control-checkout.webp" width="400" />
-  <figcaption>Status Bar: Source Control Checkout button</figcaption>
+  <img alt="Branch Dropdown" src="../assets/create-branch-text.webp" width="300" />
+  <figcaption>Branch Dropdown</figcaption>
 </figure>
 <h3 id="committing-and-submitting-vs-code-assignments">Committing and Submitting VS Code Assignments</h3>
-<p><em>These steps apply to both the draft (draft branch) and final (main branch) stages. It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
+<p><em>It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
 <ol>
 <li>Open the <strong>Source Control</strong> panel in VS Code.</li>
 <li>Stage all changes by clicking the <strong>+</strong> next to <strong>Changes</strong>.</li>
 <li>Enter a commit message and click the <strong>Commit</strong> button (use "finished" for your final commit).</li>
 <li>The <strong>Commit</strong> button should change to a <strong>Sync Changes</strong> button. Click this to finish syncing the latest changes to your online GitHub repository.</li>
 <li>Find your repository on GitHub.</li>
+<li><em>Draft only:</em> Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.</li>
 <li>Go to the <strong>Settings</strong> tab within the repository and navigate to the <strong>Pages</strong> section.</li>
-<li>Under <strong>Branch</strong>, choose the appropriate branch (draft or main) and click <strong>Save</strong>.</li>
+<li>Under <strong>Branch</strong>, select the appropriate branch to publish (draft or main) and click <strong>Save</strong>.</li>
 <li>After a few moments, if you refresh the page, there should now be a URL near the top next to a <strong>Visit Site</strong> button. If you click this button, you should see your site open in a new window.</li>
 <li>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click <strong>Submit Assignment</strong>.</li>
 </ol>
