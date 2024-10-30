@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../event-listeners/">
+      
+      
+        <link rel="next" href="../functions/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Xform values - IMS322 Docs</title>
+        <title>Forms - IMS322 Docs</title>
       
     
     
@@ -67,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#input-validation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Xform values
+              Forms
             
           </span>
         </div>
@@ -537,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -561,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -698,6 +709,72 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Forms
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Forms
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Validation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -722,11 +799,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../more-input-types/" class="md-nav__link">
+      <a href="../manipulating-style-properties/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    More Input Types
+    Manipulating Style Properties
   </span>
   
 
@@ -743,11 +820,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../manipulating-style-properties/" class="md-nav__link">
+      <a href="../modals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Manipulating Style Properties
+    Modals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more-input-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Input Types
   </span>
   
 
@@ -1076,6 +1174,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Validation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1089,7 +1204,26 @@
                   
 
 
-  <h1>Xform values</h1>
+  <h1>Forms</h1>
+
+<p>The <code>&lt;form&gt;</code> element is used to collect user data with one or more inputs and either process the values directly in JavaScript or submit the data to a server. Grouping multiple inputs in a <code>&lt;form&gt;</code> is beneficial because it enables access to all values in a single dataset using a single "submit" event (often triggered with an <code>&lt;input type="submit"&gt;</code>).</p>
+<p>Adding the <code>name</code> attribute to inputs is crucial when working with forms, as it allows access to individual values as properties of the form.</p>
+<p>In the examples below, you'll notice that while values are correctly logged to the console upon form submission, the page reloads with a 404 error. This happens because the form's default action is to send data to a server, and the error occurs because we have not set up a server to receive the data. <em>This is expected behavior</em> and will not be an issue once we move to placing forms within modals in later readings and examples.</p>
+<p class="codepen" data-height="400" data-default-tab="js,result" data-slug-hash="abeGoQp" data-pen-title="Form Submission (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/abeGoQp">
+  Form Submission (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<h2 id="input-validation">Input Validation</h2>
+<p>Validating inputs ensures that the data entered by the user matches the expected format. There are many ways to apporach input validation with varying levels of complexity, but the most direct and simlple implementation is to use the input <code>type</code> attribute that best fits the requirements, along with the <code>required</code> attribute to prevent empty values.</p>
+<p>You can read more about the various <code>type</code> attributes for inputs <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">here</a>.</p>
+<p class="codepen" data-height="400" data-default-tab="js,result" data-slug-hash="WNVJNbe" data-pen-title="Form Submission (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNVJNbe">
+  Form Submission (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -1097,7 +1231,8 @@
 
 
 
-
+  
+  
 
 
 
