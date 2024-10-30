@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../manipulating-style-properties/">
+      
+      
+        <link rel="next" href="../more-input-types/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -706,6 +712,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../functions/" class="md-nav__link">
         
   
@@ -727,11 +754,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../more-input-types/" class="md-nav__link">
+      <a href="../manipulating-style-properties/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    More Input Types
+    Manipulating Style Properties
   </span>
   
 
@@ -745,14 +772,80 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../manipulating-style-properties/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modals
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Manipulating Style Properties
+    Modals
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-dialog-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      The &lt;dialog&gt; element
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more-input-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Input Types
   </span>
   
 
@@ -1113,11 +1206,11 @@
 
   <h1>Modals</h1>
 
-<p>A modal is a pop-up that appears on top of the current page and takes priority, meaning that it prevents interaction with the underlying content until it is submitted or closed.</p>
+<p>A modal is a pop-up that appears on top of the current page, taking priority and preventing interaction with underlying content in the <code>&lt;body&gt;</code> until it is either submitted or closed.</p>
 <h2 id="the-dialog-element">The <code>&lt;dialog&gt;</code> element</h2>
-<p>Designing and implementing modals recently became much easier with changes to the standard <code>&lt;dialog&gt;</code> element. It now includes default properties and methods that make it fairly easy to use and customize, especially for gathering user-submitted information.</p>
-<p>The <code>&lt;dialog&gt;</code> element can be styled like any other element, including <code>border</code>, <code>background-color</code>, <code>box-shadow</code>, and more. The <code>::backdrop</code> pseudo-element selects the backdrop displayed behind a modal while it is open. Modals can be displayed and dismissed using the <code>showModal()</code> and <code>close()</code> methods, respectively.</p>
-<p>Typically, <code>&lt;form&gt;</code> elements have a default behavior when submitted that requires additional server infrastructure to receive and process data - this is why you may have seen an error when clicking "Submit" in previous reading examples. However, when put in a modal with the attribute <code>method="dialog"</code>, the default <code>&lt;form&gt;</code> behavior is blocked, values from inputs in the form can be referenced locally with JavaScript, and the modal will close automatically upon submission.</p>
+<p>Designing and implementing modals is straightforward with the <code>&lt;dialog&gt;</code> element. It includes attributes, properties, and methods that make it easy to use and customize as a modal, especially for collecting user-submitted information.</p>
+<p>The <code>&lt;dialog&gt;</code> element can be styled like any other HTML element using properties like <code>border</code>, <code>background-color</code>, <code>box-shadow</code>, and more. Modals can be displayed and dismissed using the <code>showModal()</code> and <code>close()</code> methods, respectively.</p>
+<p>When a <code>&lt;form&gt;</code> is put in a modal and given the attribute <code>method="dialog"</code>, the modal will close automatically upon form submission and fire a "submit" event.</p>
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYPByZL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/vYPByZL">
   Modals (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
