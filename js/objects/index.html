@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../more-input-types/">
+      
+      
+        <link rel="next" href="../operators/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -799,6 +805,37 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Objects
+  </span>
+  
+
+      </a>
+      
     </li>
   
 
@@ -1139,40 +1176,35 @@
 
 
 <h1 id="objects">Objects</h1>
-<p>We recently learned that <a href="arrays">arrays</a> are useful for storing sequences of related data, such as GPS coordinates, enrollment figures, names of the months in a year, etc.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">miamiCoordinates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">39.511047326918174</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">84.72907894440365</span><span class="p">];</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">miamiEnrollment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">21627</span><span class="p">,</span><span class="w"> </span><span class="mf">20613</span><span class="p">,</span><span class="w"> </span><span class="mf">20784</span><span class="p">,</span><span class="w"> </span><span class="mf">20384</span><span class="p">,</span><span class="w"> </span><span class="mf">20036</span><span class="p">];</span>
+<p>When working with HTML elements in JavaScript, you are often using or changing the object's <em>properties</em> and <em>methods</em>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// example properties</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">textDisplay</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello!&quot;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">headshotImage</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;images/headshot.webp&quot;</span><span class="p">;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">months</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;January&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;February&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;March&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;April&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;May&quot;</span><span class="p">];</span><span class="w"> </span><span class="c1">// etc</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// example methods</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">audioFile</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">compass</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setProperty</span><span class="p">(</span><span class="s2">&quot;font-size&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2rem&quot;</span><span class="p">);</span>
 </span></code></pre></div>
-<p>The type of data and the relationship that those items have to each other suggest that an array is a suitable way to organize and store those items. They fall into a series and can be easily referenced using only the index number (e.g. <code>months[0]</code> for the first month of the year, <code>months[1]</code> for the second month of the year, etc).</p>
-<p>You may want to store multiple pieces of data about a subject that don't necessarily belong in a sequence. For example, general information about Miami University looks kind of strange in an array.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">miamiOh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1809</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Oxford, OH&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Division I&quot;</span><span class="p">];</span>
+<p>Remember that <em>properties</em> are charactertistcs about the object (often corresponding to HTML attrbutes), while <em>methods</em> are actions that the object can perform.</p>
+<p>You can also define your own objects to organize and provide context for data about something. For example, if you were describing Miami University, you might want to include information about the type of institution, when it was established, and where it is located. The <em>object</em> data type stores these as <em>key/value</em> pairs.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// format is key: value</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">miamiOh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// type is key, &quot;Public&quot; is value</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nx">established</span><span class="o">:</span><span class="w"> </span><span class="mf">1809</span><span class="p">,</span><span class="w"> </span><span class="c1">// established is key, 1809 is value</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">location</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Oxford, OH&quot;</span><span class="w"> </span><span class="c1">// location is key, &quot;Oxford, OH&quot; is value</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">};</span>
 </span></code></pre></div>
-<p>While you can likely guess what each item in that array means, it isn't the most obvious or meaningful way to store that specific information. Also, it can become confusing to refer to non-sequential data by index number.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">miamiOh</span><span class="p">[</span><span class="mf">2</span><span class="p">];</span><span class="w"> </span><span class="c1">// returns &quot;Oxford, OH&quot; - but what does that mean?</span>
+<p>The key provides context for the values. You can reference the individual values of an object using <em>dot notation</em>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">miamiOh</span><span class="p">.</span><span class="nx">type</span><span class="p">;</span><span class="w"> </span><span class="c1">// returns &quot;Public&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">miamiOh</span><span class="p">.</span><span class="nx">established</span><span class="p">;</span><span class="w"> </span><span class="c1">// returns 1809</span>
 </span></code></pre></div>
-<p>For cases like this, the <em>object</em> data type is a better fit. Objects store data as <em>key/value</em> pairs.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// format is key: value</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">miamiOh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// type is key, &quot;Public&quot; is value</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nx">established</span><span class="o">:</span><span class="w"> </span><span class="mf">1809</span><span class="p">,</span><span class="w"> </span><span class="c1">// established is key, 1809 is value</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nx">location</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Oxford, OH&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// location is key, &quot;Oxford, OH&quot; is value</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nx">ncaa</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Division I&quot;</span><span class="w"> </span><span class="c1">// ncaa is key, &quot;Division I&quot; is value</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">};</span>
-</span></code></pre></div>
-<p>The key provides context for the values in a way that the generic index numbers of an array do not. You can reference the individual values of an object using <em>dot notation</em>.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">miamiOh</span><span class="p">.</span><span class="nx">type</span><span class="p">;</span><span class="w"> </span><span class="c1">// returns &quot;Public&quot;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">miamiOh</span><span class="p">.</span><span class="nx">established</span><span class="p">;</span><span class="w"> </span><span class="c1">// returns 1809</span>
-</span></code></pre></div>
-<p>You have already been interfacing with objects in the JavaScript code that you've been developing. Essentially, any time you have written something using dot notation, that is a reference to a property (characteristic) or method (action it can perform) of an object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// the querySelector() method of the document object</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;text-input&quot;</span><span class="p">);</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">// the innerText property of the textInput object</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nx">textInput</span><span class="p">.</span><span class="nx">innerText</span><span class="p">;</span>
+<p>You have already been using dot notation to interface with objects in JavaScript.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// the querySelector() method of the document object</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;text-input&quot;</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">// the innerText property of the textInput object</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nx">textInput</span><span class="p">.</span><span class="nx">innerText</span><span class="p">;</span>
 </span></code></pre></div>
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="vYPByeL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/vYPByeL">
