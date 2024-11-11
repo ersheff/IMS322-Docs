@@ -48,11 +48,13 @@ nav:
       - Variables: css/variables.md
   - JavaScript:
       - Introduction: js/introduction.md
+      - Arrays: js/arrays.md
       - Class Toggling: js/class-toggling.md
       - Conditionals: js/conditionals.md
       - Data Types: js/data-types.md
       - DOM Properties and Methods: js/dom-properties-and-methods.md
       - Event Listeners: js/event-listeners.md
+      - For Loops: js/for-loops.md
       - Forms: js/forms.md
       - Functions: js/functions.md
       - Manipulating Style Properties: js/manipulating-style-properties.md

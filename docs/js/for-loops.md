@@ -1,8 +1,6 @@
----
-title: For Loops
----
+# For Loops
 
-For loops are used to execute a block of code a number of times. It is built using 3 expressions:
+For loops are used to execute a block of code a specified number of times. They are structured using 3 expressions:
 
 ```js
 for (expression 1; expression 2; expression 3) {
@@ -10,21 +8,26 @@ for (expression 1; expression 2; expression 3) {
 }
 ```
 
-- Expression 1 is executed (one time) before the execution of the code block. Typically, this is used to initialize a counter variable at 0. Conventionally, this variable is named `i`.
-- Expression 2 defines the condition for executing the code block. Essentially, it determines the number of times the code block will be executed.
-- Expression 3 is executed (every time) after the code block has been executed. This is typically written as `i++` to increment the counter variable.
+1. Expression 1 is executed once before code block in the curly brackets runs. Typically, this is used to initialize a counter variable, usually named `i`, and set to `0`.
+2. Expression 2 defines the condition for running the code block. Essentially, it determines the how many times the code block will execute.
+3. Expression 3 runs after each execution of the code block, typically written as `i++` to increment the counter variable.
+
 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="OJGwpoJ" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/OJGwpoJ">
   For Loops (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
 The counter variable can be used in arithmetic expressions like any other number.
+
 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="eYojvPG" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/eYojvPG">
   For Loops Accumulator (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
 The counter variable can be also be used as an index number to lookup each value in an array.
+
 <p class="codepen" data-height="400" data-default-tab="js" data-slug-hash="KKYBWxN" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/KKYBWxN">
   For Loops and Arrays (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
@@ -33,7 +36,7 @@ The counter variable can be also be used as an index number to lookup each value
 
 # For Of Loops
 
-Arrays are an example of something that is _iterable_. This means that we can iterate over all of the values of an array using a `for...of` loop.
+Arrays are an example of something that is _iterable_, meaning that we can loop over each value (iterate) using a special `for...of` loop.
 
 ```js
 for (const variable of iterable) {
@@ -41,21 +44,21 @@ for (const variable of iterable) {
 }
 ```
 
-In the example presented above, the placeholder `iterable` would be replaced by the source of the sequence e.g. the variable name of your array. The placeholder `variable` becomes a temporary variable within the loop that receives a new value from the sequence on each iteration.
+In this structure, the placeholder `iterable` is replaced by the source of the sequence (the name of the array). The placeholder `variable` becomes a temporary variable within the loop, holding a new value from the sequence in each iteration.
 
-This can be a little tricky to picture mentally, so let's walk though this example:
+To clarify, let's go through an example:
 
 ```js
-const myArray = [12, 34, 56, 78];
+const quickArray = [12, 34, 56, 78];
 
-for (const m of myArray) {
-  console.log(m);
+for (const q of myArray) {
+  console.log(q);
 }
 ```
 
-In this case, the source of the sequence is the variable `myArray`. The `for of` loop will run 4 times because there are 4 values in the `myArray` sequence. Each time the loop runs, `m` will represent the value of each successive value in the array, starting at `12`, then `34`, then `56`, etc.
+Here, `quickArray` is the source. The `for of` loop runs four times because there are four values in `quickArray`. Each time the loop runs, `q` represents each successive value in the array, starting at `12`, then `34`, then `56`, and so on.
 
-Why did we call the temporary variable `m`? Any name is valid, though it is common to see the first letter of the array name used as the temporary variable. Or, in the case of an array with a plural variable name, the singular could be used as the name for the temporary variable.
+Why did we call the temporary variable `q`? Any name is valid, though it is common to see the first letter of the array name used as the temporary variable. Or, in the case of an array with a plural variable name, the singular form may be used as the name for the temporary variable.
 
 ```js
 const months = [
