@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../data-types/">
+      
+      
+        <link rel="next" href="../dom-properties-and-methods/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>More DOM Manipulation - IMS322 Docs</title>
+        <title>DOM Manipulation - IMS322 Docs</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-elements-and-appending-children" class="md-skip">
+        <a href="#dom-manipulation" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              More DOM Manipulation
+              DOM Manipulation
             
           </span>
         </div>
@@ -542,17 +546,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -566,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -673,6 +679,85 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DOM Manipulation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DOM Manipulation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-elements-and-appending-children" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Elements and Appending Children
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-appending-elements-in-a-for-of-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Appending Elements in a For Of Loop
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1185,6 +1270,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1225,57 +1312,71 @@
                   
 
 
-  <h1>More DOM Manipulation</h1>
-
-<p>If you recall from a previous reading, the DOM (Document Object Model) is "the data representation of the objects that comprise the structure and content of a document on the web."</p>
-<p>You can think of the structure of the DOM in terms of <em>parents</em> and <em>children</em> using a diagram like this:</p>
-<p><img src="../images/dom.webp"></p>
-<p>There are 3 child elements in the <code>&lt;body&gt;</code> of the diagram - an <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;img&gt;</code> - each which also have their own attributes and inner text. The corresponding HTML would look something like this:</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Blah blah blah blah blah blah<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;pic.webp&quot;</span> <span class="p">/&gt;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<h1 id="dom-manipulation">DOM Manipulation</h1>
+<p><em>Reminder: The Document Object Model (DOM) is the "representation of the objects that comprise the structure and content of a document on the web." It represents the page in a way that programs, like JavaScript, can manipulate the document structure, style, and content.</em></p>
+<p><em>You can review more on the <a href="../dom-properties-and-methods">DOM Properties and Methods page</a>.</em></p>
+<p>One way to conceptualize the structure of the DOM is as a hierarchical tree of <em>parents</em> and <em>children</em>.</p>
+<figure>
+  <img alt="DOM Tree" src="../../assets/DOM-model.webp" width="500px" />
+  <figcaption>DOM Tree (image source: Wikipedia)</figcaption>
+</figure>
+<p>In the example diagram shown above, all elements are children of the <code>&lt;html&gt;</code> root element. The <code>&lt;body&gt;</code> has two child elements: an <code>&lt;h1&gt;</code> and an <code>&lt;a&gt;</code>. The corresponding HTML might look something like this:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>A heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span><span class="p">&gt;</span>Link text<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p>Take a look at the following example - how would you describe the structure in terms of parents and children? You can probably make some guesses just by looking at the results, but you should open the inspector and/or look at the HTML to confirm.</p>
-<p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="XWGrjOq" data-editable="true" data-user="ersheff" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p>Take a look at the following example and, before opening the HTML editor, think about how might describe the structure in terms of parents and children.</p>
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="XWGrjOq" data-editable="true" data-user="ersheff" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/XWGrjOq">
   Parent-Child (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<p>Each <code>&lt;img&gt;</code> has a <code>&lt;figcaption&gt;</code> sibling, both of which are children of a <code>&lt;figure&gt;</code> element, which are themselves children of the <code>&lt;div&gt;</code> flex row. Or, looking at it from the other direction, the <code>&lt;div&gt;</code> flex row is the parent element containing 3 <code>&lt;figure&gt;</code> children, which each contain one <code>&lt;img&gt;</code> child element and one <code>&lt;figcaption&gt;</code> child element. </p>
+
+<p>Upon opening the HTML editor (or the browser's Inspector), you'll see that each <code>&lt;img&gt;</code> has a <code>&lt;figcaption&gt;</code> sibling, both of which are children of a <code>&lt;figure&gt;</code> element. These <code>&lt;figure&gt;</code> elements are themselves children of the <code>&lt;div&gt;</code> flex row. Or, looking at it from the other direction, the <code>&lt;div&gt;</code> flex row is the parent element containing three <code>&lt;figure&gt;</code> children, each of which contains one <code>&lt;img&gt;</code> child element and one <code>&lt;figcaption&gt;</code> child element.</p>
 <h2 id="creating-elements-and-appending-children">Creating Elements and Appending Children</h2>
-<p>If you were given a large collection of images in a folder to display in a responsive gallery site, you might manually create flexboxes for rows, <code>&lt;figure&gt;</code> or <code>&lt;div&gt;</code> elements for image containers, and <code>&lt;img&gt;</code> elements in your HTML. But what if you were running a website for a cafe that featured different specials and events each week? Might it be easer to automatically generate the HTML with some information about the images in the folder?</p>
-<p>Let's start with a single photo. If you were to create an object that describes a single photo from <a href="https://picsum.photos">Lorem Picsum</a>, it might look like this:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">photo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://picsum.photos/id/292/800/600.webp&quot;</span><span class="p">,</span>
+<p>If you were given a large collection of images in a folder to display in a responsive gallery site, you might manually create flexboxes for rows, <code>&lt;figure&gt;</code> or <code>&lt;div&gt;</code> elements for image containers, and <code>&lt;img&gt;</code> elements in your HTML. But what if you were running a website for a cafe that featured different specials and events each week? It might be easier to automatically generate the HTML using information about the images in the folder.</p>
+<p>Let's start simply. If you were to create an object with properties that describe a single menu item, it might look like this:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">onionAndPeppercorns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">imageUrl</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://picsum.photos/id/292/800/600.webp&quot;</span><span class="p">,</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">alt</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;onion and peppercorns&quot;</span><span class="p">,</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">caption</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Onion and Peppercorns.&quot;</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">};</span>
 </span></code></pre></div>
-<p>You can use JavaScript to create each required element using the <code>createElement()</code> method and set the required attributes:</p>
+<p>You can use JavaScript to create each required element using the <code>createElement()</code> method and set the necessary attributes:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">figureElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;figure&quot;</span><span class="p">);</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">imageElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;img&quot;</span><span class="p">);</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">captionElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;figcaption&quot;</span><span class="p">);</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">// sets src attribute to &quot;https://picsum.photos/id/292/800/600.webp&quot;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">imageElement</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">photo</span><span class="p">.</span><span class="nx">url</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">imageElement</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">onionAndPeppercorns</span><span class="p">.</span><span class="nx">imageUrl</span><span class="p">;</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// sets alt text attribute to &quot;onion and peppercorns&quot;</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">imageElement</span><span class="p">.</span><span class="nx">alt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">photo</span><span class="p">.</span><span class="nx">alt</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">imageElement</span><span class="p">.</span><span class="nx">alt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">onionAndPeppercorns</span><span class="p">.</span><span class="nx">alt</span><span class="p">;</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">// sets inner text of &lt;figcaption&gt; to &quot;Onion and Peppercorns.&quot;</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nx">captionElement</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">photo</span><span class="p">.</span><span class="nx">caption</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nx">captionElement</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">onionAndPeppercorns</span><span class="p">.</span><span class="nx">caption</span><span class="p">;</span>
 </span></code></pre></div>
-<p>Then, you can use the <code>appendChild()</code> method to append the <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements to the <code>&lt;figure&gt;</code> element and the <code>&lt;figure&gt;</code> element to the <code>&lt;body&gt;</code> (see example below).</p>
+<p>Then, you can use the <code>appendChild()</code> method to append the <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements to the <code>&lt;figure&gt;</code> element and the <code>&lt;figure&gt;</code> element to the <code>&lt;body&gt;</code>.</p>
 <p class="codepen" data-height="500" data-default-tab="js,result" data-slug-hash="mdobOPe" data-editable="true" data-user="ersheff" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/mdobOPe">
   Creating and Appending Elements (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+
 <h2 id="creating-and-appending-elements-in-a-for-of-loop">Creating and Appending Elements in a For Of Loop</h2>
-<p>In the example below, an array containing objects is used to generate elements for a flexbox-based row of photos. Each object contains information about the photo source (url), alt text, and caption text.</p>
+<p>Using the <code>createElement()</code> and <code>appendChild()</code> methods for a single object is good practice, but using them in a <code>for...of</code> loop for multiple objects showcases their power and flexibility.</p>
+<p>In the example below, an array containing objects is used to generate elements for a grid of photos. Each object contains information about the photo source (url), alt text, and caption text.</p>
 <p class="codepen" data-height="680" data-default-tab="js,result" data-slug-hash="PoLpZQV" data-editable="true" data-user="ersheff" style="height: 680px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/PoLpZQV">
-  Generating a Photo Row with a For Of Loop (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  Generating a Photo Grid with a For Of Loop (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -1285,9 +1386,6 @@
 
 
 
-
-  
-  
 
 
 
