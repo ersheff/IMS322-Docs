@@ -4,7 +4,7 @@ The sections on this page will lead you through the process of setting up the ap
 
 1. Install [Git](#git).
 2. Create a [GitHub](#github) account (if needed).
-3. Log in to [CodePen](#codepen), enable **Format on Save** in account settings, and create your first Pen.
+3. Log in to [CodePen](#codepen), enable **Format on Save** and **Autocomplete** in account settings, and create your first **Pen**.
 4. Install additional [browsers](#browsers) as needed.
 5. Install [VS Code](#vs-code) and configure extensions and settings.
 6. Review coding [assignment procedures](#assignment-procedures).
@@ -22,10 +22,10 @@ The sections on this page will lead you through the process of setting up the ap
 
 ### Mac
 
-Mac users should follow the Homebrew installation option:
+Mac users should use the Homebrew installation option:
 
-1. Install [Homebrew](https://github.com/Homebrew/brew/releases/download/4.3.18/Homebrew-4.3.18.pkg).
-2. Run `brew install git` in Terminal.
+1. Install [Homebrew](https://github.com/Homebrew/brew/releases/download/4.4.17/Homebrew-4.4.17.pkg).
+2. Run `brew install git` in **Terminal**. If you are prompted to install the Xcode "command line developer tools", click **Install**. This will take a while, so make sure you are on a fast Wi-Fi network.
 
 ### Windows
 
@@ -39,11 +39,20 @@ If you're using Linux, you probably don't need help installing Git! Follow the i
 
 ## GitHub
 
-[GitHub](https://github.com) is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments.
+[GitHub](https://github.com) is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments and projects.
 
-1. Create a [GitHub](https://github.com) account.
-2. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code).
-3. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
+1. Create a [GitHub](https://github.com) account (if you don't already have one).
+2. Enable **Two-Factor Authentication** in your account:
+
+   1. In the upper-right corner of any page on GitHub, click your profile photo, then click **Settings**.
+   2. In the **Access** section of the sidebar, click **Password and authentication**.
+   3. In the **Two-factor authentication** section of the page, click **Enable two-factor authentication**.
+   4. STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!
+   5. Open Duo Mobile and click **Add +**, then choose **Use QR Code** to scan the QR code. You may use a different 2FA app if you have a preferred alternative.
+   6. Complete the rest of the Two-Factor Authentication setup as directed.
+
+3. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code).
+4. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
 
 ---
 
@@ -56,7 +65,7 @@ There are a few important things to note about CodePen and how it differs from t
 - You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.
 - A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.
 - Make sure that the **Format On Save** and **Autocomplete** options are checked in your account settings (found in the **Editor Preferences** section).
-- The simplified HTML editor does not need a `<head>` element or `<body>` tags. You should start your HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
+- _The simplified HTML editor should not have a `<head>` element or `<body>` tags_. You should start your HTML content from the first tag that would normally go after the opening `<body>` tag, like a `<header>` or `<h1>` element.
 - There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the `src` attribute of the `<img>` element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like [Lorem Picsum](https://picsum.photos) will suffice.
 
 <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -103,12 +112,15 @@ We will be using a small collection of VS Code extensions to assist with formatt
 
 _Make sure that Git has finished installing before completing these steps._
 
-1. Click on the **Terminal** menu and choose **New Terminal**.
-2. In the **Terminal** panel, run the two commands provided below, inserting your own GitHub username and email where indicated (you will not see a confirmation message):
+1. In VS Code, click on the **Terminal** menu and choose **New Terminal**.
+2. In the **Terminal** panel, run the two commands provided below, one at a time, inserting your own GitHub username and email where indicated (you will not see a confirmation message).
 3. Click the **Accounts** icon in the lower-left corner and sign in using your GitHub account.
 
 ```
 git config --global user.name "your_username"
+```
+
+```
 git config --global user.email your@email.com
 ```
 
@@ -119,31 +131,9 @@ git config --global user.email your@email.com
 
 ### Editor Settings
 
-1. Go to the **View** menu and choose **Command Palette...** Use the search field to find and run the **Preferences: Open User Settings (JSON)** command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.
-2. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
-3. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
-
-```json
-{
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "prettier.trailingComma": "none",
-  "[html]": {
-    "editor.defaultFormatter": "vsce-toolroom.vscode-beautify"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
+1. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
+2. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
+3. There are a few other settings that will be automatically managed for you by a hidden file in project templates in the future. This primarily enables autoformatting for the plugins that you previously installed.
 
 ---
 
@@ -181,7 +171,7 @@ Throughout the semester, coursework will be assigned using both CodePen and VS C
 
 _The first time you accept a VS Code assignment through GitHub Classroom, you will be asked to link your GitHub account to your name._
 
-1. Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your **Top Repositories** on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.
+1. Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your **Top Repositories** on GitHub. You can also find it in the the **IMS322-Sheffield-S25** organization repositories by clicking your profile photo, then clicking **Your organizations**.
 2. Open VS Code. If an existing folder is already open, close it by going to the **File** menu and choosing **Close Folder**.
 3. Open the **Source Control** panel and click the **Clone Repository** button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.
 4. To open this folder in the future, go to the **File** menu and choose **Open Folder...**
@@ -238,11 +228,7 @@ _It is recommended that you Stage and Commit after each major change (steps 1-3)
 
 ### Autograding
 
-Assignments managed through GitHub will be run through an autograding process when they are committed and synced with any of the following words in the commit message:
-
-- finished
-- finish
-- autograde
+Assignments managed through GitHub will be run through an autograding process when they are committed and synced with "autograde" or "finished" as the commit message.
 
 The criteria checked during this process can be found on the [Style Guide](../style-guide) page.
 
@@ -254,14 +240,14 @@ To review autograding results:
 4.  Click on the workflow run to view the details.
 5.  On the workflow details page, you can see the status of each step.
 
-If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have one of the trigger words listed above in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".
+If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.
 
 ---
 
 ## Setup Checklist
 
-- [ ] I have installed Git (_not_ just GitHub Desktop).
-- [ ] I have created my GitHub account.
+- [ ] I have installed Git (_not_ GitHub Desktop).
+- [ ] I have created my GitHub account and enabled Two-Factor Authentication using Duo Mobile (or my preferred 2FA app).
 - [ ] My GitHub Student Benefits are active, and I have claimed **Github Copilot** access.
 - [ ] I have enabled the **Format On Save** and **Autocomplete** options in my CodePen account settings.
 - [ ] I have both Chrome (or another Chromium-based browser) and Firefox installed.
@@ -276,6 +262,5 @@ If you would like to fix errors identified by the autograding logs, you may comm
 
 - [ ] I have run the `git config` commands in the Terminal in VS Code.
 - [ ] I have signed VS Code into my GitHub account.
-- [ ] I have copy-pasted the suggested settings in the settings.json file.
 - [ ] I have selected my **Live Server Custom Browser** in settings.
 - [ ] I have ensured that **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are all visible in the Activity Bar.

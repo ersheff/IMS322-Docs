@@ -4,9 +4,9 @@ The IMS322 Style Guide was designed to help you write well-organized code that i
 
 This page is divided into 3 sections:
 
-- **[Autograded Requirements](#autograded-requirements)**: The requirements in this section will be autograded by GitHub Actions during the final sync with your project's repository. You can read more about how to initiate this process and review the results on the [Setup](../setup/#autograding) page.
+- **[Autograded Requirements](#autograded-requirements)**: The requirements in this section will be autograded by GitHub Actions after syncing your repository with "autograde" or "finished" as the commit message. You can read more about how to initiate this process and review the results on the [Setup](../setup/#autograding) page.
 
-- **[Manually Graded Requirements](#manually-graded-requirements)**: The requirements in this section will be reviewed by the instructor after submission.
+- **[Manually Graded Requirements](#manually-graded-requirements)**: The requirements in this section will be reviewed by the instructor after submission and graded using the assignment rubric in Canvas.
 
 - **[Other Suggestions](#other-suggestions)**: This section includes other miscellaneous style suggestions. While they do not directly affect your assignment grades, implementing these suggestions may help improve your results.
 
@@ -52,7 +52,7 @@ _Not this:_
 
 ### Image Compression, Resolution, and Organization
 
-All images used in your projects should be in WebP format with a maximum resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
+All images used in your projects should be in WebP format with a _maximum_ resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
 
 Store image files in an "images" folder to help keep the file browser organized. Remember, this means that the folder name will need to be included in the file path.
 
@@ -120,7 +120,7 @@ If you use any other font in your designs, you must include it as a resource by 
 - Use concise, searchable, and meaningful names for classes, ids, functions, and variables. Only use common, easy-to-remember abbreviations if a name becomes excessively long.
 - Name class and id attributes in HTML and CSS using the "kebab-case" convention, where lowercase words are separated by hyphens.
 - Name functions and variables in JavaScript using the "camelCase" convention, where each word (except the first) starts with a capital letter, without spaces or hyphens.
-- Keep in mind that you may find yourself writing both kebab-case and camelCase in your JavaScript file when assigning HTML elements to variables. This is valid since the id name was created in the HTML file.
+- Keep in mind that you will find yourself writing both kebab-case and camelCase in your JavaScript file when assigning HTML elements to variables. This is valid since the id name was created in the HTML file.
 
 ```html
 <p class="kebab-case" id="kebab-case">Blah blah blah.</p>
@@ -144,11 +144,15 @@ Your project layouts should accommodate the following window widths (based on [M
 - `800px` (tablet, narrow laptop/desktop windows)
 - `1100px` (wide laptop/desktop windows)
 
-This means that text content and images are neither too small nor overflowing the visible area.
+This means that text content and images are neither too small nor overflowing the visible area. Additionally, you should plan to use empty or "white" space effectively around the main content area and individual component blocks. Text or images that extend right to the edge of the browser window can result in a cluttered or disorganized look.
+
+<figure markdown="span">
+  ![Using Space](assets/using-space.webp){ width="600" }
+  <figcaption>Using Space</figcaption>
+</figure>
 
 The following CSS is provided for you in the assignment templates to help meet these requirements:
 
-- By default, the `<body>` element should be centered within the browser window and have a maximum width of `1100px`.
 - Large paragraphs should not exceed a width of `80ch` to improve readability.
 - Use media queries at `480px` and/or `800px` to rearrange or resize elements as needed.
 
@@ -159,11 +163,6 @@ _Default assignment template CSS:_
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1100px;
-  margin: auto;
-}
-
 p {
   max-width: 80ch;
 }
@@ -171,6 +170,8 @@ p {
 img {
   width: 100%;
 }
+
+/* media queries - keep at bottom */
 
 @media (max-width: 800px) {
 }
@@ -269,5 +270,67 @@ h2 {
   button {
     background-color: #ff9999;
   }
+}
+```
+
+#### BEM
+
+There is a CSS class naming methodology called **Block-Element-Modifier** (BEM) that can help with code organization. Generally, the three parts are defined as follows:
+
+- Block
+  - Standalone entity that is meaningful on its own.
+  - Examples: `header`, `container`, `menu`, `checkbox`, `input`
+- Element
+  - A part of a block that has no standalone meaning and is semantically tied to its block.
+  - Examples: `menu item`, `list item`, `checkbox caption`, `header title`
+- Modifier
+  - A flag on a block or element. Use them to change appearance or behavior.
+  - Examples: disabled, highlighted, checked, fixed, size big, color yellow
+
+You can read more about the BEM methodology at the following sites:
+
+- https://getbem.com
+- ["BEM 101" on CSS Tricks](https://css-tricks.com/bem-101/)
+
+**BEM** takes advantage of the fact that class names can include \_ and - characters, and an HTML element can have multiple classes. Some combinations may take the following formats:
+
+```css
+.block--modifier {
+}
+
+.block--modifier-value {
+}
+
+.block__element {
+}
+
+.block__element--modifier {
+}
+
+.block__element--modifier-value {
+}
+```
+
+For example:
+
+```html
+<form class="form form--theme-xmas form--simple">
+  <input class="form__input" type="text" />
+  <input class="form__submit form__submit--disabled" type="submit" />
+</form>
+```
+
+```css
+.form {
+}
+.form--theme-xmas {
+}
+.form--simple {
+}
+.form__input {
+}
+.form__submit {
+}
+.form__submit--disabled {
 }
 ```

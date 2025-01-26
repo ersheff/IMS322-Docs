@@ -1657,7 +1657,7 @@
 <ol>
 <li>Install <a href="#git">Git</a>.</li>
 <li>Create a <a href="#github">GitHub</a> account (if needed).</li>
-<li>Log in to <a href="#codepen">CodePen</a>, enable <strong>Format on Save</strong> in account settings, and create your first Pen.</li>
+<li>Log in to <a href="#codepen">CodePen</a>, enable <strong>Format on Save</strong> and <strong>Autocomplete</strong> in account settings, and create your first <strong>Pen</strong>.</li>
 <li>Install additional <a href="#browsers">browsers</a> as needed.</li>
 <li>Install <a href="#vs-code">VS Code</a> and configure extensions and settings.</li>
 <li>Review coding <a href="#assignment-procedures">assignment procedures</a>.</li>
@@ -1670,10 +1670,10 @@
   <figcaption>Activity Bar: Source Control panel</figcaption>
 </figure>
 <h3 id="mac">Mac</h3>
-<p>Mac users should follow the Homebrew installation option:</p>
+<p>Mac users should use the Homebrew installation option:</p>
 <ol>
-<li>Install <a href="https://github.com/Homebrew/brew/releases/download/4.3.18/Homebrew-4.3.18.pkg">Homebrew</a>.</li>
-<li>Run <code>brew install git</code> in Terminal.</li>
+<li>Install <a href="https://github.com/Homebrew/brew/releases/download/4.4.17/Homebrew-4.4.17.pkg">Homebrew</a>.</li>
+<li>Run <code>brew install git</code> in <strong>Terminal</strong>. If you are prompted to install the Xcode "command line developer tools", click <strong>Install</strong>. This will take a while, so make sure you are on a fast Wi-Fi network.</li>
 </ol>
 <h3 id="windows">Windows</h3>
 <p>Windows users should use the 64-bit Git for Windows Setup under <a href="https://git-scm.com/download/win">Standalone Installer</a>.</p>
@@ -1681,10 +1681,25 @@
 <p>If you're using Linux, you probably don't need help installing Git! Follow the instructions <a href="https://git-scm.com/download/linux">here</a>.</p>
 <hr />
 <h2 id="github">GitHub</h2>
-<p><a href="https://github.com">GitHub</a> is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments.</p>
+<p><a href="https://github.com">GitHub</a> is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments and projects.</p>
 <ol>
-<li>Create a <a href="https://github.com">GitHub</a> account.</li>
-<li>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant within VS Code).</li>
+<li>Create a <a href="https://github.com">GitHub</a> account (if you don't already have one).</li>
+<li>
+<p>Enable <strong>Two-Factor Authentication</strong> in your account:</p>
+</li>
+<li>
+<p>In the upper-right corner of any page on GitHub, click your profile photo, then click <strong>Settings</strong>.</p>
+</li>
+<li>In the <strong>Access</strong> section of the sidebar, click <strong>Password and authentication</strong>.</li>
+<li>In the <strong>Two-factor authentication</strong> section of the page, click <strong>Enable two-factor authentication</strong>.</li>
+<li>STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!</li>
+<li>Open Duo Mobile and click <strong>Add +</strong>, then choose <strong>Use QR Code</strong> to scan the QR code. You may use a different 2FA app if you have a preferred alternative.</li>
+<li>
+<p>Complete the rest of the Two-Factor Authentication setup as directed.</p>
+</li>
+<li>
+<p>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant within VS Code).</p>
+</li>
 <li>Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose <strong>Your Copilot</strong> from the menu to claim Copilot access.</li>
 </ol>
 <hr />
@@ -1695,7 +1710,7 @@
 <li>You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.</li>
 <li>A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.</li>
 <li>Make sure that the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options are checked in your account settings (found in the <strong>Editor Preferences</strong> section).</li>
-<li>The simplified HTML editor does not need a <code>&lt;head&gt;</code> element or <code>&lt;body&gt;</code> tags. You should start your HTML content from the first tag that would normally go after the opening <code>&lt;body&gt;</code> tag, like a <code>&lt;header&gt;</code> or <code>&lt;h1&gt;</code> element.</li>
+<li><em>The simplified HTML editor should not have a <code>&lt;head&gt;</code> element or <code>&lt;body&gt;</code> tags</em>. You should start your HTML content from the first tag that would normally go after the opening <code>&lt;body&gt;</code> tag, like a <code>&lt;header&gt;</code> or <code>&lt;h1&gt;</code> element.</li>
 <li>There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the <code>src</code> attribute of the <code>&lt;img&gt;</code> element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like <a href="https://picsum.photos">Lorem Picsum</a> will suffice.</li>
 </ul>
 <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -1733,12 +1748,13 @@
 <h3 id="git-setup-and-github-login">Git Setup and GitHub Login</h3>
 <p><em>Make sure that Git has finished installing before completing these steps.</em></p>
 <ol>
-<li>Click on the <strong>Terminal</strong> menu and choose <strong>New Terminal</strong>.</li>
-<li>In the <strong>Terminal</strong> panel, run the two commands provided below, inserting your own GitHub username and email where indicated (you will not see a confirmation message):</li>
+<li>In VS Code, click on the <strong>Terminal</strong> menu and choose <strong>New Terminal</strong>.</li>
+<li>In the <strong>Terminal</strong> panel, run the two commands provided below, one at a time, inserting your own GitHub username and email where indicated (you will not see a confirmation message).</li>
 <li>Click the <strong>Accounts</strong> icon in the lower-left corner and sign in using your GitHub account.</li>
 </ol>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git config --global user.name &quot;your_username&quot;
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git config --global user.email your@email.com
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git config --global user.email your@email.com
 </span></code></pre></div>
 <figure>
   <img alt="Activity Bar: Accounts" src="../assets/activity-bar-accounts.webp" width="400" />
@@ -1746,30 +1762,10 @@
 </figure>
 <h3 id="editor-settings">Editor Settings</h3>
 <ol>
-<li>Go to the <strong>View</strong> menu and choose <strong>Command Palette...</strong> Use the search field to find and run the <strong>Preferences: Open User Settings (JSON)</strong> command. Copy-paste the text below into the open settings.json file, replacing any existing text, then save and close the file.</li>
 <li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.</li>
 <li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are checked.</li>
+<li>There are a few other settings that will be automatically managed for you by a hidden file in project templates in the future. This primarily enables autoformatting for the plugins that you previously installed.</li>
 </ol>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;editor.minimap.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;breadcrumbs.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;editor.tabSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;editor.formatOnSave&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">&quot;prettier.trailingComma&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">&quot;[html]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vsce-toolroom.vscode-beautify&quot;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="nt">&quot;[css]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="nt">&quot;[javascript]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="nt">&quot;[json]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;esbenp.prettier-vscode&quot;</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">}</span>
-</span></code></pre></div>
 <hr />
 <h2 id="assignment-procedures">Assignment Procedures</h2>
 <p>Throughout the semester, coursework will be assigned using both CodePen and VS Code with GitHub. Some specific instructions and details in the Canvas assignment descriptions may differ on a case-by-case basis, but the general workflow for both platforms is outlined below.</p>
@@ -1799,7 +1795,7 @@
 <h3 id="accepting-and-cloning-vs-code-assignments">Accepting and Cloning VS Code Assignments</h3>
 <p><em>The first time you accept a VS Code assignment through GitHub Classroom, you will be asked to link your GitHub account to your name.</em></p>
 <ol>
-<li>Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your <strong>Top Repositories</strong> on GitHub. You can also find it by visiting the IMS322-Sheffield-F24 organization.</li>
+<li>Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your <strong>Top Repositories</strong> on GitHub. You can also find it in the the <strong>IMS322-Sheffield-S25</strong> organization repositories by clicking your profile photo, then clicking <strong>Your organizations</strong>.</li>
 <li>Open VS Code. If an existing folder is already open, close it by going to the <strong>File</strong> menu and choosing <strong>Close Folder</strong>.</li>
 <li>Open the <strong>Source Control</strong> panel and click the <strong>Clone Repository</strong> button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.</li>
 <li>To open this folder in the future, go to the <strong>File</strong> menu and choose <strong>Open Folder...</strong></li>
@@ -1853,12 +1849,7 @@
   <figcaption>Source Control: Stage and Commit changes</figcaption>
 </figure>
 <h3 id="autograding">Autograding</h3>
-<p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with any of the following words in the commit message:</p>
-<ul>
-<li>finished</li>
-<li>finish</li>
-<li>autograde</li>
-</ul>
+<p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with "autograde" or "finished" as the commit message.</p>
 <p>The criteria checked during this process can be found on the <a href="../style-guide">Style Guide</a> page.</p>
 <p>To review autograding results:</p>
 <ol>
@@ -1868,12 +1859,12 @@
 <li>Click on the workflow run to view the details.</li>
 <li>On the workflow details page, you can see the status of each step.</li>
 </ol>
-<p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date. Keep in mind that you will need to have one of the trigger words listed above in your commit message to rerun the autograding workflow. You can optionally amend the commit message with a number to keep track of subsequent attempts e.g., "finished 2".</p>
+<p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.</p>
 <hr />
 <h2 id="setup-checklist">Setup Checklist</h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed Git (<em>not</em> just GitHub Desktop).</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have created my GitHub account.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed Git (<em>not</em> GitHub Desktop).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have created my GitHub account and enabled Two-Factor Authentication using Duo Mobile (or my preferred 2FA app).</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active, and I have claimed <strong>Github Copilot</strong> access.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have enabled the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options in my CodePen account settings.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have both Chrome (or another Chromium-based browser) and Firefox installed.</li>
@@ -1892,7 +1883,6 @@
 <p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have run the <code>git config</code> commands in the Terminal in VS Code.</p>
 </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have signed VS Code into my GitHub account.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have copy-pasted the suggested settings in the settings.json file.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have selected my <strong>Live Server Custom Browser</strong> in settings.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have ensured that <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are all visible in the Activity Bar.</li>
 </ul>
