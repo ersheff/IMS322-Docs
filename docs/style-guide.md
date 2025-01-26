@@ -289,7 +289,7 @@ There is a CSS class naming methodology called **Block-Element-Modifier** (BEM) 
 
 You can read more about the BEM methodology at the following sites:
 
-- https://getbem.com
+- [Get BEM](https://getbem.com)
 - ["BEM 101" on CSS Tricks](https://css-tricks.com/bem-101/)
 
 **BEM** takes advantage of the fact that class names can include \_ and - characters, and an HTML element can have multiple classes. Some combinations may take the following formats:
