@@ -43,15 +43,13 @@ If you're using Linux, you probably don't need help installing Git! Follow the i
 
 1. Create a [GitHub](https://github.com) account (if you don't already have one).
 2. Enable **Two-Factor Authentication** in your account:
-
    1. In the upper-right corner of any page on GitHub, click your profile photo, then click **Settings**.
    2. In the **Access** section of the sidebar, click **Password and authentication**.
    3. In the **Two-factor authentication** section of the page, click **Enable two-factor authentication**.
    4. STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!
    5. Open Duo Mobile and click **Add +**, then choose **Use QR Code** to scan the QR code. You may use a different 2FA app if you have a preferred alternative.
    6. Complete the rest of the Two-Factor Authentication setup as directed.
-
-3. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code).
+3. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code). FYI - there is a document in myMiami called "Enrollment Verification" that seems to work for this.
 4. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
 
 ---
