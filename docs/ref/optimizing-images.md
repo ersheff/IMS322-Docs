@@ -21,7 +21,7 @@ There are several different types of image compression codecs suitable for web d
 
 ## Fluid Images
 
-It is highly recommended to start sizing all `<img>` elements using _only_ `width: 100%` (the default in project templates). This ensures they responsively fill their closest parent container, regardless of the original resolution of the image file. It also allows responsive layout containers like **Flexbox** and **Grid** to manage image sizing effectively when multiple images appear in the same row.
+It is highly recommended to start sizing all `<img>` elements using _only_ `width: 100%`. This ensures they responsively fill their closest parent container, regardless of the original resolution of the image file. It also allows responsive layout containers like **Flexbox** and **Grid** to manage image sizing effectively when multiple images appear in the same row.
 
 If needed, wrap an `<img>` in a `<figure>` element with a `<figcaption>` to keep images and captions paired, even when the browser window resizes. Note that `<figure>` has a default margin, which you may want to adjust or remove for better spacing.
 
