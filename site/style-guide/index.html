@@ -1661,6 +1661,7 @@
 <hr />
 <h2 id="manually-graded-requirements">Manually Graded Requirements</h2>
 <h3 id="font-selection-and-loading">Font Selection and Loading</h3>
+<p>You should <em>always</em> specify a font family in your CSS, even when using the browser default. You will either need to use a "web safe font" or include the desired font assets when using an alternative.</p>
 <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">Web safe fonts</a> are fonts that you can safely assume are already installed on a user's computer:</p>
 <ul>
 <li>Arial (sans-serif)</li>
@@ -1672,7 +1673,7 @@
 <li>Courier New (monospace)</li>
 <li>Brush Script MT (cursive)</li>
 </ul>
-<p>If you use any other font in your designs, you must include it as a resource by either adding the font file to the project folder and importing it in CSS, or embedding <code>&lt;link&gt;</code> tags from a hosted source in the <code>&lt;head&gt;</code> element.</p>
+<p>Otherwise, for simplicity, I recommend checking <a href="https://fonts.google.com">Google Fonts</a> first, as it offers a large, searchable collection and is easy to include by adding the provided <code>&lt;link&gt;</code> tags to the <code>&lt;head&gt;</code> of your HTML file.</p>
 <h3 id="naming-conventions">Naming Conventions</h3>
 <ul>
 <li>Rename long or cryptic image files as needed. For example, <code>dog.webp</code> is much easier to type and identify than <code>neom-9E9NsEiUGxg-unsplash.webp</code>.</li>

@@ -106,6 +106,8 @@ var birthYear = 1986;
 
 ### Font Selection and Loading
 
+You should _always_ specify a font family in your CSS, even when using the browser default. You will either need to use a "web safe font" or include the desired font assets when using an alternative.
+
 [Web safe fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php) are fonts that you can safely assume are already installed on a user's computer:
 
 - Arial (sans-serif)
@@ -117,7 +119,7 @@ var birthYear = 1986;
 - Courier New (monospace)
 - Brush Script MT (cursive)
 
-If you use any other font in your designs, you must include it as a resource by either adding the font file to the project folder and importing it in CSS, or embedding `<link>` tags from a hosted source in the `<head>` element.
+Otherwise, for simplicity, I recommend checking [Google Fonts](https://fonts.google.com) first, as it offers a large, searchable collection and is easy to include by adding the provided `<link>` tags to the `<head>` of your HTML file.
 
 ### Naming Conventions
 
