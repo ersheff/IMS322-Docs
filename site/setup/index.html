@@ -460,18 +460,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
+  <a href="#autograding" class="md-nav__link">
     <span class="md-ellipsis">
-      Committing and Submitting VS Code Assignments
+      Autograding
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#autograding" class="md-nav__link">
+  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Autograding
+      Committing and Submitting VS Code Assignments
     </span>
   </a>
   
@@ -1606,18 +1606,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
+  <a href="#autograding" class="md-nav__link">
     <span class="md-ellipsis">
-      Committing and Submitting VS Code Assignments
+      Autograding
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#autograding" class="md-nav__link">
+  <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Autograding
+      Committing and Submitting VS Code Assignments
     </span>
   </a>
   
@@ -1684,7 +1684,6 @@
 <p><a href="https://github.com">GitHub</a> is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments and projects.</p>
 <ol>
 <li>Create a <a href="https://github.com">GitHub</a> account (if you don't already have one).</li>
-<li>Enable <strong>Two-Factor Authentication</strong> in your account:</li>
 <li>In the upper-right corner of any page on GitHub, click your profile photo, then click <strong>Settings</strong>.</li>
 <li>In the <strong>Access</strong> section of the sidebar, click <strong>Password and authentication</strong>.</li>
 <li>In the <strong>Two-factor authentication</strong> section of the page, click <strong>Enable two-factor authentication</strong>.</li>
@@ -1755,7 +1754,7 @@
 <h3 id="editor-settings">Editor Settings</h3>
 <ol>
 <li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.</li>
-<li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are checked.</li>
+<li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, and <strong>Accounts</strong> are checked.</li>
 <li>There are a few other settings that will be automatically managed for you by a hidden file in project templates in the future. This primarily enables autoformatting for the plugins that you previously installed.</li>
 </ol>
 <hr />
@@ -1798,7 +1797,7 @@
 </figure>
 <h3 id="working-with-vs-code-assignments">Working With VS Code Assignments</h3>
 <ul>
-<li>Folders are very important when working in VS Code. You should always check the top of the <strong>Explorer</strong> panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).</li>
+<li><strong>Folders</strong> are <em>very important</em> when working in VS Code. You should always check the top of the <strong>Explorer</strong> panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).</li>
 <li>To preview your code in the browser, click the <strong>Go Live</strong> button in the bottom-right corner of the window (which is part of the <strong>Status Bar</strong>). This will use the <strong>Live Server</strong> extension to launch your project in your preferred browser. If you accidentally lose your browser preview window, you can reopen the browser and navigate to <code>http://127.0.0.1:5500/</code> (replacing the last 4 digits with whatever port number appears in the <strong>Status Bar</strong> while the extension is running). Alternatively, you can click on the port number in the <strong>Status Bar</strong> to close the extension and relaunch it by clicking <strong>Go Live</strong> again.</li>
 </ul>
 <figure>
@@ -1822,24 +1821,6 @@
   <img alt="Branch Dropdown" src="../assets/create-branch-text.webp" width="300" />
   <figcaption>Branch Dropdown</figcaption>
 </figure>
-<h3 id="committing-and-submitting-vs-code-assignments">Committing and Submitting VS Code Assignments</h3>
-<p><em>It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
-<ol>
-<li>Open the <strong>Source Control</strong> panel in VS Code.</li>
-<li>Stage all changes by clicking the <strong>+</strong> next to <strong>Changes</strong>.</li>
-<li>Enter a commit message and click the <strong>Commit</strong> button (use "finished" for your final commit).</li>
-<li>The <strong>Commit</strong> button should change to a <strong>Sync Changes</strong> button. Click this to finish syncing the latest changes to your online GitHub repository.</li>
-<li>Find your repository on GitHub.</li>
-<li><em>Draft only:</em> Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.</li>
-<li>Go to the <strong>Settings</strong> tab within the repository and navigate to the <strong>Pages</strong> section.</li>
-<li>Under <strong>Branch</strong>, select the appropriate branch to publish (draft or main) and click <strong>Save</strong>.</li>
-<li>After a few moments, if you refresh the page, there should now be a URL near the top next to a <strong>Visit Site</strong> button. If you click this button, you should see your site open in a new window.</li>
-<li>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click <strong>Submit Assignment</strong>.</li>
-</ol>
-<figure>
-  <img alt="Source Control: Stage and Commit changes" src="../assets/source-control-changes.webp" width="300" />
-  <figcaption>Source Control: Stage and Commit changes</figcaption>
-</figure>
 <h3 id="autograding">Autograding</h3>
 <p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with "autograde" or "finished" as the commit message.</p>
 <p>The criteria checked during this process can be found on the <a href="../style-guide">Style Guide</a> page.</p>
@@ -1852,6 +1833,24 @@
 <li>On the workflow details page, you can see the status of each step.</li>
 </ol>
 <p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.</p>
+<h3 id="committing-and-submitting-vs-code-assignments">Committing and Submitting VS Code Assignments</h3>
+<p><em>It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
+<ol>
+<li>Open the <strong>Source Control</strong> panel in VS Code.</li>
+<li>Stage all changes by clicking the <strong>+</strong> next to <strong>Changes</strong>.</li>
+<li>Enter a commit message and click the <strong>Commit</strong> button (use "autograde" if you want to run the autograding process and "finished" for your final commit).</li>
+<li>The <strong>Commit</strong> button should change to a <strong>Sync Changes</strong> button. Click this to finish syncing the latest changes to your online GitHub repository.</li>
+<li>Find your repository on GitHub.</li>
+<li><em>Draft only:</em> Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.</li>
+<li>Go to the <strong>Settings</strong> tab within the repository and navigate to the <strong>Pages</strong> section.</li>
+<li>Under <strong>Branch</strong>, select the appropriate branch to publish (draft or main) and click <strong>Save</strong>.</li>
+<li>After a few moments, if you refresh the page, there should now be a URL near the top next to a <strong>Visit Site</strong> button. If you click this button, you should see your site open in a new window.</li>
+<li>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click <strong>Submit Assignment</strong>.</li>
+</ol>
+<figure>
+  <img alt="Source Control: Stage and Commit changes" src="../assets/source-control-changes.webp" width="300" />
+  <figcaption>Source Control: Stage and Commit changes</figcaption>
+</figure>
 <hr />
 <h2 id="setup-checklist">Setup Checklist</h2>
 <ul class="task-list">
@@ -1876,7 +1875,7 @@
 </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have signed VS Code into my GitHub account.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have selected my <strong>Live Server Custom Browser</strong> in settings.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have ensured that <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, <strong>Chat</strong>, and <strong>Accounts</strong> are all visible in the Activity Bar.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have ensured that <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, and <strong>Accounts</strong> are all visible in the Activity Bar.</li>
 </ul>
 
 

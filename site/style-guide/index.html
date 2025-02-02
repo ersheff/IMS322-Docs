@@ -351,6 +351,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#javascript-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#image-compression-resolution-and-organization" class="md-nav__link">
     <span class="md-ellipsis">
       Image Compression, Resolution, and Organization
@@ -1447,6 +1456,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#javascript-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Loading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#image-compression-resolution-and-organization" class="md-nav__link">
     <span class="md-ellipsis">
       Image Compression, Resolution, and Organization
@@ -1621,15 +1639,8 @@
 <p>The following items will be checked during the autograding workflow:</p>
 <ul>
 <li>Write all CSS in the <code>style.css</code> file, which should be referenced in the <code>&lt;head&gt;</code> element using <code>&lt;link&gt;</code> tags. Avoid writing any CSS as inline <code>style</code> attributes or in <code>&lt;style&gt;</code> tags within the HTML.</li>
-<li>
-<p>Write all JavaScript in the <code>script.js</code> file, which should be referenced in the <code>&lt;head&gt;</code> element using <code>&lt;script&gt;</code> tags with the <code>defer</code> keyword. Avoid writing any JavaScript code inside <code>&lt;script&gt;</code> tags within the HTML.</p>
-<ul>
-<li>On a related note, do not use a <code>DOMContentLoaded</code> event listener or <code>window.onload</code> property in your JavaScript file. This can cause issues with some projects and is unnecessary when using the <code>defer</code> attribute in the <code>&lt;script&gt;</code> tags.</li>
-</ul>
-</li>
-<li>
-<p>Trigger JavaScript functions from event listeners defined in the <code>script.js</code> file, not from HTML attributes.</p>
-</li>
+<li>Write all JavaScript in the <code>script.js</code> file, which should be referenced in the <code>&lt;head&gt;</code> element using <code>&lt;script&gt;</code> tags with the <code>defer</code> keyword. Avoid writing any JavaScript code inside <code>&lt;script&gt;</code> tags within the HTML.</li>
+<li>Trigger JavaScript functions from event listeners defined in the <code>script.js</code> file, not from HTML attributes.</li>
 </ul>
 <p><em>This:</em></p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">counterButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#counter-button&quot;</span><span class="p">);</span>
@@ -1638,6 +1649,10 @@
 <p><em>Not this:</em></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;addCount()&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></code></pre></div>
+<h3 id="javascript-loading">JavaScript Loading</h3>
+<p>By default, the <code>&lt;script&gt;</code> tag in the <code>&lt;head&gt;</code> of your <code>index.html</code> file is initialized with the <code>defer</code> keyword. This ensures that <code>script.js</code> is downloaded in parallel with the HTML document but only executes after the HTML has been fully parsed.</p>
+<p>It is important that you <em>do not</em> remove the <code>defer</code> keyword, as doing so may cause errors if the script runs before the necessary HTML elements are available.</p>
+<p>Additionally, do not use a <code>DOMContentLoaded</code> event listener or <code>window.onload</code> property in your JavaScript file. These are redundant when using <code>defer</code> and may cause issues in future projects.</p>
 <h3 id="image-compression-resolution-and-organization">Image Compression, Resolution, and Organization</h3>
 <p>All images used in your projects should be in WebP format with a <em>maximum</em> resolution of 2200px in either dimension. Use <a href="https://squoosh.app">Squoosh</a> or another preferred image editing application that can export <code>.webp</code> files to prepare your images before adding them to your project.</p>
 <p>Store image files in an "images" folder to help keep the file browser organized. Remember, this means that the folder name will need to be included in the file path.</p>
@@ -1817,7 +1832,7 @@
 <li>Examples: <code>menu item</code>, <code>list item</code>, <code>checkbox caption</code>, <code>header title</code></li>
 <li>Modifier</li>
 <li>A flag on a block or element. Use them to change appearance or behavior.</li>
-<li>Examples: disabled, highlighted, checked, fixed, size big, color yellow</li>
+<li>Examples: <code>disabled</code>, <code>highlighted</code>, <code>checked</code>, <code>fixed</code>, <code>size big</code>, <code>color yellow</code></li>
 </ul>
 <p>You can read more about the BEM methodology at the following sites:</p>
 <ul>

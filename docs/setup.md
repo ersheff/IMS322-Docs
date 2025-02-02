@@ -42,15 +42,14 @@ If you're using Linux, you probably don't need help installing Git! Follow the i
 [GitHub](https://github.com) is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments and projects.
 
 1. Create a [GitHub](https://github.com) account (if you don't already have one).
-2. Enable **Two-Factor Authentication** in your account:
-   1. In the upper-right corner of any page on GitHub, click your profile photo, then click **Settings**.
-   2. In the **Access** section of the sidebar, click **Password and authentication**.
-   3. In the **Two-factor authentication** section of the page, click **Enable two-factor authentication**.
-   4. STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!
-   5. Open Duo Mobile and click **Add +**, then choose **Use QR Code** to scan the QR code. You may use a different 2FA app if you have a preferred alternative.
-   6. Complete the rest of the Two-Factor Authentication setup as directed.
-3. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code). FYI - there is a document in myMiami called "Enrollment Verification" that seems to work for this.
-4. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
+2. In the upper-right corner of any page on GitHub, click your profile photo, then click **Settings**.
+3. In the **Access** section of the sidebar, click **Password and authentication**.
+4. In the **Two-factor authentication** section of the page, click **Enable two-factor authentication**.
+5. STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!
+6. Open Duo Mobile and click **Add +**, then choose **Use QR Code** to scan the QR code. You may use a different 2FA app if you have a preferred alternative.
+7. Complete the rest of the Two-Factor Authentication setup as directed.
+8. Register for GitHub [Student Benefits](https://github.com/education/students) (this will give you access to the GitHub Copilot AI assistant within VS Code). FYI - there is a document in myMiami called "Enrollment Verification" that seems to work for this.
+9. Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose **Your Copilot** from the menu to claim Copilot access.
 
 ---
 
@@ -130,7 +129,7 @@ git config --global user.email your@email.com
 ### Editor Settings
 
 1. Click on the gear icon in the lower-left and choose **Settings**. Search for **Live Server Custom Browser** and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.
-2. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are checked.
+2. Right-click the **Activity Bar** on the left side of the window. Uncheck **Run and Debug**. Ensure that only **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, and **Accounts** are checked.
 3. There are a few other settings that will be automatically managed for you by a hidden file in project templates in the future. This primarily enables autoformatting for the plugins that you previously installed.
 
 ---
@@ -181,7 +180,7 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
 
 ### Working With VS Code Assignments
 
-- Folders are very important when working in VS Code. You should always check the top of the **Explorer** panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
+- **Folders** are _very important_ when working in VS Code. You should always check the top of the **Explorer** panel to make sure that you are working within the desired assignment folder. The primary open folder acts as the "root" of your workspace where you will find your HTML, CSS, and JavaScript files, as well as any subfolders (e.g., for images).
 - To preview your code in the browser, click the **Go Live** button in the bottom-right corner of the window (which is part of the **Status Bar**). This will use the **Live Server** extension to launch your project in your preferred browser. If you accidentally lose your browser preview window, you can reopen the browser and navigate to `http://127.0.0.1:5500/` (replacing the last 4 digits with whatever port number appears in the **Status Bar** while the extension is running). Alternatively, you can click on the port number in the **Status Bar** to close the extension and relaunch it by clicking **Go Live** again.
 
 <figure markdown="span">
@@ -204,26 +203,6 @@ _The first time you accept a VS Code assignment through GitHub Classroom, you wi
   <figcaption>Branch Dropdown</figcaption>
 </figure>
 
-### Committing and Submitting VS Code Assignments
-
-_It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished._
-
-1. Open the **Source Control** panel in VS Code.
-2. Stage all changes by clicking the **+** next to **Changes**.
-3. Enter a commit message and click the **Commit** button (use "finished" for your final commit).
-4. The **Commit** button should change to a **Sync Changes** button. Click this to finish syncing the latest changes to your online GitHub repository.
-5. Find your repository on GitHub.
-6. _Draft only:_ Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.
-7. Go to the **Settings** tab within the repository and navigate to the **Pages** section.
-8. Under **Branch**, select the appropriate branch to publish (draft or main) and click **Save**.
-9. After a few moments, if you refresh the page, there should now be a URL near the top next to a **Visit Site** button. If you click this button, you should see your site open in a new window.
-10. Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click **Submit Assignment**.
-
-<figure markdown="span">
-  ![Source Control: Stage and Commit changes](assets/source-control-changes.webp){ width="300" }
-  <figcaption>Source Control: Stage and Commit changes</figcaption>
-</figure>
-
 ### Autograding
 
 Assignments managed through GitHub will be run through an autograding process when they are committed and synced with "autograde" or "finished" as the commit message.
@@ -239,6 +218,26 @@ To review autograding results:
 5.  On the workflow details page, you can see the status of each step.
 
 If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.
+
+### Committing and Submitting VS Code Assignments
+
+_It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished._
+
+1. Open the **Source Control** panel in VS Code.
+2. Stage all changes by clicking the **+** next to **Changes**.
+3. Enter a commit message and click the **Commit** button (use "autograde" if you want to run the autograding process and "finished" for your final commit).
+4. The **Commit** button should change to a **Sync Changes** button. Click this to finish syncing the latest changes to your online GitHub repository.
+5. Find your repository on GitHub.
+6. _Draft only:_ Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.
+7. Go to the **Settings** tab within the repository and navigate to the **Pages** section.
+8. Under **Branch**, select the appropriate branch to publish (draft or main) and click **Save**.
+9. After a few moments, if you refresh the page, there should now be a URL near the top next to a **Visit Site** button. If you click this button, you should see your site open in a new window.
+10. Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click **Submit Assignment**.
+
+<figure markdown="span">
+  ![Source Control: Stage and Commit changes](assets/source-control-changes.webp){ width="300" }
+  <figcaption>Source Control: Stage and Commit changes</figcaption>
+</figure>
 
 ---
 
@@ -261,4 +260,4 @@ If you would like to fix errors identified by the autograding logs, you may comm
 - [ ] I have run the `git config` commands in the Terminal in VS Code.
 - [ ] I have signed VS Code into my GitHub account.
 - [ ] I have selected my **Live Server Custom Browser** in settings.
-- [ ] I have ensured that **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, **Chat**, and **Accounts** are all visible in the Activity Bar.
+- [ ] I have ensured that **Explorer**, **Search**, **Source Control**, **Extensions**, **Live Share**, and **Accounts** are all visible in the Activity Bar.

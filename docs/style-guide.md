@@ -32,9 +32,6 @@ The following items will be checked during the autograding workflow:
 
 - Write all CSS in the `style.css` file, which should be referenced in the `<head>` element using `<link>` tags. Avoid writing any CSS as inline `style` attributes or in `<style>` tags within the HTML.
 - Write all JavaScript in the `script.js` file, which should be referenced in the `<head>` element using `<script>` tags with the `defer` keyword. Avoid writing any JavaScript code inside `<script>` tags within the HTML.
-
-      - On a related note, do not use a `DOMContentLoaded` event listener or `window.onload` property in your JavaScript file. This can cause issues with some projects and is unnecessary when using the `defer` attribute in the `<script>` tags.
-
 - Trigger JavaScript functions from event listeners defined in the `script.js` file, not from HTML attributes.
 
 _This:_
@@ -49,6 +46,14 @@ _Not this:_
 ```html
 <button onclick="addCount()">Click Me</button>
 ```
+
+### JavaScript Loading
+
+By default, the `<script>` tag in the `<head>` of your `index.html` file is initialized with the `defer` keyword. This ensures that `script.js` is downloaded in parallel with the HTML document but only executes after the HTML has been fully parsed.
+
+It is important that you _do not_ remove the `defer` keyword, as doing so may cause errors if the script runs before the necessary HTML elements are available.
+
+Additionally, do not use a `DOMContentLoaded` event listener or `window.onload` property in your JavaScript file. These are redundant when using `defer` and may cause issues in future projects.
 
 ### Image Compression, Resolution, and Organization
 
@@ -285,7 +290,7 @@ There is a CSS class naming methodology called **Block-Element-Modifier** (BEM) 
   - Examples: `menu item`, `list item`, `checkbox caption`, `header title`
 - Modifier
   - A flag on a block or element. Use them to change appearance or behavior.
-  - Examples: disabled, highlighted, checked, fixed, size big, color yellow
+  - Examples: `disabled`, `highlighted`, `checked`, `fixed`, `size big`, `color yellow`
 
 You can read more about the BEM methodology at the following sites:
 
