@@ -212,10 +212,10 @@ The criteria checked during this process can be found on the [Style Guide](../st
 To review autograding results:
 
 1.  Navigate to your assignment repository on GitHub.
-2.  Click on the **Actions** tab at the top of the repository page.
-3.  In the **Actions** tab, click on the most recent item in the list of workflows that have been run.
-4.  Click on the workflow run to view the details.
-5.  On the workflow details page, you can see the status of each step.
+2.  Click on the **Actions** tab at the top of the repository page, then select **IMS322 Autograder** in the left column.
+3.  Select the most recent completed workflow at the top of the list. It will have either a blue checkmark or a red X, along with the name of the commit message you used.
+4.  Click on the workflow under **Jobs** to view the details.
+5.  On the details page, you can see the status of each grading step and the points awarded out of 12. You may need to expand the "Autograding" section and scroll to the bottom. Look for `--- AUTOGRADING RESULTS ---`.
 
 If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.
 
