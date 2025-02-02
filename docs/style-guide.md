@@ -19,7 +19,7 @@ This page is divided into 3 sections:
 Every assignment should start with the following three files:
 
 - `index.html`
-- `style.css`
+- `styles.css`
 - `script.js`
 
 These will be provided for you in each assignment template. Do not delete or rename them.
@@ -30,7 +30,7 @@ There are multiple aspects to this concept. Simply put, the goal is to only put 
 
 The following items will be checked during the autograding workflow:
 
-- Write all CSS in the `style.css` file, which should be referenced in the `<head>` element using `<link>` tags. Avoid writing any CSS as inline `style` attributes or in `<style>` tags within the HTML.
+- Write all CSS in the `styles.css` file, which should be referenced in the `<head>` element using `<link>` tags. Avoid writing any CSS as inline `style` attributes or in `<style>` tags within the HTML.
 - Write all JavaScript in the `script.js` file, which should be referenced in the `<head>` element using `<script>` tags with the `defer` keyword. Avoid writing any JavaScript code inside `<script>` tags within the HTML.
 - Trigger JavaScript functions from event listeners defined in the `script.js` file, not from HTML attributes.
 
