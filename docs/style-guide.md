@@ -57,7 +57,9 @@ Additionally, do not use a `DOMContentLoaded` event listener or `window.onload` 
 
 ### Image Compression, Resolution, and Organization
 
-All images used in your projects should be in WebP format with a _maximum_ resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
+With one exception (noted below), all images used in your projects should be in WebP format with a _maximum_ resolution of 2200px in either dimension. Use [Squoosh](https://squoosh.app) or another preferred image editing application that can export `.webp` files to prepare your images before adding them to your project.
+
+Things like logos, icons, or other vector drawings can be in SVG format. Keep in mind that `.svg` files typically need dimensions (width and/or height) specified in the CSS to be visible on the page.
 
 Store image files in an "images" folder to help keep the file browser organized. Remember, this means that the folder name will need to be included in the file path.
 
