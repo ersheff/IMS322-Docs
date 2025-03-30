@@ -126,6 +126,7 @@ Otherwise, for simplicity, I recommend checking [Google Fonts](https://fonts.goo
 ### Naming Conventions
 
 - Rename long or cryptic image files as needed. For example, `dog.webp` is much easier to type and identify than `neom-9E9NsEiUGxg-unsplash.webp`.
+- Do not use any spaces or special characters (e.g., parentheses) in any project file names. Doing so will prevent the autograding script from running. You may use hyphens - or underscores \_ if necessary.
 - Use concise, searchable, and meaningful names for classes, ids, functions, and variables. Only use common, easy-to-remember abbreviations if a name becomes excessively long.
 - Name class and id attributes in HTML and CSS using the "kebab-case" convention, where lowercase words are separated by hyphens.
 - Name functions and variables in JavaScript using the "camelCase" convention, where each word (except the first) starts with a capital letter, without spaces or hyphens.
