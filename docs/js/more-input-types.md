@@ -6,26 +6,9 @@ Buttons are the simplest form of control or input type. They present only one ch
 
 There are many other HTML input types and input-like elements that vary in complexity and intended application. Whenever possible, the type of input presented to the user should be the best fit for the information being collected.
 
-This page provides an overview of some commonly used input types. A full reference for all valid input types can be found here.
+This page provides an overview of a few other commonly used input types. A full reference for all valid input types can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input).
 
-In each of the examples below, `click`, `change`, or `input` event listeners are used to gather values.
-
-## Selection Controls
-
-A selection control allows the user to choose from a group of predetermined choices. The selection control presented in the example below, radio buttons, is typically best for multiple-choice style questions in which only one choice can be selected at a time.
-
-Some important things to note about radio buttons:
-
-- The name attribute given to the radio buttons groups them together so that only one can be selected at a time.
-- Each radio button is paired with a `<label>` element to provide instructions. The `for` attribute of each `<label>` should match the `id` of the corresponding radio button.
-- The `value` attribute should be gathered in JavaScript. It does not need to be the same as the `<label>` text.
-- Since there are multiple radio buttons in a set, each with its own `id`, it can be a tricky to find the value of a checked radio button in JavaScript. The recommendation is to use `document.querySelector("input[type='radio']:checked")` paired with a submit button.
-
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWGrNgo" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/ersheff/pen/XWGrNgo">
-  Selection Controls (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+In each the examples below, `change`, or `input` event listeners are used to gather values.
 
 ## List Controls
 
@@ -33,7 +16,7 @@ List controls allow users to select from a small set of text strings, each repre
 
 Some important things to note about `<select>` dropdown menus:
 
-- Like radio buttons, the `value` attribute is what will be gathered in your JavaScript. This does not need to match the displayed text.
+- The `value` attribute is what will be gathered in your JavaScript. This does not need to match the displayed text.
 - It is recommended to put instructions in the first `<option>` with an empty `value`, as this will be the first thing the user sees by default. This will also prompt the user to make a selection.
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyrbOzP" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
