@@ -2,7 +2,7 @@
 
 A collection of documents and example code developed for a course I teach - IMS 322: Intermediate Interaction Design and Development.
 
-[IMS322 Docs site](https://ims322.ersheff.com/)
+[IMS322 Docs site](https://ims322docs.ersheff.com/)
 
 This required course ensures that all students in the degree program, many of whom have little or no prior coding experience, understand the basic syntax and patterns used in many programming languages. The class is structured around multiple web-based creative interaction design projects, each progressively applying JavaScript to add interactivity to their HTML and CSS.
 
