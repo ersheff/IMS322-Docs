@@ -6,6 +6,8 @@ Attributes are placed inside the opening tag of an element, like this:
 
 ```html
 <a href="https://miamioh.edu">Link to Miami University's site</a>
+
+<img src="https://picsum.photos/id/237" alt="cute black dog" />
 ```
 
 Like elements themselves, there are dozens of valid attributes, as seen on [this MDN Web Docs reference page](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes). However, you will likely only need to use the following attributes in your projects throughout the semester:
