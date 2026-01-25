@@ -9,7 +9,7 @@ The DOM defines:
 **HTML elements _as objects_** (i.e., how an HTML element is represented when assigned to a variable).
 
 ```js
-const mainHeading = document.querySelector("#main-heading");
+const mainHeading = document.getElementById("main-heading");
 ```
 
 **The _properties_ of HTML element objects**, which are similar to attributes in HTML.
@@ -17,7 +17,7 @@ const mainHeading = document.querySelector("#main-heading");
 Properties can be set:
 
 ```js
-headshotImage.src = "images/headshot.webp";
+headshotImage.src = "images/headshot.jpeg";
 ```
 
 Properties can also be read:
@@ -78,7 +78,7 @@ These values can be read in JavaScript by listening for the `input` event (e.g.,
 
 ## Getting Started with Methods
 
-Some methods - like `document.querySelector()`, `console.log()`, `.addEventListener()`, and `classList.toggle()` - are used so frequently that they become second nature. At times, you might need to reference online documentation to explore more methods (or properties and events) associated with an object. For example, the `play()` method is described in the [Basic Usage](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#basic_usage) section of the MDN Web Docs article on HTML Audio Elements.
+Some methods - like `document.getElementById()`, `console.log()`, `.addEventListener()`, and `classList.toggle()` - are used so frequently that they become second nature. At times, you might need to reference online documentation to explore more methods (or properties and events) associated with an object. For example, the `play()` method is described in the [Basic Usage](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#basic_usage) section of the MDN Web Docs article on HTML Audio Elements.
 
 <p class="codepen" data-height="400" data-default-tab="js,result" data-slug-hash="vYPGjPy" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/vYPGjPy">

@@ -1,6 +1,6 @@
 # Grid
 
-Grid is similar to [flexbox](../flexbox) in that it is used to create responsive layouts that adapt to fill the available space. However, while grid can be used for smaller components, it is a two-dimensional layout system typically adopted for creating larger layouts.
+**Grid** is similar to [flexbox](../flexbox) in that it is used to create responsive layouts that adapt to fill the available space. However, while grid can be used for smaller components, it is primarily a two-dimensional layout system typically adopted for creating larger layouts.
 
 The scope of properties and options in grid can be a little overwhelming. As with flexbox, CSS Tricks has an excellent article called ["CSS Grid Layout Guide"](https://css-tricks.com/snippets/css/complete-guide-grid/) that covers just about everything, but this selection of nine properties (demonstrated in the examples below) will suffice for most basic layout needs:
 

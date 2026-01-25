@@ -73,7 +73,7 @@ const months = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 
 for (const month of months) {

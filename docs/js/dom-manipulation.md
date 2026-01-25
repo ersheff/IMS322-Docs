@@ -47,9 +47,9 @@ Let's start simply. If you were to create an object with properties that describ
 
 ```js
 const onionAndPeppercorns = {
-  imageUrl: "https://picsum.photos/id/292/800/600.webp",
+  imageUrl: "https://picsum.photos/id/292/800/600",
   alt: "onion and peppercorns",
-  caption: "Onion and Peppercorns."
+  caption: "Onion and Peppercorns.",
 };
 ```
 
@@ -60,7 +60,7 @@ const figureElement = document.createElement("figure");
 const imageElement = document.createElement("img");
 const captionElement = document.createElement("figcaption");
 
-// sets src attribute to "https://picsum.photos/id/292/800/600.webp"
+// sets src attribute to "https://picsum.photos/id/292/800/600"
 imageElement.src = onionAndPeppercorns.imageUrl;
 // sets alt text attribute to "onion and peppercorns"
 imageElement.alt = onionAndPeppercorns.alt;

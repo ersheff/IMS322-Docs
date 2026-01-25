@@ -29,12 +29,12 @@ In JavaScript, we introduce two new concepts:
 2. Use the method `classList.toggle()` to add/remove the `.red-text` class.
 
 ```js
-const colorToggleBtn = document.querySelector("#color-toggle-btn");
+const colorToggleBtn = document.getElementById("color-toggle-btn");
 
 colorToggleBtn.addEventListener("click", colorToggle);
 
 function colorToggle() {
-  const changingText = document.querySelector("#changing-text");
+  const changingText = document.getElementById("changing-text");
   changingText.classList.toggle("red-text");
 }
 ```

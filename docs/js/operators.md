@@ -71,7 +71,7 @@ When working with strings, `+` is the concatenation operator, joining strings to
 ```js
 const myName = "Eric";
 const welcomeMessage = "Welcome, " + myName + ".";
-console.log(welcomeMessage); // logs "Welcome, Eric." to the console
+console.log(welcomeMessage); // logs 'Welcome, Eric.' to the console
 ```
 
 _When using the console with embedded CodePen examples, you should open the Pen in its own window by clicking **Edit On CodePen** and then clicking the **Console** button in the CodePen editor._

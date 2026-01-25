@@ -1,6 +1,6 @@
 # Flexbox
 
-Flexbox is used to create responsive layouts. It is typically considered ideal for 1-dimensional rows or columns, though more complex layouts can be achieved by nesting flexboxes inside of each other.
+**Flexbox** is used to create responsive layouts. It is typically considered ideal for one-dimensional rows or columns, though more complex layouts can be achieved by nesting flexboxes inside of each other.
 
 From CSS Tricks' ["CSS Flexbox Layout Guide"](https://css-tricks.com/snippets/css/a-guide-to-flexbox/):
 

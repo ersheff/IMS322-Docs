@@ -2,16 +2,16 @@ site_name: IMS322 Docs
 theme:
   name: material
   palette:
-    - media: "(prefers-color-scheme)"
+    - media: '(prefers-color-scheme)'
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -34,17 +34,25 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Setup: setup.md
-  - Style Guide: style-guide.md
+  - Coding Style & Requirements: style-requirements.md
+  - HTML:
+      - Introduction: html/introduction.md
+      - Attributes: html/attributes.md
+      - Elements: html/elements.md
+      - Semantic HTML: html/semantic-html.md
   - CSS:
       - Introduction: css/introduction.md
-      - CSS Nesting: css/nesting.md
+      - Box Model: css/box-model.md
       - Flexbox: css/flexbox.md
       - Grid: css/grid.md
       - Hover: css/hover.md
       - Input Styling: css/input-styling.md
-      - Media Queries: css/media-queries.md
-      - Relative Units: css/relative-units.md
+      - Mobile-First Design: css/mobile-first.md
+      - Nesting: css/nesting.md
+      - Properties and Units: css/properties-units.md
+      - RWD Overview: css/rwd-overview.md
       - Transitions: css/transitions.md
+      - Typography: css/typography.md
       - Variables: css/variables.md
   - JavaScript:
       - Introduction: js/introduction.md
@@ -66,12 +74,10 @@ nav:
       - Operators: js/operators.md
       - Using the Console: js/using-the-console.md
       - Variables: js/variables.md
-  - Reference:
-      - Introduction: ref/introduction.md
-      - Additional Resources: ref/additional-resources.md
-      - Artificial Intelligence: ref/ai.md
-      - Browser Review: ref/browser-review.md
-      - HTML Review: ref/html-review.md
-      - Optimizing Images: ref/optimizing-images.md
-      - Utilities: ref/utilities.md
-      - Wireframes: ref/wireframes.md
+  - Resources:
+      - Introduction: res/introduction.md
+      - Additional Resources: res/additional-resources.md
+      - Artificial Intelligence: res/ai.md
+      - Browser Review: res/browser-review.md
+      - Optimizing Images: res/optimizing-images.md
+      - Utilities: res/utilities.md

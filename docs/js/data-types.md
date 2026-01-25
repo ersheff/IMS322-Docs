@@ -57,7 +57,7 @@ const myLaptop = {
   model: "MacBook Air",
   year: 2020,
   processor: "M1",
-  color: "Space Gray"
+  color: "Space Gray",
 };
 ```
 
@@ -86,7 +86,7 @@ _Null_ represents an empty or unknown value.
 ```
 
 ```js
-const myElement = document.querySelector("#does-not-exist");
+const myElement = document.getElementById("does-not-exist");
 
 console.log(myElement); // logs null
 ```

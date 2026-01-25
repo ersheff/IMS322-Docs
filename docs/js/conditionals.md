@@ -53,7 +53,7 @@ if (x > 10) {
 }
 ```
 
-This checks if the string variable exactly matches "Eric":
+This checks if the string variable exactly matches 'Eric':
 
 ```js
 const myName = "Eric";

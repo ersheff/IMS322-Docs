@@ -1,6 +1,6 @@
 # Using the Console
 
-The console is part of the [Developer Tools](../ref/browser-review.md#developer-tools) in your browser. While anyone can open the developer tools, the console is typically not viewed by users. Take a moment to ensure you can find your browser's console.
+The console is part of the [Developer Tools](../res/browser-review.md#developer-tools) in your browser. While anyone can open the developer tools, the console is typically not viewed by users. Take a moment to ensure you can find your browser's console.
 
 One of the console's main purposes is to display messages for developers. These messages can include automatically generated warnings and errors, but you can also manually log information using the `console.log()` method.
 

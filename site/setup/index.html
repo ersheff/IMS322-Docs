@@ -12,11 +12,14 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../style-guide/">
+        <link rel="next" href="../style-requirements/">
+      
+      
+        
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -24,10 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -46,11 +49,10 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -91,12 +93,12 @@
     <a href=".." title="IMS322 Docs" class="md-header__button md-logo" aria-label="IMS322 Docs" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -124,7 +126,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
       </label>
     
   
@@ -134,7 +136,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -144,7 +146,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -152,30 +154,32 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
@@ -192,6 +196,7 @@
     </div>
   </div>
 </div>
+      
     
     
   </nav>
@@ -222,7 +227,7 @@
     <a href=".." title="IMS322 Docs" class="md-nav__button md-logo" aria-label="IMS322 Docs" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     IMS322 Docs
@@ -240,9 +245,16 @@
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -269,9 +281,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     Setup
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -280,9 +299,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Setup
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -305,7 +331,9 @@
         <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     <span class="md-ellipsis">
-      Git
+      
+        Git
+      
     </span>
   </a>
   
@@ -313,27 +341,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mac" class="md-nav__link">
+  <a href="#windows-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Mac
+      
+        Windows Installation
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
+  <a href="#mac-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows
+      
+        Mac Installation
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#other" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      
+        Other
+      
     </span>
   </a>
   
@@ -345,18 +379,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github" class="md-nav__link">
+  <a href="#github-and-github-student-benefits" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#codepen" class="md-nav__link">
-    <span class="md-ellipsis">
-      CodePen
+        GitHub and GitHub Student Benefits
+      
     </span>
   </a>
   
@@ -365,16 +392,59 @@
         <li class="md-nav__item">
   <a href="#browsers" class="md-nav__link">
     <span class="md-ellipsis">
-      Browsers
+      
+        Browsers
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#codepen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CodePen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CodePen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#vs-code" class="md-nav__link">
     <span class="md-ellipsis">
-      VS Code
+      
+        VS Code
+      
     </span>
   </a>
   
@@ -384,7 +454,9 @@
           <li class="md-nav__item">
   <a href="#extensions" class="md-nav__link">
     <span class="md-ellipsis">
-      Extensions
+      
+        Extensions
+      
     </span>
   </a>
   
@@ -393,7 +465,9 @@
           <li class="md-nav__item">
   <a href="#git-setup-and-github-login" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Setup and GitHub Login
+      
+        Git Setup and GitHub Login
+      
     </span>
   </a>
   
@@ -402,7 +476,9 @@
           <li class="md-nav__item">
   <a href="#editor-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Editor Settings
+      
+        Editor Settings
+      
     </span>
   </a>
   
@@ -416,7 +492,9 @@
         <li class="md-nav__item">
   <a href="#assignment-procedures" class="md-nav__link">
     <span class="md-ellipsis">
-      Assignment Procedures
+      
+        Assignment Procedures
+      
     </span>
   </a>
   
@@ -426,7 +504,9 @@
           <li class="md-nav__item">
   <a href="#accepting-codepen-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Accepting CodePen Assignments
+      
+        Accepting CodePen Assignments
+      
     </span>
   </a>
   
@@ -435,7 +515,9 @@
           <li class="md-nav__item">
   <a href="#submitting-codepen-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Submitting CodePen Assignments
+      
+        Submitting CodePen Assignments
+      
     </span>
   </a>
   
@@ -444,7 +526,9 @@
           <li class="md-nav__item">
   <a href="#accepting-and-cloning-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Accepting and Cloning VS Code Assignments
+      
+        Accepting and Cloning VS Code Assignments
+      
     </span>
   </a>
   
@@ -453,16 +537,9 @@
           <li class="md-nav__item">
   <a href="#working-with-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Working With VS Code Assignments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autograding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autograding
+      
+        Working With VS Code Assignments
+      
     </span>
   </a>
   
@@ -471,7 +548,9 @@
           <li class="md-nav__item">
   <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Committing and Submitting VS Code Assignments
+      
+        Committing and Submitting VS Code Assignments
+      
     </span>
   </a>
   
@@ -485,7 +564,9 @@
         <li class="md-nav__item">
   <a href="#setup-checklist" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup Checklist
+      
+        Setup Checklist
+      
     </span>
   </a>
   
@@ -506,12 +587,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../style-guide/" class="md-nav__link">
+      <a href="../style-requirements/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Style Guide
+    
+  
+    Coding Style & Requirements
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -525,6 +613,7 @@
   
   
   
+    
     
     
     
@@ -539,9 +628,16 @@
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    CSS
+    
+  
+    HTML
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -550,7 +646,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            CSS
+            
+  
+    HTML
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -561,12 +661,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../css/introduction/" class="md-nav__link">
+      <a href="../html/introduction/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -582,12 +689,185 @@
   
   
     <li class="md-nav__item">
-      <a href="../css/nesting/" class="md-nav__link">
+      <a href="../html/attributes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    CSS Nesting
+    
+  
+    Attributes
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/semantic-html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semantic HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CSS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CSS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/box-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Box Model
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -606,9 +886,16 @@
       <a href="../css/flexbox/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Flexbox
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -627,9 +914,16 @@
       <a href="../css/grid/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Grid
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -648,9 +942,16 @@
       <a href="../css/hover/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Hover
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -669,9 +970,16 @@
       <a href="../css/input-styling/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Input Styling
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -687,12 +995,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../css/media-queries/" class="md-nav__link">
+      <a href="../css/mobile-first/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Media Queries
+    
+  
+    Mobile-First Design
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -708,12 +1023,75 @@
   
   
     <li class="md-nav__item">
-      <a href="../css/relative-units/" class="md-nav__link">
+      <a href="../css/nesting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Relative Units
+    
+  
+    Nesting
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/properties-units/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties and Units
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/rwd-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RWD Overview
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -732,9 +1110,44 @@
       <a href="../css/transitions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Transitions
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Typography
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -753,9 +1166,16 @@
       <a href="../css/variables/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Variables
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -781,28 +1201,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     JavaScript
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            JavaScript
+            
+  
+    JavaScript
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -816,9 +1248,16 @@
       <a href="../js/introduction/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -837,9 +1276,16 @@
       <a href="../js/arrays/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Arrays
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -858,9 +1304,16 @@
       <a href="../js/class-toggling/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Class Toggling
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -879,9 +1332,16 @@
       <a href="../js/conditionals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Conditionals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -900,9 +1360,16 @@
       <a href="../js/data-types/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Data Types
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -921,9 +1388,16 @@
       <a href="../js/dom-manipulation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DOM Manipulation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -942,9 +1416,16 @@
       <a href="../js/dom-properties-and-methods/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DOM Properties and Methods
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -963,9 +1444,16 @@
       <a href="../js/event-listeners/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Event Listeners
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -984,9 +1472,16 @@
       <a href="../js/for-loops/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     For Loops
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1005,9 +1500,16 @@
       <a href="../js/forms/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Forms
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1026,9 +1528,16 @@
       <a href="../js/functions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1047,9 +1556,16 @@
       <a href="../js/manipulating-style-properties/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Manipulating Style Properties
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1068,9 +1584,16 @@
       <a href="../js/modals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Modals
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1089,9 +1612,16 @@
       <a href="../js/more-functions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     More Functions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1110,9 +1640,16 @@
       <a href="../js/more-input-types/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     More Input Types
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1131,9 +1668,16 @@
       <a href="../js/objects/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Objects
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1152,9 +1696,16 @@
       <a href="../js/operators/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Operators
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1173,9 +1724,16 @@
       <a href="../js/using-the-console/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Using the Console
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1194,9 +1752,16 @@
       <a href="../js/variables/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Variables
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1222,28 +1787,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    Reference
+    
+  
+    Resources
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Reference
+            
+  
+    Resources
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1254,12 +1831,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/introduction/" class="md-nav__link">
+      <a href="../res/introduction/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1275,12 +1859,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/additional-resources/" class="md-nav__link">
+      <a href="../res/additional-resources/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Additional Resources
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1296,12 +1887,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/ai/" class="md-nav__link">
+      <a href="../res/ai/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Artificial Intelligence
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1317,12 +1915,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/browser-review/" class="md-nav__link">
+      <a href="../res/browser-review/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Browser Review
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1338,33 +1943,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/html-review/" class="md-nav__link">
+      <a href="../res/optimizing-images/" class="md-nav__link">
         
   
-  <span class="md-ellipsis">
-    HTML Review
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ref/optimizing-images/" class="md-nav__link">
-        
   
   <span class="md-ellipsis">
+    
+  
     Optimizing Images
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1380,33 +1971,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/utilities/" class="md-nav__link">
+      <a href="../res/utilities/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Utilities
-  </span>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ref/wireframes/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Wireframes
+    
   </span>
+  
   
 
       </a>
@@ -1451,7 +2028,9 @@
         <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     <span class="md-ellipsis">
-      Git
+      
+        Git
+      
     </span>
   </a>
   
@@ -1459,27 +2038,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mac" class="md-nav__link">
+  <a href="#windows-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Mac
+      
+        Windows Installation
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
+  <a href="#mac-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows
+      
+        Mac Installation
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#other" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      
+        Other
+      
     </span>
   </a>
   
@@ -1491,18 +2076,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github" class="md-nav__link">
+  <a href="#github-and-github-student-benefits" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#codepen" class="md-nav__link">
-    <span class="md-ellipsis">
-      CodePen
+        GitHub and GitHub Student Benefits
+      
     </span>
   </a>
   
@@ -1511,16 +2089,59 @@
         <li class="md-nav__item">
   <a href="#browsers" class="md-nav__link">
     <span class="md-ellipsis">
-      Browsers
+      
+        Browsers
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#codepen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CodePen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CodePen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#vs-code" class="md-nav__link">
     <span class="md-ellipsis">
-      VS Code
+      
+        VS Code
+      
     </span>
   </a>
   
@@ -1530,7 +2151,9 @@
           <li class="md-nav__item">
   <a href="#extensions" class="md-nav__link">
     <span class="md-ellipsis">
-      Extensions
+      
+        Extensions
+      
     </span>
   </a>
   
@@ -1539,7 +2162,9 @@
           <li class="md-nav__item">
   <a href="#git-setup-and-github-login" class="md-nav__link">
     <span class="md-ellipsis">
-      Git Setup and GitHub Login
+      
+        Git Setup and GitHub Login
+      
     </span>
   </a>
   
@@ -1548,7 +2173,9 @@
           <li class="md-nav__item">
   <a href="#editor-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Editor Settings
+      
+        Editor Settings
+      
     </span>
   </a>
   
@@ -1562,7 +2189,9 @@
         <li class="md-nav__item">
   <a href="#assignment-procedures" class="md-nav__link">
     <span class="md-ellipsis">
-      Assignment Procedures
+      
+        Assignment Procedures
+      
     </span>
   </a>
   
@@ -1572,7 +2201,9 @@
           <li class="md-nav__item">
   <a href="#accepting-codepen-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Accepting CodePen Assignments
+      
+        Accepting CodePen Assignments
+      
     </span>
   </a>
   
@@ -1581,7 +2212,9 @@
           <li class="md-nav__item">
   <a href="#submitting-codepen-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Submitting CodePen Assignments
+      
+        Submitting CodePen Assignments
+      
     </span>
   </a>
   
@@ -1590,7 +2223,9 @@
           <li class="md-nav__item">
   <a href="#accepting-and-cloning-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Accepting and Cloning VS Code Assignments
+      
+        Accepting and Cloning VS Code Assignments
+      
     </span>
   </a>
   
@@ -1599,16 +2234,9 @@
           <li class="md-nav__item">
   <a href="#working-with-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Working With VS Code Assignments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#autograding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autograding
+      
+        Working With VS Code Assignments
+      
     </span>
   </a>
   
@@ -1617,7 +2245,9 @@
           <li class="md-nav__item">
   <a href="#committing-and-submitting-vs-code-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Committing and Submitting VS Code Assignments
+      
+        Committing and Submitting VS Code Assignments
+      
     </span>
   </a>
   
@@ -1631,7 +2261,9 @@
         <li class="md-nav__item">
   <a href="#setup-checklist" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup Checklist
+      
+        Setup Checklist
+      
     </span>
   </a>
   
@@ -1647,62 +2279,80 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
+
 <h1 id="setup">Setup</h1>
 <p>The sections on this page will lead you through the process of setting up the applications and accounts needed to complete IMS322 coursework. It is recommended that you follow the steps below in the order listed:</p>
 <ol>
-<li>Install <a href="#git">Git</a>.</li>
-<li>Create a <a href="#github">GitHub</a> account (if needed).</li>
-<li>Log in to <a href="#codepen">CodePen</a>, enable <strong>Format on Save</strong> and <strong>Autocomplete</strong> in account settings, and create your first <strong>Pen</strong>.</li>
-<li>Install additional <a href="#browsers">browsers</a> as needed.</li>
-<li>Install <a href="#vs-code">VS Code</a> and configure extensions and settings.</li>
-<li>Review coding <a href="#assignment-procedures">assignment procedures</a>.</li>
+<li><a href="#git">Git</a></li>
+<li><a href="#github-and-github-student-benefits">GitHub and GitHub Student Benefits</a></li>
+<li><a href="#browsers">Browsers</a></li>
+<li><a href="#codepen">CodePen</a></li>
+<li><a href="#vs-code">VS Code</a></li>
+<li><a href="#assignment-procedures">Assignment Procedures</a></li>
 </ol>
 <hr />
 <h2 id="git">Git</h2>
-<p><a href="https://git-scm.com">Git</a> is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will only be using it through the <strong>Source Control</strong> panel in VS Code.</p>
+<p><a href="https://git-scm.com">Git</a> is a "version control system" that helps track and manage changes in files. While Git itself is very powerful, we will only be using it through the <strong>Source Control</strong> panel in VS Code, not as a separate application.</p>
 <figure>
   <img alt="Activity Bar: Source Control panel" src="../assets/activity-bar-source-control.webp" width="400" />
-  <figcaption>Activity Bar: Source Control panel</figcaption>
+<br />
+<figcaption>Activity Bar: Source Control panel</figcaption>
 </figure>
-<h3 id="mac">Mac</h3>
-<p>Mac users should use the Homebrew installation option:</p>
+<h3 id="windows-installation">Windows Installation</h3>
+<p>Windows users should download and install the latest version of Git from <a href="https://git-scm.com/install/windows">here</a>. Accept the default options during installation.</p>
+<h3 id="mac-installation">Mac Installation</h3>
+<p>There is not an updated standalone Git installer for Mac. Instead, perform the following actions:</p>
 <ol>
-<li>Install <a href="https://github.com/Homebrew/brew/releases/download/4.4.17/Homebrew-4.4.17.pkg">Homebrew</a>.</li>
-<li>Run <code>brew install git</code> in <strong>Terminal</strong>. If you are prompted to install the Xcode "command line developer tools", click <strong>Install</strong>. This will take a while, so make sure you are on a fast Wi-Fi network.</li>
+<li>Make sure you are on a fast Wi-Fi network (<strong>MiamiOH-Secure</strong> or your home Wi-Fi, <em>not</em> <strong>MiamiOH-Visitor</strong>).</li>
+<li>Open the application <strong>Terminal</strong>, type <code>git --version</code>, then press <strong>Enter</strong> to run the command.</li>
+<li>If Git is already installed, you will see a response like <code>git version 2.52.0</code>.</li>
+<li>If Git is <em>not</em> already installed, you should be prompted to install the Xcode command line developer tools. If so, click <strong>Install</strong>. This may take a while.</li>
 </ol>
-<h3 id="windows">Windows</h3>
-<p>Windows users should use the 64-bit Git for Windows Setup under <a href="https://git-scm.com/download/win">Standalone Installer</a>.</p>
-<h3 id="linux">Linux</h3>
-<p>If you're using Linux, you probably don't need help installing Git! Follow the instructions <a href="https://git-scm.com/download/linux">here</a>.</p>
+<h3 id="other">Other</h3>
+<p>If you do not have a Windows or Mac laptop (e.g., iPad or Chromebook), please let me know. There are some other viable options, but we will need to address them on a case-by-case basis.</p>
 <hr />
-<h2 id="github">GitHub</h2>
+<h2 id="github-and-github-student-benefits">GitHub and GitHub Student Benefits</h2>
 <p><a href="https://github.com">GitHub</a> is a platform for creating, storing, and managing code. It relies on Git to commit and sync changes between files stored locally on your computer (the ones that you'll be editing in VS Code) and online repositories. In this class, we will be using GitHub to manage all major assignments and projects.</p>
 <ol>
 <li>Create a <a href="https://github.com">GitHub</a> account (if you don't already have one).</li>
-<li>In the upper-right corner of any page on GitHub, click your profile photo, then click <strong>Settings</strong>.</li>
+<li>In the upper-right corner of any page on GitHub, click your profile icon, then click <strong>Settings</strong>.</li>
 <li>In the <strong>Access</strong> section of the sidebar, click <strong>Password and authentication</strong>.</li>
 <li>In the <strong>Two-factor authentication</strong> section of the page, click <strong>Enable two-factor authentication</strong>.</li>
-<li>STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!</li>
+<li><strong>STOP! DO NOT SCAN THE QR CODE USING YOUR REGULAR CAMERA APP!</strong></li>
 <li>Open Duo Mobile and click <strong>Add +</strong>, then choose <strong>Use QR Code</strong> to scan the QR code. You may use a different 2FA app if you have a preferred alternative.</li>
 <li>Complete the rest of the Two-Factor Authentication setup as directed.</li>
-<li>Register for GitHub <a href="https://github.com/education/students">Student Benefits</a> (this will give you access to the GitHub Copilot AI assistant within VS Code). FYI - there is a document in myMiami called "Enrollment Verification" that seems to work for this.</li>
+<li>Register for GitHub Student Benefits <a href="https://github.com/education/students">here</a> in order to enable access to the GitHub Copilot AI assistant. If needed, there is a document in myMiami called "Enrollment Verification" that seems to work for the verification requested by GitHub.</li>
 <li>Once your student benefits have been approved, log in to GitHub and click on your profile icon. Choose <strong>Your Copilot</strong> from the menu to claim Copilot access.</li>
 </ol>
 <hr />
+<h2 id="browsers">Browsers</h2>
+<p>Although there are many different modern web browsers, there are essentially only three different <a href="https://en.wikipedia.org/wiki/Browser_engine">browser engines</a> currently in use. A browser engine is the software component under the hood that handles document layout, rendering, and security.</p>
+<ul>
+<li><strong>WebKit</strong> is maintained by Apple and used for the desktop and mobile versions of <a href="https://www.apple.com/safari/">Safari</a>, which is the default browser on Apple devices.</li>
+<li><strong>Blink</strong> is maintained by Google and powers all Chromium-based browsers, which include <a href="https://www.google.com/chrome/">Google Chrome</a>, <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="https://brave.com/">Brave</a>, <a href="https://www.opera.com/gx">Opera GX</a>, and others.</li>
+<li><strong>Gecko</strong> is maintained by Mozilla and used for <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>.</li>
+</ul>
+<p>You must have <em>both</em> Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also expected that you choose one of these as the <strong>Live Server Custom Browser</strong> in VS Code (instructions provided below).</p>
+<hr />
 <h2 id="codepen">CodePen</h2>
 <p><a href="https://codepen.io/">CodePen</a> is a popular online code editor focused on creating and sharing snippets of HTML, CSS, and JavaScript. The embedded code examples throughout the IMS322 Docs site have been created using CodePen. One of the main reasons that we use CodePen for this class is because it allows you to edit embedded examples right on the page and see live results - try it out below! We will also regularly use CodePen instead of VS Code for smaller assignments, like weekly practice and in-class exercises.</p>
-<p>There are a few important things to note about CodePen and how it differs from the VS Code and GitHub workflow:</p>
+<h3 id="quick-setup">Quick Setup</h3>
+<ol>
+<li>Log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.</li>
+<li>Click on your profile icon in the upper-right corner, then choose <strong>Settings</strong>.</li>
+<li>In the <strong>Editor Preferences</strong> section, make sure that the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options are checked.</li>
+</ol>
+<h3 id="notes">Notes</h3>
 <ul>
-<li>You should log in to CodePen using your GitHub username and password. There is no actual connection between CodePen and GitHub; it simply uses the same account credentials.</li>
 <li>A project on CodePen is called a "Pen." By default, a Pen includes HTML, CSS, and JavaScript editors, as well as a live preview.</li>
-<li>Make sure that the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options are checked in your account settings (found in the <strong>Editor Preferences</strong> section).</li>
 <li><em>The simplified HTML editor should not have a <code>&lt;head&gt;</code> element or <code>&lt;body&gt;</code> tags</em>. You should start your HTML content from the first tag that would normally go after the opening <code>&lt;body&gt;</code> tag, like a <code>&lt;header&gt;</code> or <code>&lt;h1&gt;</code> element.</li>
-<li>There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the <code>src</code> attribute of the <code>&lt;img&gt;</code> element. Generally, the content of images in CodePen-based assignments is not important, so a random image hosting service like <a href="https://picsum.photos">Lorem Picsum</a> will suffice.</li>
+<li>There is no file hosting provided with free CodePen accounts. When you want to include images in CodePen assignments, you will need to use a URL instead of a file name for the <code>src</code> attribute of the <code>&lt;img&gt;</code> element. Generally, the content of images in our CodePen-based assignments is not important, so a random image hosting service like <a href="https://picsum.photos">Lorem Picsum</a> will suffice.</li>
 </ul>
 <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNPVYVb" data-pen-title="Embed Example (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/WNPVYVb">
@@ -1712,29 +2362,19 @@
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <hr />
-<h2 id="browsers">Browsers</h2>
-<p>Although there are many different modern web browsers, there are essentially only three different <a href="https://en.wikipedia.org/wiki/Browser_engine">browser engines</a> currently in use. A browser engine is the software component under the hood that handles document layout, rendering, and security.</p>
-<ul>
-<li><strong>WebKit</strong> is maintained by Apple and used for the desktop and mobile versions of <a href="https://www.apple.com/safari/">Safari</a>, which is the default browser on Apple devices.</li>
-<li><strong>Blink</strong> is maintained by Google and powers all Chromium-based browsers, which include <a href="https://www.google.com/chrome/">Google Chrome</a>, <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="https://brave.com/">Brave</a>, <a href="https://www.opera.com/gx">Opera GX</a>, and others.</li>
-<li><strong>Gecko</strong> is maintained by Mozilla and used for <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>.</li>
-</ul>
-<p>You should have <em>both</em> Firefox and at least one Chromium-based browser installed on your laptop for this class. It is also recommended that you set one of these as the <strong>Live Server Custom Browser</strong> during VS Code configuration (instructions provided below).</p>
-<hr />
 <h2 id="vs-code">VS Code</h2>
 <p><a href="https://code.visualstudio.com">Visual Studio Code</a> (aka VS Code) is the code editor that we will be using for all major assignments in this class. After installing the VS Code application, follow the instructions below to configure extensions and settings.</p>
 <h3 id="extensions">Extensions</h3>
 <p>We will be using a small collection of VS Code extensions to assist with formatting and development. Search for the following extensions in the <strong>Extensions</strong> panel to install them:</p>
-<ul>
-<li><strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> AI code assistant (published by GitHub, requires GitHub Student Benefits activation)</li>
-<li><strong>JS-Beautify for VS Code</strong> for HTML formatting (published by VSCE Toolroom)</li>
+<ol>
 <li><strong>Prettier</strong> for CSS and JavaScript formatting (published by Prettier)</li>
 <li><strong>Live Server</strong> for quick and easy browser previews (published by Ritwick Dey)</li>
 <li><strong>Live Share</strong> for collaborative coding (published by Microsoft)</li>
-</ul>
+</ol>
 <figure>
   <img alt="Activity Bar: Extensions panel" src="../assets/activity-bar-extensions.webp" width="400" />
-  <figcaption>Activity Bar: Extensions panel</figcaption>
+<br />
+<figcaption>Activity Bar: Extensions panel</figcaption>
 </figure>
 <h3 id="git-setup-and-github-login">Git Setup and GitHub Login</h3>
 <p><em>Make sure that Git has finished installing before completing these steps.</em></p>
@@ -1749,17 +2389,18 @@
 </span></code></pre></div>
 <figure>
   <img alt="Activity Bar: Accounts" src="../assets/activity-bar-accounts.webp" width="400" />
-  <figcaption>Activity Bar: Accounts</figcaption>
+<br />
+<figcaption>Activity Bar: Accounts</figcaption>
 </figure>
 <h3 id="editor-settings">Editor Settings</h3>
 <ol>
-<li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and choose your preferred browser from the dropdown menu (Firefox or Chromium-based). This is the browser that will open automatically whenever you run the Live Server extension.</li>
-<li>Right-click the <strong>Activity Bar</strong> on the left side of the window. Uncheck <strong>Run and Debug</strong>. Ensure that only <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, and <strong>Accounts</strong> are checked.</li>
-<li>There are a few other settings that will be automatically managed for you by a hidden file in project templates in the future. This primarily enables autoformatting for the plugins that you previously installed.</li>
+<li>Click on the gear icon in the lower-left and choose <strong>Settings</strong>. Search for <strong>Live Server Custom Browser</strong> and select your preferred browser (Firefox or Chromium-based) from the dropdown. This is the browser that will open automatically whenever you run the Live Server extension to preview your code.</li>
+<li>Some additional settings, such as autoformatting, will be managed for you by configuration files in project templates. These are located inside folders that begin with <code>.</code>, such as <code>.instructor</code> and <code>.vscode</code>. Do not modify or delete these files!</li>
+<li>In a future class period, we will go over how to enable and configure Copilot after everyone's student benefits have been activated.</li>
 </ol>
 <hr />
 <h2 id="assignment-procedures">Assignment Procedures</h2>
-<p>Throughout the semester, coursework will be assigned using both CodePen and VS Code with GitHub. Some specific instructions and details in the Canvas assignment descriptions may differ on a case-by-case basis, but the general workflow for both platforms is outlined below.</p>
+<p>Throughout the semester, coursework will be assigned using both CodePen and VS Code with GitHub. Some specific instructions and details in the assignment descriptions may differ on a case-by-case basis, but the general workflow for both platforms is outlined below.</p>
 <h3 id="accepting-codepen-assignments">Accepting CodePen Assignments</h3>
 <ol>
 <li>If the Canvas assignment instructions point to an embedded example Pen, click <strong>Edit On CodePen</strong>, then create a copy of it in your account by clicking the <strong>Fork</strong> button in the lower-right corner of the editor window. Otherwise, create a new empty Pen.</li>
@@ -1767,11 +2408,13 @@
 </ol>
 <figure>
   <img alt="Edit On CodePen" src="../assets/edit-on-codepen.webp" width="400" />
-  <figcaption>Edit On CodePen</figcaption>
+<br />
+<figcaption>Edit On CodePen</figcaption>
 </figure>
 <figure>
   <img alt="CodePen: Fork" src="../assets/codepen-fork.webp" width="500" />
-  <figcaption>CodePen: Fork</figcaption>
+<br />
+<figcaption>CodePen: Fork</figcaption>
 </figure>
 <h3 id="submitting-codepen-assignments">Submitting CodePen Assignments</h3>
 <ol>
@@ -1781,19 +2424,21 @@
 </ol>
 <figure>
   <img alt="CodePen: Save and Share" src="../assets/codepen-save-share.webp" width="500" />
-  <figcaption>CodePen: Save and Share</figcaption>
+<br />
+<figcaption>CodePen: Save and Share</figcaption>
 </figure>
 <h3 id="accepting-and-cloning-vs-code-assignments">Accepting and Cloning VS Code Assignments</h3>
 <p><em>The first time you accept a VS Code assignment through GitHub Classroom, you will be asked to link your GitHub account to your name.</em></p>
 <ol>
-<li>Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your <strong>Top Repositories</strong> on GitHub. You can also find it in the the <strong>IMS322-Sheffield-S25</strong> organization repositories by clicking your profile photo, then clicking <strong>Your organizations</strong>.</li>
+<li>Click the link in the corresponding Canvas assignment to accept the assignment on GitHub Classroom. Once your new repository is generated, it should be visible in your <strong>Top Repositories</strong> on GitHub. You can also find it in the <strong>IMS322-Sheffield-S26</strong> organization repositories by clicking your profile icon, then clicking <strong>Your organizations</strong>.</li>
 <li>Open VS Code. If an existing folder is already open, close it by going to the <strong>File</strong> menu and choosing <strong>Close Folder</strong>.</li>
-<li>Open the <strong>Source Control</strong> panel and click the <strong>Clone Repository</strong> button. Copy-paste the URL from your repository into the text field. You will be prompted for a location on your computer to save this folder.</li>
+<li>Open the <strong>Source Control</strong> panel and click the <strong>Clone Repository</strong> button. Copy-paste the URL from your new repository into the text field. You will be prompted for a location on your computer to save this folder.</li>
 <li>To open this folder in the future, go to the <strong>File</strong> menu and choose <strong>Open Folder...</strong></li>
 </ol>
 <figure>
   <img alt="Source Control: Clone Repository" src="../assets/source-control-clone.webp" width="400" />
-  <figcaption>Source Control: Clone Repository</figcaption>
+<br />
+<figcaption>Source Control: Clone Repository</figcaption>
 </figure>
 <h3 id="working-with-vs-code-assignments">Working With VS Code Assignments</h3>
 <ul>
@@ -1802,69 +2447,47 @@
 </ul>
 <figure>
   <img alt="Status Bar: Go Live" src="../assets/status-bar-go-live.webp" width="500" />
-  <figcaption>Status Bar: Go Live</figcaption>
+<br />
+<figcaption>Status Bar: Go Live</figcaption>
 </figure>
 <figure>
   <img alt="Status Bar: Port #" src="../assets/status-bar-port.webp" width="500" />
-  <figcaption>Status Bar: Port #</figcaption>
+<br />
+<figcaption>Status Bar: Port #</figcaption>
 </figure>
-<ul>
-<li>
-<p>Some assignments in VS Code will have 2 stages: a draft followed by a final submission. We will manage these stages by using different "branches" on GitHub. This approach allows you to submit the assignment multiple times without needing to create multiple repositories.</p>
-<ul>
-<li>By default, each GitHub repository is created with a "main" branch. This includes all assignment instructions and template files and will be the only branch where you write code.</li>
-<li>When you are ready to submit a draft, you will create a "draft" branch on GitHub. To do this, locate your repository on GitHub and click on the branch dropdown. Then, enter the word "draft" and click "Create branch <em>draft</em> from <em>main</em>".</li>
-</ul>
-</li>
-</ul>
-<figure>
-  <img alt="Branch Dropdown" src="../assets/create-branch-text.webp" width="300" />
-  <figcaption>Branch Dropdown</figcaption>
-</figure>
-<h3 id="autograding">Autograding</h3>
-<p>Assignments managed through GitHub will be run through an autograding process when they are committed and synced with "autograde" or "finished" as the commit message.</p>
-<p>The criteria checked during this process can be found on the <a href="../style-guide">Style Guide</a> page.</p>
-<p>To review autograding results:</p>
-<ol>
-<li>Navigate to your assignment repository on GitHub.</li>
-<li>Click on the <strong>Actions</strong> tab at the top of the repository page, then select <strong>IMS322 Autograder</strong> in the left column.</li>
-<li>Select the most recent completed workflow at the top of the list. It will have either a blue checkmark or a red X, along with the name of the commit message you used.</li>
-<li>Click on the workflow under <strong>Jobs</strong> to view the details.</li>
-<li>On the details page, you can see the status of each grading step and the points awarded out of 12. You may need to expand the "Autograding" section and scroll to the bottom. Look for <code>--- AUTOGRADING RESULTS ---</code>.</li>
-</ol>
-<p>If you would like to fix errors identified by the autograding logs, you may commit and sync changes as many times as needed before the assignment due date.</p>
 <h3 id="committing-and-submitting-vs-code-assignments">Committing and Submitting VS Code Assignments</h3>
-<p><em>It is recommended that you Stage and Commit after each major change (steps 1-3) and Sync often (step 4), even before you are finished.</em></p>
+<p>It is recommended that you <strong>Stage</strong>, <strong>Commit</strong>, and <strong>Sync</strong> your work often, even before the project is finished.</p>
 <ol>
 <li>Open the <strong>Source Control</strong> panel in VS Code.</li>
 <li>Stage all changes by clicking the <strong>+</strong> next to <strong>Changes</strong>.</li>
-<li>Enter a commit message and click the <strong>Commit</strong> button (use "autograde" if you want to run the autograding process and "finished" for your final commit).</li>
-<li>The <strong>Commit</strong> button should change to a <strong>Sync Changes</strong> button. Click this to finish syncing the latest changes to your online GitHub repository.</li>
-<li>Find your repository on GitHub.</li>
-<li><em>Draft only:</em> Click on the branch dropdown and enter "draft" to create a new draft branch from the main branch.</li>
-<li>Go to the <strong>Settings</strong> tab within the repository and navigate to the <strong>Pages</strong> section.</li>
-<li>Under <strong>Branch</strong>, select the appropriate branch to publish (draft or main) and click <strong>Save</strong>.</li>
-<li>After a few moments, if you refresh the page, there should now be a URL near the top next to a <strong>Visit Site</strong> button. If you click this button, you should see your site open in a new window.</li>
-<li>Copy the URL generated by GitHub Pages, paste it in the Website URL field of the corresponding Canvas assignment, and click <strong>Submit Assignment</strong>.</li>
+<li>Enter a commit message and click <strong>Commit</strong>.</li>
+<li>Use "draft" for your draft submission.</li>
+<li>Use "finished" for your final submission.</li>
+<li><em>If you do not use these commit messages, the commit closest to the due date will be used for grading.</em></li>
+<li>The <strong>Commit</strong> button will change to <strong>Sync Changes</strong>. Click this to push the latest changes to GitHub. <em>If you only commit but do not sync, I will not be able to see your work.</em></li>
+<li>Open your repository on GitHub.</li>
+<li>Go to the <strong>Settings</strong> tab for the repository (not your account), then navigate to the <strong>Pages</strong> section.</li>
+<li>Under <strong>Branch</strong>, select "main" from the dropdown and click <strong>Save</strong>. You only need to publish the site once per project. Any future changes pushed to GitHub will automatically update the live site.</li>
+<li>After a few moments, refresh the <strong>Settings</strong> page. A GitHub Pages URL should appear near the top next to a <strong>Visit Site</strong> button. Click this button to verify your site loads correctly.</li>
+<li>Copy the GitHub Pages URL and paste it in the <strong>Website URL</strong> field of the corresponding Canvas assignment, then submit.</li>
 </ol>
 <figure>
   <img alt="Source Control: Stage and Commit changes" src="../assets/source-control-changes.webp" width="300" />
-  <figcaption>Source Control: Stage and Commit changes</figcaption>
+<br />
+<figcaption>Source Control: Stage and Commit changes</figcaption>
 </figure>
 <hr />
 <h2 id="setup-checklist">Setup Checklist</h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed Git (<em>not</em> GitHub Desktop).</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have created my GitHub account and enabled Two-Factor Authentication using Duo Mobile (or my preferred 2FA app).</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active, and I have claimed <strong>Github Copilot</strong> access.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> My GitHub Student Benefits are active or pending.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have enabled the <strong>Format On Save</strong> and <strong>Autocomplete</strong> options in my CodePen account settings.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have both Chrome (or another Chromium-based browser) and Firefox installed.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have both Firefox and a Chromium-based browser installed.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed VS Code.</li>
 <li class="task-list-item">
 <p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have installed the required VS Code extensions.</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>GitHub Copilot</strong> and <strong>Copilot Chat</strong> (published by GitHub)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>JS-Beautify for VS Code</strong> (published by VSCE Toolroom)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Prettier</strong> (published by Prettier)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Live Server</strong> (published by Ritwick Dey)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Live Share</strong> (published by Microsoft)</li>
@@ -1875,7 +2498,6 @@
 </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have signed VS Code into my GitHub account.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have selected my <strong>Live Server Custom Browser</strong> in settings.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> I have ensured that <strong>Explorer</strong>, <strong>Search</strong>, <strong>Source Control</strong>, <strong>Extensions</strong>, <strong>Live Share</strong>, and <strong>Accounts</strong> are all visible in the Activity Bar.</li>
 </ul>
 
 
@@ -1923,10 +2545,13 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

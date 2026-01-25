@@ -14,20 +14,20 @@ The recommended procedure for this class is as follows:
 
 ### Step 1: Declare a variable in JavaScript to reference the interactive HTML element.
 
-When an HTML element is assigned to a variable using `document.querySelector()`, it is treated as an [_object_ data type](https://ersheff.github.io/IMS322-Docs/js/data-types/#object). More specifically, it is a class of object called _HTMLElement_.
+When an HTML element is assigned to a variable using `document.getElementById()`, it is treated as an [_object_ data type](https://ersheff.github.io/IMS322-Docs/js/data-types/#object). More specifically, it is a class of object called _HTMLElement_.
 
 ```html
 <button id="my-button">Click Me</button>
 ```
 
 ```js
-const myButton = document.querySelector("#my-button");
+const myButton = document.getElementById("my-button");
 ```
 
-Note that the naming convention for the `id` attribute in HTML (and how i's used in `querySelector`) is _kebab-case_, while the variable name in JavaScript is _camelCase_. Although they are the same words, they represent different things in different contexts. This is also a valid way to assign an HTML element to a variable:
+Note that the naming convention for the `id` attribute in HTML (and how i's used in `getElementById`) is _kebab-case_, while the variable name in JavaScript is _camelCase_. Although they are the same words, they represent different things in different contexts. This is also a valid way to assign an HTML element to a variable:
 
 ```js
-const button1 = document.querySelector("#my-button");
+const button1 = document.getElementById("my-button");
 ```
 
 However, using the same words for both the `id` and the variable name (styled appropriately in kebab-case or camelCase), simplifies the process, as it reduces the number of names you need to create and remember.

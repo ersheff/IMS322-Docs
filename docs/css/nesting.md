@@ -1,4 +1,4 @@
-# CSS Nesting
+# Nesting
 
 Excerpted from MDN Web Docs ["Using CSS nesting"](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting):
 

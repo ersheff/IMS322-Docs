@@ -8,8 +8,6 @@ Styling inputs can be confusing and frustrating. Some familiar style properties 
 - `outline`: Changes the highlight color around inputs when they are in the focus state.
 - `::placeholder`: Selects the placeholder text (set using the `placeholder` attribute) for styling.
 
-**CSS generators** can be very heplful when styling inputs. For example, this [Style Input Range](https://www.cssportal.com/style-input-range/) utility from CSS Portal makes it easy to customize the appearance of sliders.
-
 <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="NWJRoYY" data-editable="true" data-user="ersheff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/NWJRoYY">
   Input Styling (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)

@@ -5,7 +5,7 @@ When working with HTML elements in JavaScript, you are often using or changing t
 ```js
 // example properties
 textDisplay.innerText = "Hello!";
-headshotImage.src = "images/headshot.webp";
+headshotImage.src = "images/headshot.jpeg";
 
 // example methods
 audioFile.play();
@@ -22,7 +22,7 @@ You can also define your own objects to organize and provide context for data ab
 const miamiOh = {
   type: "Public", // type is key, "Public" is value
   established: 1809, // established is key, 1809 is value
-  location: "Oxford, OH" // location is key, "Oxford, OH" is value
+  location: "Oxford, OH", // location is key, "Oxford, OH" is value
 };
 ```
 
@@ -36,8 +36,8 @@ miamiOh.established; // returns 1809
 You have already been using dot notation to interface with objects in JavaScript.
 
 ```js
-// the querySelector() method of the document object
-document.querySelector("text-input");
+// the getElementById() method of the document object
+document.getElementById("text-input");
 
 // the innerText property of the textInput object
 textInput.innerText;

@@ -14,7 +14,7 @@ First, you would define and teach them the individual steps:
 
 Then, in the future, you could simply ask: _Can you please make some marinara sauce?_
 
-Start your function declaration with the `function` keyword, followed by a name (using the naming conventions from our [Style Guide](../../style-guide#naming-conventions)), then parentheses and curly braces. The individual steps of your function go inside of the curly braces.
+Start your function declaration with the `function` keyword, followed by a name (using the naming conventions from our [Coding Style & Requirements](../../style-requirements#naming-conventions)), then parentheses and curly braces. The individual steps of your function go inside of the curly braces.
 
 ```js
 function makeSauce() {
