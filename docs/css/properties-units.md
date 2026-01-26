@@ -42,11 +42,11 @@ There are multiple valid ways to specify **units** for any style property that d
 
 ### Absolute Units
 
-`px` - Absolute pixel units.
+- `px` - Absolute pixel units.
 
 ### Relative Units
 
-`%` - Relative to the parent element's corresponding property (e.g., **width**, **height**, etc.).
-`ch` - Relative to the width of a "0" text character at the element's current font size.
-`em` - Relative to the element's current font size (roughly the height of the text).
-`rem` - Relative to the root document's font size (`1rem` is usually equivalent to `16px`).
+- `%` - Relative to the parent element's corresponding property (e.g., **width**, **height**, etc.).
+- `ch` - Relative to the width of a "0" text character at the element's current font size.
+- `em` - Relative to the element's current font size (roughly the height of the text).
+- `rem` - Relative to the root document's font size (`1rem` is usually equivalent to `16px`).
