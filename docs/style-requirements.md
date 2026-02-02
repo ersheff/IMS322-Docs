@@ -30,7 +30,7 @@ const camelCase = 'apple';
 
 ### Files and Images
 
-- Each project submission must include at minimum an `index.html`, `style.css`, and `main.js` file. These are provided in the template repository, so do not delete or rename them.
+- Each project submission must include at minimum an `index.html`, `styles.css`, and `main.js` file. These are provided in the template repository, so do not delete or rename them.
 - All images must be in `jpeg` or `webp` format with a resolution no larger than `3840` pixels in width or `2160` pixels in height. Logos, icons, or other vector drawings may be in `svg` format. Use [Squoosh](https://squoosh.app/) or another image editor to resize or compress images before adding them to your project.
 - All image files must be stored inside an `images` folder.
 
@@ -52,7 +52,7 @@ _Not this:_
 
 ### HTML
 
-- Do not change the provided `<link>` or `<script>` tags in the `<head>` of `index.html`. These are already configured to correctly load `style.css` and `main.js`. You may add additional `<link>` or `<script>` tags in the `<head>` if needed (e.g., to load external fonts).
+- Do not change the provided `<link>` or `<script>` tags in the `<head>` of `index.html`. These are already configured to correctly load `styles.css` and `main.js`. You may add additional `<link>` or `<script>` tags in the `<head>` if needed (e.g., to load external fonts).
 - Do not write any styling or scripting in your HTML. This includes:
   - Inline `style` or event attributes (such as `onclick`)
   - `<style>` tags
@@ -84,7 +84,7 @@ _Not this:_
   - Example HEX code: `#e9967a`
   - Example RGB code: `rgb(233, 150, 122)`
 - Always specify font families. If you are not using a "[web safe font](https://fonts.google.com/knowledge/glossary/system_font_web_safe_font)," make sure the font is properly loaded in your project. If you are using a single font family for all elements, apply it globally in the `main` selector.
-- Layouts should adapt to any window width from `320px` and above. A default media query breakpoint at `640px` is provided in `style.css` to make size and layout adjustments as needed for wider windows.
+- Layouts should adapt to any window width from `320px` and above. A default media query breakpoint at `640px` is provided in `styles.css` to make size and layout adjustments as needed for wider windows.
 
 ### JavaScript
 

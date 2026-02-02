@@ -1,6 +1,6 @@
 # Variables
 
-CSS **variables** (aka custom properties) can help ensure consistent styling throughout your site. For example, you can apply a specific color in multiple places without needing to remember and type the exact HEX or RGB code each time. Additionally, if you want to test variations for different properties, you only need to change the value once where the CSS variable is declared at the top of the `style.css` file.
+CSS **variables** (aka custom properties) can help ensure consistent styling throughout your site. For example, you can apply a specific color in multiple places without needing to remember and type the exact HEX or RGB code each time. Additionally, if you want to test variations for different properties, you only need to change the value once where the CSS variable is declared at the top of the `styles.css` file.
 
 Thare are multiple ways to declare CSS variables, but the most common and general-purpose method is within the `:root` pseudo-element. These variables can then be referenced throughout the rest of the file by their variable name, which should always start with `--`.
 
