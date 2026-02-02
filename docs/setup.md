@@ -204,7 +204,7 @@ It is recommended that you **Stage**, **Commit**, and **Sync** your work often, 
 1. Open the **Source Control** panel in VS Code.
 2. Stage all changes by clicking the **+** next to **Changes**.
 3. Enter a commit message and click **Commit**.
-   - Use "draft" for your draft submission.
+   - Use "draft" for your draft submission (where applicable).
    - Use "finished" for your final submission.
    - _If you do not use these commit messages, the commit closest to the due date will be used for grading._
 4. The **Commit** button will change to **Sync Changes**. Click this to push the latest changes to GitHub. _If you only commit but do not sync, I will not be able to see your work._
