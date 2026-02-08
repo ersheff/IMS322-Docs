@@ -2,16 +2,16 @@ site_name: IMS322 Docs
 theme:
   name: material
   palette:
-    - media: '(prefers-color-scheme)'
+    - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-    - media: '(prefers-color-scheme: light)'
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - media: '(prefers-color-scheme: dark)'
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -81,3 +81,4 @@ nav:
       - Browser Review: res/browser-review.md
       - Optimizing Images: res/optimizing-images.md
       - Utilities: res/utilities.md
+      - Wireframes: res/wireframes.md

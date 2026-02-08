@@ -1,6 +1,6 @@
 # IMS322 Docs
 
-A collection of documents and example code developed for a course I teach - IMS 322: Intermediate Interaction Design and Development.
+A collection of documents and example code developed for a course I teach - IMS322: Intermediate Interaction Design and Development.
 
 [IMS322 Docs site](https://ersheff.github.io/IMS322-Docs/)
 
