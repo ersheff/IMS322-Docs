@@ -33,12 +33,4 @@ The `doubleValue()` function would be much more useful if we could use the resul
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
-Here is a more sophisticated example with two functions: one that converts Fahrenheit to Celsius and another that does the reverse.
-
-<p class="codepen" data-height="420" data-default-tab="js" data-slug-hash="xbxqxeL" data-pen-title="Function Return (IMS322 Docs)" data-editable="true" data-user="ersheff" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/ersheff/pen/xbxqxeL">
-  Function Return Temperature (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
