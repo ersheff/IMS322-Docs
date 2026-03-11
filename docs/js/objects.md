@@ -4,7 +4,7 @@ When working with HTML elements in JavaScript, you are often using or changing t
 
 ```js
 // example properties
-textDisplay.innerText = "Hello!";
+textDisplay.textContent = "Hello!";
 headshotImage.src = "images/headshot.jpeg";
 
 // example methods
@@ -39,8 +39,8 @@ You have already been using dot notation to interface with objects in JavaScript
 // the getElementById() method of the document object
 document.getElementById("text-input");
 
-// the innerText property of the textInput object
-textInput.innerText;
+// the textContent property of the textInput object
+textInput.textContent;
 ```
 
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="vYPByeL" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">

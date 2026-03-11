@@ -42,17 +42,17 @@ primaryButton.addEventListener("click", toggleState);
 
 Here are some common examples of setting and reading properties in JavaScript.
 
-### innerText
+### textContent
 
-To change the text displayed in an HTML element via JavaScript, assign a value to the `innerText` property:
+To change the text displayed in an HTML element via JavaScript, assign a value to the `textContent` property:
 
 ```js
-element.innerText = "Hello!";
+element.textContent = "Hello!";
 ```
 
 <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="poGMYEX" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/poGMYEX">
-  innerText (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
+  textContent (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 

@@ -65,7 +65,7 @@ imageElement.src = onionAndPeppercorns.imageUrl;
 // sets alt text attribute to "onion and peppercorns"
 imageElement.alt = onionAndPeppercorns.alt;
 // sets inner text of <figcaption> to "Onion and Peppercorns."
-captionElement.innerText = onionAndPeppercorns.caption;
+captionElement.textContent = onionAndPeppercorns.caption;
 ```
 
 Then, you can use the `appendChild()` method to append the `<img>` and `<figcaption>` elements to the `<figure>` element and the `<figure>` element to the `<body>`.
