@@ -10,7 +10,7 @@ Designing and implementing modals is straightforward with the `<dialog>` element
 
 The `<dialog>` element can be styled like any other HTML element using properties like `border`, `background-color`, `box-shadow`, and more. Modals can be displayed and dismissed using the `showModal()` and `close()` methods, respectively.
 
-<p class="codepen" data-height="300" data-pen-title="Modals (IMS322 Docs)" data-default-tab="js" data-slug-hash="MYjGEJe" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="300" data-pen-title="Modals (IMS322 Docs)" data-default-tab="js,result" data-slug-hash="MYjGEJe" data-editable="true" data-user="ersheff" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/ersheff/pen/MYjGEJe">
   Modals with Forms (IMS322 Docs)</a> by Eric Sheffield (<a href="https://codepen.io/ersheff">@ersheff</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
